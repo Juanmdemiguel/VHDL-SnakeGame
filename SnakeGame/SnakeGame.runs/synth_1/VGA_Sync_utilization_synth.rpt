@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Fri Nov 22 12:08:32 2024
-| Host         : LAPTOP-GEPADMVF running 64-bit major release  (build 9200)
+| Date         : Fri Nov 22 19:33:25 2024
+| Host         : DESKTOP-1V0CU1G running 64-bit major release  (build 9200)
 | Command      : report_utilization -file VGA_Sync_utilization_synth.rpt -pb VGA_Sync_utilization_synth.pb
 | Design       : VGA_Sync
 | Device       : xc7a100tcsg324-1
