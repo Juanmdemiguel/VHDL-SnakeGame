@@ -1,14 +1,16 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: UPM
+-- Engineer: Iván Asensio Díez
+-- Engineer: Mario Luna López
+-- Engineer: Juan Muñoz de Bustillo de Miguel
 -- 
--- Create Date: 22.11.2024 13:38:51
--- Design Name: 
--- Module Name: VGA_Draw - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
+-- Create Date: 20.11.2024 10:53:37
+-- Design Name: VGA
+-- Module Name: VGA_Sync - Behavioral
+-- Project Name: VHDL_SnakeGame
+-- Target Devices: Nexys4 - DDR
+-- Tool Versions: Vivado 2024.1
+-- Description: Sincroniza el pulso de la pantalla vga con los pixeles del mismo y emite la zona visible 
 -- 
 -- Dependencies: 
 -- 
