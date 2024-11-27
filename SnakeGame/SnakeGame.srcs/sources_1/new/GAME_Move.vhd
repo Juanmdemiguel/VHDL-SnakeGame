@@ -34,13 +34,14 @@ entity GAME_Move is
         snake_length_max    : integer := 3
         );
     port(
-        clk_60hz            : in  std_logic
+        clk_60hz        : in  std_logic;
+        snake_length    : out integer range 0 to snake_length_max;
+        snake_mesh_xy   : out xys(0 to snake_length_max - 1)
         );
 end entity;
 
 architecture BEHAVIORAL of GAME_Move is
-    signal snake_length         : integer range 0 to snake_length_max;
-    signal snake_mesh_xy        : xys(0 to snake_length_max - 1);
+    signal snake_mesh_xy_i        : xys(0 to snake_length_max - 1);
 begin
 
 snake_move:
@@ -66,7 +67,7 @@ snake_move:
             snake_head_xy_future(15 downto 0)   := std_logic_vector(to_signed(snake_begin_y , 16));  --Resetea la posición y de la cabeza
 
             for i in 0 to snake_length_max - 1 loop
-                snake_mesh_xy(i) <= snake_head_xy_future; --Asigna al inicio la misma posición para toda la serpiente
+                snake_mesh_xy_i(i) <= snake_head_xy_future; --Asigna al inicio la misma posición para toda la serpiente
             end loop;
             
             inited := '1';  --Inicia el juego
@@ -76,9 +77,9 @@ snake_move:
             snake_head_xy_future(15 downto 0) := std_logic_vector(signed(snake_head_xy_future(15 downto 0)) + snake_speed);
             
             for i in snake_length_max - 1 downto 1 loop      --Cada parte posterior de la serpiente se mueve a la posición de la parte anterior
-                snake_mesh_xy(i) <= snake_mesh_xy(i - 1);    --Se descomprime en los primeros ciclos de reloj
+                snake_mesh_xy_i(i) <= snake_mesh_xy_i(i - 1);    --Se descomprime en los primeros ciclos de reloj
             end loop;
-            snake_mesh_xy(0) <= snake_head_xy_future; --Mueve la cabeza a la proxima posición
+            snake_mesh_xy_i(0) <= snake_head_xy_future; --Mueve la cabeza a la proxima posición
 
                                                                              --Pierde por salirse de la pantalla
             if (signed(snake_head_xy_future(31 downto 16)) < 0 or                      --Sale por la izq
@@ -89,5 +90,6 @@ snake_move:
             end if;
         end if;
     end process;
+    snake_mesh_xy <= snake_mesh_xy_i;
 end BEHAVIORAL;
 

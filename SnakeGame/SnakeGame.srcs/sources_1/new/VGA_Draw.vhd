@@ -28,7 +28,7 @@ entity VGA_Draw is
  generic(
         head_width          : integer := 20;
         snake_length_begin  : integer := 1;
-        snake_length_max    : integer := 20);
+        snake_length_max    : integer := 3);
         
     port(
         --clk_108mhz          : in  std_logic
