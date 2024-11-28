@@ -74,7 +74,7 @@ draw: process(snake_length, snake_mesh_xy, row, col, en)
                 gout <= "1111";
                 bout <= "1111";
             else -- if it's background
-                rout <= "0000";
+                rout <= "1111";
                 gout <= "0000";
                 bout <= "0000";
             end if;

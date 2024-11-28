@@ -25,14 +25,14 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Clock_Converter is --Convertidor de señales de reloj de 33 MHz en señales de 60 Hz
     Port (
-        clk_in   : in  std_logic;  -- Reloj de entrada (33 MHz)
+        clk_in   : in  std_logic;  -- Reloj de entrada (100 MHz)
         reset    : in  std_logic; 
         clk_out  : out std_logic   -- Reloj de salida (60 Hz)
     );
 end Clock_Converter;
 
 architecture BEHAVIORAL of Clock_Converter is
-    constant converter : integer := 550_000;  -- Factor de conversión
+    constant converter : integer := 1_666_667;  -- Factor de conversión (1.666.666,6667)
     signal counter   : integer range 0 to converter - 1 := 0; 
     signal clk_temp  : std_logic := '0';  
 begin

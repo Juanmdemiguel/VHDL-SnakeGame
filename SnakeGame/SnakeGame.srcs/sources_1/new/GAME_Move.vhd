@@ -41,7 +41,8 @@ entity GAME_Move is
 end entity;
 
 architecture BEHAVIORAL of GAME_Move is
-    signal snake_mesh_xy_i        : xys(0 to snake_length_max - 1);
+    signal snake_mesh_xy_i : xys(0 to snake_length_max - 1);
+    signal snake_length_i    : integer range 0 to snake_length_max;
 begin
 
 snake_move:
@@ -57,7 +58,7 @@ snake_move:
         variable snake_length_future        : integer := 0;                             --Longitud de la serpiente a futuro
         
     begin
-        snake_length    <= snake_length_future;
+        snake_length_i    <= snake_length_future;
         if (inited = '0') then --Caso fuera del juego
         
             snake_length_future := snake_length_begin; --Resetea la longitud de la serpiente
@@ -90,6 +91,7 @@ snake_move:
             end if;
         end if;
     end process;
+    snake_length <= snake_length_i;
     snake_mesh_xy <= snake_mesh_xy_i;
 end BEHAVIORAL;
 
