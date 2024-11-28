@@ -49,7 +49,7 @@ snake_move:
     process(clk_60hz)
         --Constantes
         --Velocidad en pixel
-        constant snake_speed    : signed(15 downto 0) := to_signed(1, 16);              --Constante de velocidad (6 por cada rising clk) 
+        constant snake_speed    : signed(15 downto 0) := to_signed(4, 16);              --Constante de velocidad (6 por cada rising clk) 
 
         --Variables
         variable inited                     : std_logic := '0';                         --Boton de inicio

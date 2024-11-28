@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log VGA_Sync.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_Sync.tcl
+EAStep vivado -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl

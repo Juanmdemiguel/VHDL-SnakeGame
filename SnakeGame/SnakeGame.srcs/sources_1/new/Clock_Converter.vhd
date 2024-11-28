@@ -26,7 +26,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity Clock_Converter is --Convertidor de señales de reloj de 33 MHz en señales de 60 Hz
     Port (
         clk_in   : in  std_logic;  -- Reloj de entrada (100 MHz)
-        reset    : in  std_logic; 
+        --reset    : in  std_logic; 
         clk_out  : out std_logic   -- Reloj de salida (60 Hz)
     );
 end Clock_Converter;
@@ -37,12 +37,12 @@ architecture BEHAVIORAL of Clock_Converter is
     signal clk_temp  : std_logic := '0';  
 begin
 
-    process(clk_in, reset)
+    process(clk_in)
     begin
-        if reset = '1' then
-            counter <= 0;
-            clk_temp <= '0';
-        elsif rising_edge(clk_in) then
+--        if reset = '1' then
+--            counter <= 0;
+--            clk_temp <= '0';
+        if rising_edge(clk_in) then
             if counter = converter - 1 then
                 counter <= 0;
                 clk_temp <= not clk_temp;  

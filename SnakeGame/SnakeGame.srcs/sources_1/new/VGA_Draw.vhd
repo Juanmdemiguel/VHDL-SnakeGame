@@ -26,7 +26,7 @@ use work.Types.all;
 
 entity VGA_Draw is
  generic(
-        head_width          : integer := 20;
+        head_width          : integer := 60;
         snake_length_begin  : integer := 1;
         snake_length_max    : integer := 3);
         
@@ -70,13 +70,13 @@ draw: process(snake_length, snake_mesh_xy, row, col, en)
             end loop;
             
             if (is_shape = '1') then
-                rout <= "0000";
-                gout <= "1111";
-                bout <= "1111";
+                rout <= "0010";
+                gout <= "0100";
+                bout <= "0110";
             else -- if it's background
-                rout <= "1111";
-                gout <= "0000";
-                bout <= "0000";
+                rout <= "0100";
+                gout <= "1100";
+                bout <= "0100";
             end if;
         else -- if not enabled
             rout <= "0000";
