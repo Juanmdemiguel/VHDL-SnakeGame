@@ -47,6 +47,7 @@ architecture Behavioral of top is
     signal SyncEnable : std_logic;
     signal row_i, col_i   : std_logic_vector(15 downto 0); 
     signal sig_snake_mesh_xy  : xys(0 to snake_length_max - 1);
+    
 COMPONENT GAME_Move
     port(
         clk_60hz            : in  std_logic;
@@ -65,7 +66,7 @@ END COMPONENT;
 COMPONENT VGA_Draw 
      port (
         snake_length		: in  integer range 0 to 20;          --Pendiente de revisión  20 -> snake_length
-        snake_mesh_xy		: in  xys(0 to 20 - 1);               --Pendiente de revisión  20 -> snake_length
+        snake_mesh_xy		: in  xys(0 to snake_length_max-1);   --Pendiente de revisión  20 -> snake_length
         en                  : in  std_logic;
         row, col            : in  std_logic_vector(15 downto 0);
         rout, gout, bout    : out std_logic_vector(3 downto 0)
