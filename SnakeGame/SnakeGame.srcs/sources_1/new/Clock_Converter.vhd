@@ -32,7 +32,7 @@ entity Clock_Converter is --Convertidor de señales de reloj de 33 MHz en señal
 end Clock_Converter;
 
 architecture BEHAVIORAL of Clock_Converter is
-    constant converter : integer := 1_666_667;  -- Factor de conversión (1.666.666,6667)
+    constant converter : integer := 833_333;  -- Factor de conversión (1.666.666,6667)
     signal counter   : integer range 0 to converter - 1 := 0; 
     signal clk_temp  : std_logic := '0';  
 begin
