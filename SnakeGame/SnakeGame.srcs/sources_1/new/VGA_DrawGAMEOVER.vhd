@@ -40,7 +40,7 @@ begin
     process(row, col, en)
         variable dx, dy : integer := 0;
         variable is_text_pixel : std_logic := '0';
-          
+        variable selector: integer := 0;
     begin
         if (en = '1') then
             -- Calculate relative positions
@@ -51,7 +51,8 @@ begin
             is_text_pixel := '0'; -- negated unless said otherwise
       
            if (dx >= 0 and dx < Number*CHAR_LARGE_WIDTH and dy >= 0 and dy < Number*CHAR_LARGE_HEIGHT) then
-                if GAMEOVER(dx/CHAR_LARGE_WIDTH)(dy)(dx) = '1' then
+                selector := dx/CHAR_LARGE_WIDTH; --selects the element of the array 
+                if GAMEOVER(selector)(dy)(dx - selector*CHAR_LARGE_WIDTH) = '1' then
                     is_text_pixel := '1';
                 end if;
             end if;
