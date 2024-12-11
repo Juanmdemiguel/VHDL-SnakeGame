@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Dec 11 13:28:01 2024
+# Process ID: 3912
+# Current directory: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21192 C:\Users\ivano\OneDrive\Documentos\GitHub\VHDL-SnakeGame\SnakeGame\SnakeGame.xpr
+# Log file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/vivado.log
+# Journal file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame\vivado.jou
+# Running On        :DESKTOP-1V0CU1G
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+# CPU Frequency     :2208 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :17007 MB
+# Swap memory       :11274 MB
+# Total Virtual     :28281 MB
+# Available Virtual :8498 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_Move.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_Move.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd w ]
+add_files C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Up.vhd w ]
+add_files C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Up.vhd
+close [ open C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Left.vhd w ]
+add_files C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Left.vhd
+close [ open C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Down.vhd w ]
+add_files C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Down.vhd
+close [ open C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Init.vhd w ]
+add_files C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Init.vhd
+close [ open C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Right.vhd w ]
+add_files C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Right.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd w ]
+add_files C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTON_Lock.vhd w ]
+add_files C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTON_Lock.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -top top -part xc7a100tcsg324-1 -lint 
+synth_design -top top -part xc7a100tcsg324-1 -lint 
+synth_design -top top -part xc7a100tcsg324-1 -lint 

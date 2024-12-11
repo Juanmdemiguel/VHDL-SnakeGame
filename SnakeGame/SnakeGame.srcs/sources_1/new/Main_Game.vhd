@@ -34,7 +34,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Main_Game is
   port(
 	    RESET      :  in std_logic;
-	    BUTTON     :  in std_logic;
+	    BUTTON     :  in std_logic_vector(2 downto 0);
+	    LOSE       :  in std_logic;
         CLK_100MHz :  in std_logic;
         STATE      :  out std_logic_vector(1 downto 0)
     );
@@ -42,8 +43,7 @@ end Main_Game;
 
 architecture Structural of Main_Game is
 
-signal lose_i :std_logic:= '0';
-Type STATE_T is (S0_START, S1_GAME, S2_GO);
+    Type STATE_T is (S0_START, S1_GAME, S2_GO);
 	signal cur_state, nxt_state : STATE_T; -- Cualquier cosa que sea estado necesita dos señales
 begin
 	st_reg : process(CLK_100MHz, RESET) -- clk state register
@@ -60,15 +60,15 @@ begin
     	nxt_state <= cur_state; -- Evita la aparición de un Latch -> Garantza combinacional
     	case cur_state is	-- Cuando se le da a start empieza a bajar
         	when S0_START =>
-            	if BUTTON = '1' then
+            	if BUTTON = "100" then
                 	nxt_state <= S1_GAME;
                 end if; 
             when S1_GAME => -- Cuando llegue al final de carrera sube
-          	    if lose_i = '1' then
+          	    if LOSE = '1' then
                 	nxt_state <= S2_GO;
                 end if; 
             when S2_GO => -- Cuando termina de subir se para
-          	    if BUTTON = '1' then
+          	    if BUTTON = "100" then
                 	nxt_state <= S0_START;
                 end if; 
             when others => 
