@@ -22,12 +22,13 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.Types.all;
+use work.Letters.all;
 
 entity VGA_Manager is
-      Generic(
-        snake_length_max    : integer := 3
-        );
       Port ( 
+        START           : in big_letter_array(0 to 4);
+        GAMEOVER        : in big_letter_array(0 to 8);
+        mode            : in std_logic_vector(1 downto 0);
         clk             : in std_logic;
         snake_length    : in  integer range 0 to 20; 
         snake_mesh_xy   : in  xys(0 to snake_length_max-1);
@@ -50,14 +51,16 @@ architecture Behavioral of VGA_Manager is
         row, col        : out std_logic_vector(15 downto 0)
      );
 END COMPONENT;
+
 COMPONENT VGA_Draw 
-     port (
-        snake_length		: in  integer range 0 to 20;          --Pendiente de revisión  20 -> snake_length
-        snake_mesh_xy		: in  xys(0 to snake_length_max-1);   --Pendiente de revisión  20 -> snake_length
-        en                  : in  std_logic;
+     port(
+        START               : in big_letter_array(0 to 4);
+        GAMEOVER            : in big_letter_array(0 to 8);
+        mode                : in std_logic_vector(1 downto 0);
+        snake_length		: in  integer range 0 to snake_length_max;
+        snake_mesh_xy		: in  xys(0 to snake_length_max - 1);
         row, col            : in  std_logic_vector(15 downto 0);
-        rout, gout, bout    : out std_logic_vector(3 downto 0)
-     );
+        rout, gout, bout    : out std_logic_vector(3 downto 0));
 END COMPONENT;
      
 begin
@@ -73,9 +76,11 @@ begin
 
     Inst_VGA_Draw: VGA_Draw 
       PORT MAP (
-        snake_length	 => snake_length,
-        snake_mesh_xy	 => snake_mesh_xy,
-        en             => SyncEnable,
+        START          => START,
+        GAMEOVER       => GAMEOVER,
+        snake_length   => snake_length,
+        snake_mesh_xy  => snake_mesh_xy,
+        mode           => mode,
         row            => row_i, 
         col            => col_i,
         rout           => red,

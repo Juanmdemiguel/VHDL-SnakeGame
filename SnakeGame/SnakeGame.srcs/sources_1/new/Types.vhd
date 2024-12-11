@@ -25,6 +25,7 @@ use ieee.numeric_std.all;
 package Types is
     subtype xy is std_logic_vector(31 downto 0);
     type xys is array (integer range <>) of xy;
+    constant snake_length_max    : integer := 3;
 end package Types;
 
 -- Implementación del paquete
