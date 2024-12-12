@@ -53,7 +53,7 @@ architecture Structural of top is
                 signal row_i, col_i       : std_logic_vector(15 downto 0); 
                 signal sig_snake_mesh_xy  : xys(0 to snake_length_max - 1);
                 signal sig_food_xy        : xy; 
-            
+
             -- signals for scaled string
                 signal start    :  big_letter_array(0 to 4);
                 signal gameover :  big_letter_array(0 to 8);
@@ -103,6 +103,7 @@ COMPONENT VGA_Manager
         clk             : in std_logic;
         snake_length    : in  integer range 0 to 20; 
         snake_mesh_xy   : in  xys(0 to snake_length_max-1);
+        food_xy         : in xy;
         HSync, VSync    : out std_logic;
         red, green, blue: out std_logic_vector(3 downto 0)
         
@@ -189,6 +190,7 @@ Inst_MainFSM : Main_Game
         clk              => sig_108MHz,
         snake_length	 => sig_snake_length,
         snake_mesh_xy	 => sig_snake_mesh_xy,
+        food_xy          => sig_food_xy,
         HSync            => HSync,
         VSync            => VSync,
         red              => Red,

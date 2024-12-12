@@ -32,6 +32,7 @@ entity VGA_Manager is
         clk             : in std_logic;
         snake_length    : in  integer range 0 to 20; 
         snake_mesh_xy   : in  xys(0 to snake_length_max-1);
+        food_xy         : in xy;
         HSync, VSync    : out std_logic;
         red, green, blue: out std_logic_vector(3 downto 0)
         
@@ -40,9 +41,9 @@ end VGA_Manager;
 
 architecture Behavioral of VGA_Manager is
 
-    signal SyncEnable : std_logic;
+    signal SyncEnable     : std_logic;
     signal row_i, col_i   : std_logic_vector(15 downto 0); 
-    
+
  COMPONENT VGA_Sync 
      port (
         clk             : in  std_logic;  
@@ -59,6 +60,7 @@ COMPONENT VGA_Draw
         mode                : in std_logic_vector(1 downto 0);
         snake_length		: in  integer range 0 to snake_length_max;
         snake_mesh_xy		: in  xys(0 to snake_length_max - 1);
+        food_xy             : in xy;
         row, col            : in  std_logic_vector(15 downto 0);
         rout, gout, bout    : out std_logic_vector(3 downto 0));
 END COMPONENT;
@@ -80,6 +82,7 @@ begin
         GAMEOVER       => GAMEOVER,
         snake_length   => snake_length,
         snake_mesh_xy  => snake_mesh_xy,
+        food_xy        =>  food_xy,
         mode           => mode,
         row            => row_i, 
         col            => col_i,
