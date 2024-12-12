@@ -35,6 +35,7 @@ entity VGA_Draw is
         --clk_108mhz          : in  std_logic
         START               : in big_letter_array(0 to 4);
         GAMEOVER            : in big_letter_array(0 to 8);
+        enable              : in std_logic;
         mode                : in std_logic_vector(1 downto 0);
         snake_length		: in  integer range 0 to snake_length_max;
         snake_mesh_xy		: in  xys(0 to snake_length_max - 1);
@@ -74,83 +75,73 @@ end process;
 
 drawSnake: process(snake_length, snake_mesh_xy, row, col, typeDraw)
         --x and y distance from shape
-        variable dx, dy     : signed(15 downto 0) := (others => '0');
+       -- variable dx, dy     : signed(15 downto 0) := (others => '0');
         --if current pixel is shape
         variable is_shape   : std_logic := '0';  
+        --if current pixel is food
         variable is_food    : std_logic := '0';
-        
-    begin
-        if (typeDraw = '0') then 
-            --draw body
-            is_shape := '0';
-            for i in 0 to snake_length_max - 1 loop
-             if (i < snake_length) then  --if is valid snake body
-                dx := abs(signed(col) - signed(snake_mesh_xy(i)(31 downto 16)));
-                dy := abs(signed(row) - signed(snake_mesh_xy(i)(15 downto 0)));
-                    if (dx < head_width / 2 and dy < head_width / 2) then
-                        is_shape := '1';
-                    end if;
-                end if;
-            end loop;
-            
-            dx := abs(signed(col) - signed(food_xy(31 downto 16)));
-            dy := abs(signed(row) - signed(food_xy(15 downto 0)));
-            if (dx < food_width / 2 and dy < food_width / 2) then
-                is_food := '1';
-            else 
-                is_food := '0';
-            end if;
-            
-            if (is_shape = '1') then
-                rout <= "0010";
-                gout <= "0100";
-                bout <= "0110";
-           elsif (is_food = '1') then
-                rout <= "1100";
-                gout <= "1111";
-                bout <= "0000";
-            else -- if it's background
-                rout <= "0100";
-                gout <= "1100";
-                bout <= "0100";
-            end if;
-        else -- if not enabled
-            rout <= "0000";
-            gout <= "0000";
-            bout <= "0000";
-        end if;
-    end process;
-    
-     StringDraw : process(row, col, typeDraw)
+
         variable dx, dy : integer := 0;
         variable is_text_pixel : std_logic := '0';
         variable selector: integer := 0;
-        
-    begin
-        if (typeDraw = '1') then
-            -- Calculate relative positions
-            dx := to_integer(unsigned(col)) - TEXT_START_X;
-            dy := to_integer(unsigned(row)) - TEXT_START_Y;
 
-            -- Check if the pixel is part of the letter
-            is_text_pixel := '0'; -- negated unless said otherwise
+    begin
+    if enable = '1' then
+        if typeDraw = '0' then 
+--            --draw body
+--            is_shape := '0';
+--            for i in 0 to snake_length_max - 1 loop
+--             if (i < snake_length) then  --if is valid snake body
+--                dx := abs(signed(col) - signed(snake_mesh_xy(i)(31 downto 16)));
+--                dy := abs(signed(row) - signed(snake_mesh_xy(i)(15 downto 0)));
+--                    if (dx < head_width / 2 and dy < head_width / 2) then
+--                        is_shape := '1';
+--                    end if;
+--                end if;
+--            end loop;
             
-         --Checks boundaries 
-           if (dx >= 0 and dx < Strlen*CHAR_LARGE_WIDTH and dy >= 0 and dy < Strlen*CHAR_LARGE_HEIGHT) then
-                selector := dx/CHAR_LARGE_WIDTH; --selects the element of the array 
-                
-            -- Selects the string to print 
-               if Strlen = 5 then
-                  if START(selector)(dy)(dx - selector*CHAR_LARGE_WIDTH) = '1' then
-                    is_text_pixel := '1';
-                  end if;
-               elsif Strlen = 9 then
-                  if GAMEOVER(selector)(dy)(dx - selector*CHAR_LARGE_WIDTH) = '1' then
-                    is_text_pixel := '1';
-                  end if;
-               end if;
-               
-            end if;
+--            dx := abs(signed(col) - signed(food_xy(31 downto 16)));
+--            dy := abs(signed(row) - signed(food_xy(15 downto 0)));
+--            if (dx < food_width / 2 and dy < food_width / 2) then
+--                is_food := '1';
+--            else 
+--                is_food := '0';
+--            end if;
+            
+--            if (is_shape = '1') then
+--                rout <= "0010";
+--                gout <= "0100";
+--                bout <= "0110";
+--           elsif (is_food = '1') then
+--                rout <= "1100";
+--                gout <= "1111";
+--                bout <= "0000";
+--             else -- if it's background
+--                rout <= "0100";
+--                gout <= "1100";
+--                bout <= "0100";
+--             end if;
+             
+            elsif typeDraw = '1' then
+                  -- Calculate relative positions
+                dx := to_integer(unsigned(col)) - TEXT_START_X;
+                dy := to_integer(unsigned(row)) - TEXT_START_Y;
+                -- Check if the pixel is part of the letter
+                is_text_pixel := '0'; -- negated unless said otherwise 
+             --Checks boundaries 
+                   if (dx >= 0 and dx < Strlen*CHAR_LARGE_WIDTH and dy >= 0 and dy < CHAR_LARGE_HEIGHT) then
+                        selector := dx/CHAR_LARGE_WIDTH; --selects the element of the array              
+                    -- Selects the string to print 
+                       if Strlen = 5 then
+                          if START(selector)(dy)(dx - selector*CHAR_LARGE_WIDTH) = '1' then
+                            is_text_pixel := '1';
+                          end if;
+                       elsif Strlen = 9 then
+                          if GAMEOVER(selector)(dy)(dx - selector*CHAR_LARGE_WIDTH) = '1' then
+                            is_text_pixel := '1';
+                          end if;
+                       end if;   
+                    end if;
             
             -- Assign colors based on whether it is a text pixel
             if (is_text_pixel = '1') then
@@ -162,13 +153,16 @@ drawSnake: process(snake_length, snake_mesh_xy, row, col, typeDraw)
                 gout <= "0000";
                 bout <= "0000";
             end if;
-        else
+        end if;
+  
+        else -- if not enabled
             rout <= "0000";
             gout <= "0000";
             bout <= "0000";
         end if;
     end process;
-    
+
 end;
+
 
 

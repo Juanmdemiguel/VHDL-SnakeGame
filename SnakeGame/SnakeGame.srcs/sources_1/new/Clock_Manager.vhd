@@ -25,7 +25,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Clock_Manager is
   Port (
   clk_input  : in std_logic;      
-  clk_108MHz : out std_logic;
+ -- clk_108MHz : out std_logic;
   clk_60Hz   : out std_logic
   
 );
@@ -40,18 +40,18 @@ COMPONENT Clock_Converter
      );
 END COMPONENT;
 
-COMPONENT PLL100to108
-    port(
-    clk_in1  : in std_logic;
-    clk_out1 : out std_logic);
-END COMPONENT;
+--COMPONENT PLL100to108
+--    port(
+--    clk_in1  : in std_logic;
+--    clk_out1 : out std_logic);
+--END COMPONENT;
 
 begin
-    Inst_PLL: PLL100to108
-        PORT MAP(
-            clk_in1  => clk_input,
-            clk_out1 => clk_108MHz
-    );
+--    Inst_PLL: PLL100to108
+--        PORT MAP(
+--            clk_in1  => clk_input,
+--            clk_out1 => clk_108MHz
+--    );
     Inst_Clock_Converter: Clock_Converter 
      PORT MAP (
         clk_in              =>  clk_input,

@@ -33,7 +33,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Main_Game is
   port(
-	    RESET      :  in std_logic;
 	    BUTTON     :  in std_logic_vector(2 downto 0);
 	    LOSE       :  in std_logic;
         CLK_100MHz :  in std_logic;
@@ -44,13 +43,23 @@ end Main_Game;
 architecture Structural of Main_Game is
 
     Type STATE_T is (S0_START, S1_GAME, S2_GO);
-	signal cur_state, nxt_state : STATE_T; -- Cualquier cosa que sea estado necesita dos señales
+	signal cur_state, nxt_state : STATE_T := S0_START; -- Cualquier cosa que sea estado necesita dos señales
+--	constant CLK_PERIOD : time := 10 ns; -- Período del reloj para 100 MHz
+--	signal CLK_100MHz : std_logic:= '0';
+	
 begin
-	st_reg : process(CLK_100MHz, RESET) -- clk state register
+    -- Generación de reloj
+--    clk_process : process
+--    begin
+--        CLK_100MHz <= '0';
+--        wait for CLK_PERIOD / 2;
+--        CLK_100MHz <= '1';
+--        wait for CLK_PERIOD / 2;
+--    end process;
+
+	st_reg : process(CLK_100MHz) -- clk state register
     begin
-    	if RESET = '1' then 
-        	cur_state <= S0_START;
-        elsif rising_edge(CLK_100MHz) then 
+        if rising_edge(CLK_100MHz) then 
         	cur_state <= nxt_state; -- Si se asigna directamente a estado actual se cortocircuita el componente combinacional, creando un oscilador.
         end if;
     end process;
@@ -78,7 +87,6 @@ begin
     
     out_dec : process -- out decoder
     begin
-   STATE <= "00";
     	case cur_state is
         	when S0_START =>
                  STATE <= "00";

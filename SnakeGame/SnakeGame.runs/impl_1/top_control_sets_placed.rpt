@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Thu Nov 28 19:02:59 2024
-| Host         : DESKTOP-1V0CU1G running 64-bit major release  (build 9200)
+| Date         : Thu Dec 12 22:19:41 2024
+| Host         : LAPTOP-GEPADMVF running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
 | Device       : xc7a100t
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |     8 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    41 |
+| Unused register locations in slices containing registers |    43 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -40,14 +40,14 @@ Table of Contents
 |       Fanout       | Count |
 +--------------------+-------+
 | Total control sets |     8 |
-| >= 0 to < 4        |     4 |
+| >= 0 to < 4        |     3 |
 | >= 4 to < 6        |     0 |
-| >= 6 to < 8        |     0 |
+| >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     1 |
 | >= 12 to < 14      |     0 |
-| >= 14 to < 16      |     0 |
-| >= 16              |     3 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     2 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,8 +58,8 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              38 |           16 |
-| No           | No                    | Yes                    |              39 |           11 |
+| No           | No                    | No                     |              51 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              34 |           14 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
@@ -70,17 +70,17 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------------------------------+---------------+----------------------------------------------------+------------------+----------------+--------------+
-|                Clock Signal                | Enable Signal |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count | Bels / Slice |
-+--------------------------------------------+---------------+----------------------------------------------------+------------------+----------------+--------------+
-|  inited_BUFG                               |               |                                                    |                1 |              1 |         1.00 |
-|  clk_IBUF                                  |               |                                                    |                1 |              1 |         1.00 |
-|  Inst_Clock_Manager/Inst_PLL/inst/clk_out1 |               | Inst_VGA_Manager/Inst_VGA_Sync/h_sync0             |                1 |              1 |         1.00 |
-|  Inst_Clock_Manager/Inst_PLL/inst/clk_out1 |               | Inst_VGA_Manager/Inst_VGA_Sync/v_sync0             |                1 |              1 |         1.00 |
-|  Inst_Clock_Manager/Inst_PLL/inst/clk_out1 |               | Inst_VGA_Manager/Inst_VGA_Sync/h_count[10]_i_1_n_0 |                7 |             11 |         1.57 |
-|  clk_IBUF                                  |               | Inst_Clock_Manager/Inst_Clock_Converter/clk_temp_0 |                5 |             21 |         4.20 |
-|  Inst_Clock_Manager/Inst_PLL/inst/clk_out1 |               |                                                    |               14 |             36 |         2.57 |
-|  clk_temp_BUFG                             |               | inited_BUFG                                        |               11 |             39 |         3.55 |
-+--------------------------------------------+---------------+----------------------------------------------------+------------------+----------------+--------------+
++--------------------------------+---------------+-------------------------------------------+------------------+----------------+--------------+
+|          Clock Signal          | Enable Signal |              Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------+---------------+-------------------------------------------+------------------+----------------+--------------+
+|  Inst_MainFSM/typeDraw         |               | Inst_VGA_Manager/Inst_VGA_Sync/SyncEnable |                1 |              1 |         1.00 |
+|  Inst_PLL/inst/clk_out1        |               | Inst_VGA_Manager/Inst_VGA_Sync/h_sync0    |                1 |              1 |         1.00 |
+|  Inst_PLL/inst/clk_out1        |               | Inst_VGA_Manager/Inst_VGA_Sync/v_sync0    |                1 |              1 |         1.00 |
+|  Inst_Clock_Converter/clk_temp |               |                                           |                1 |              6 |         6.00 |
+|  Inst_PLL/inst/clk_out1        |               | Inst_VGA_Manager/Inst_VGA_Sync/p_0_in     |                5 |             11 |         2.20 |
+|  Inst_ClockDistributor/clk_CV  |               |                                           |                7 |             14 |         2.00 |
+|  Inst_ClockDistributor/clk_CV  |               | Inst_Clock_Converter/clk_temp_0           |                6 |             20 |         3.33 |
+|  Inst_PLL/inst/clk_out1        |               |                                           |               13 |             34 |         2.62 |
++--------------------------------+---------------+-------------------------------------------+------------------+----------------+--------------+
 
 

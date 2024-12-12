@@ -38,12 +38,16 @@ ENTITY top is
         button_center  : in std_logic;
         --VGA output
         HSync, VSync   : out std_logic;
-        Red,Green,Blue : out std_logic_vector(3 DOWNTO 0)
+        Red,Green,Blue : out std_logic_vector(3 DOWNTO 0);
+        LEDs           : out std_logic_vector(4 downto 0);
+        LED            : out std_logic_vector(2 downto 0)
     );
+    
 END top;
 
 architecture Structural of top is
             -- signals for clock manager
+                signal clk_PLL, clk_FSM, clk_SC, clk_CV : std_logic;
                 signal sig_60Hz   : std_logic;
                 signal sig_108MHz : std_logic;
             
@@ -75,18 +79,25 @@ architecture Structural of top is
       START    : out big_letter_array(0 to 4)
       );
  END COMPONENT;
- COMPONENT Clock_Manager
-    port (
-        clk_input   : in  std_logic;  
-        clk_108MHz  : out  std_logic; 
-        clk_60Hz    : out std_logic   
-     );
-END COMPONENT;
+ 
+-- COMPONENT Clock_Manager
+--    port (
+--        clk_input   : in  std_logic;  
+--       -- clk_108MHz  : out  std_logic; 
+--        clk_60Hz    : out std_logic   
+--     );
+--END COMPONENT;
 
+COMPONENT Clock_distributor
+    Port ( clk_in : in STD_LOGIC;
+           clk_out1 : out STD_LOGIC;
+           clk_out2 : out STD_LOGIC;
+           clk_out3 : out STD_LOGIC
+          );
+END COMPONENT;
     -- main FSM
 COMPONENT Main_Game
   port(
-	    RESET      :  in std_logic;
 	    BUTTON     :  in std_logic_vector(2 downto 0);
 	    LOSE       :  in std_logic;
         CLK_100MHz :  in std_logic;
@@ -151,37 +162,70 @@ COMPONENT BUTTON_Lock
     );
 END COMPONENT;
 
+COMPONENT PLL100to108
+    port(
+    clk_in1  : in std_logic;
+    clk_out1 : out std_logic);
+END COMPONENT;
 
+COMPONENT Clock_Converter
+    port (
+        clk_in   : in  std_logic;
+        clk_out  : out std_logic   
+     );
+END COMPONENT;
 
 
 BEGIN
+
+Inst_ClockDistributor : Clock_distributor
+    Port map ( 
+           clk_in   => clk,
+           clk_out1 => clk_FSM,
+           clk_out2 => clk_SC,
+           clk_out3 => clk_CV
+           );
+
+
+    Inst_PLL: PLL100to108
+        PORT MAP(
+            clk_in1  => clk,
+            clk_out1 => sig_108MHz
+    );
+
+   Inst_Clock_Converter: Clock_Converter 
+     PORT MAP (
+        clk_in              =>  clk_CV,
+        clk_out             =>  sig_60Hz
+    );
+    
  -- Both instances provide the program with useful data structures 
     -- Provides different frequencies   
-    Inst_Clock_Manager: Clock_Manager
-     PORT MAP (
-        clk_input              =>  clk,
-        clk_108MHz             =>  sig_108MHz,
-        clk_60Hz               =>  sig_60Hz
-    );
+--    Inst_Clock_Manager: Clock_Manager
+--     PORT MAP (
+--        clk_input              =>  clk,
+--       -- clk_108MHz             =>  sig_108MHz,
+--        clk_60Hz               =>  sig_60Hz
+--    );
+
     -- provides the strings for the start and gameover state
    Inst_ScaledString : Scaled_String 
      port map(
-      clk => clk,
+      clk => clk_SC,
       GAME_OVER => gameover,
       START    => start
       );
  
- -- State declaration, outputs the current state
+-- -- State declaration, outputs the current state
 Inst_MainFSM : Main_Game
   port map(
-	    RESET      => reset,
 	    BUTTON     => sig_buttons,
 	    LOSE       => sig_lose,
-        CLK_100MHz => clk,
+        CLK_100MHz => clk_FSM,
         STATE      => STATE
     );
  
- -- Inputs draw depending on the state
+-- -- Inputs draw depending on the state
     Inst_VGA_Manager: VGA_Manager
       PORT MAP (
         START            => start,
@@ -198,22 +242,22 @@ Inst_MainFSM : Main_Game
         blue             => Blue
     );
    
-   -- General game logic, outputs data for the vga to draw
-    Inst_GAME_Play: GAME_Play 
-     PORT MAP (
-        clk_60hz        => sig_60Hz,
-        reset           => reset,
-        play            => STATE(0),
-        joystick        => sig_buttons_lock,
+----   -- General game logic, outputs data for the vga to draw
+--    Inst_GAME_Play: GAME_Play 
+--     PORT MAP (
+--        clk_60hz        => sig_60Hz,
+--        reset           => reset,
+--        play            => STATE(0),
+--        joystick        => sig_buttons_lock,
         
-        snake_length    => sig_snake_length,
-        snake_mesh_xy   => sig_snake_mesh_xy,
-        food_xy         => sig_food_xy,
+--        snake_length    => sig_snake_length,
+--        snake_mesh_xy   => sig_snake_mesh_xy,
+--        food_xy         => sig_food_xy,
         
-        lose            => sig_lose
-    );
+--        lose            => sig_lose
+--    );
     
-    -- Sync of buttons with clock
+--    -- Sync of buttons with clock
     Inst_Buttons_Sync: BUTTONS_Sync
      PORT MAP (
             clk_60Hz => sig_60Hz,
@@ -224,8 +268,22 @@ Inst_MainFSM : Main_Game
             button_right_input  => button_right,
             button_center_input => button_center,
             
-            button_output => sig_buttons_lock
+            button_output => sig_buttons
     );
+    with sig_buttons select 
+        LEDs <= "10000" when "000" ,
+        "01000" when "001" ,
+        "00100" when "010" ,
+        "00010" when "011" ,
+        "00001" when "100" ,
+        "00000" when others;
+      
+     with STATE select 
+      LED <= 
+       "100" when "00",
+       "010" when "01",
+       "001" when "10",
+       "000" when others; 
     
     -- Sync of buttons with clock
     Inst_Buttons_Lock: BUTTON_Lock
