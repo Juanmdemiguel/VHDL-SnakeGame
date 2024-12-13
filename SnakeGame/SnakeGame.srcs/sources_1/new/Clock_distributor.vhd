@@ -28,7 +28,8 @@ entity Clock_distributor is
     Port ( clk_in : in STD_LOGIC;
            clk_out1 : out STD_LOGIC;
            clk_out2 : out STD_LOGIC;
-           clk_out3 : out STD_LOGIC);
+           clk_out3 : out STD_LOGIC;
+           clk_out4 : out STD_LOGIC);
 end Clock_distributor;
 
 architecture Structural of Clock_distributor is
@@ -46,5 +47,6 @@ begin
     clk_out1 <= clk_buf;
     clk_out2 <= clk_buf;
     clk_out3 <= clk_buf;
+    clk_out4 <= clk_buf;
 
 end Structural;

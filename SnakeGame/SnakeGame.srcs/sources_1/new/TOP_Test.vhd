@@ -26,6 +26,8 @@ USE ieee.std_logic_unsigned.ALL;
 USE work.Types.ALL;
 use work.Letters.ALL;
 
+
+
 ENTITY top is
 
     PORT (  
@@ -47,7 +49,7 @@ END top;
 
 architecture Structural of top is
             -- signals for clock manager
-                signal clk_PLL, clk_FSM, clk_SC, clk_CV : std_logic;
+                signal clk_PLL, clk_FSM, clk_SC, clk_CV, clk_EDGE : std_logic;
                 signal sig_60Hz   : std_logic;
                 signal sig_108MHz : std_logic;
             
@@ -69,7 +71,7 @@ architecture Structural of top is
             -- signals for buttons
                 signal sig_buttons : std_logic_vector(2 downto 0); --Used in START and GAMEOVER
                 signal sig_buttons_lock : std_logic_vector(2 downto 0); --Used in GAMEPLAY
-                
+                signal sig_butEdged : std_logic_vector(2 downto 0);
 -- component declaration   
 --components for data processing
  COMPONENT Scaled_String 
@@ -80,6 +82,14 @@ architecture Structural of top is
       );
  END COMPONENT;
  
+ COMPONENT EDGEDTCTR
+PORT(
+    CLK : in STD_LOGIC;
+    SYNC_IN : in STD_LOGIC_VECTOR(2 downto 0);
+    EDGE : out STD_LOGIC_VECTOR(2 downto 0)
+);
+END COMPONENT;
+
 -- COMPONENT Clock_Manager
 --    port (
 --        clk_input   : in  std_logic;  
@@ -92,7 +102,8 @@ COMPONENT Clock_distributor
     Port ( clk_in : in STD_LOGIC;
            clk_out1 : out STD_LOGIC;
            clk_out2 : out STD_LOGIC;
-           clk_out3 : out STD_LOGIC
+           clk_out3 : out STD_LOGIC;
+           clk_out4 : out STD_LOGIC
           );
 END COMPONENT;
     -- main FSM
@@ -183,7 +194,8 @@ Inst_ClockDistributor : Clock_distributor
            clk_in   => clk,
            clk_out1 => clk_FSM,
            clk_out2 => clk_SC,
-           clk_out3 => clk_CV
+           clk_out3 => clk_CV,
+           clk_out4 => clk_EDGE
            );
 
 
@@ -199,6 +211,12 @@ Inst_ClockDistributor : Clock_distributor
         clk_out             =>  sig_60Hz
     );
     
+    Inst_edge: EDGEDTCTR  PORT MAP (
+     CLK =>clk_EDGE,
+     SYNC_IN =>sig_buttons,
+     EDGE => sig_butEDGED
+);
+
  -- Both instances provide the program with useful data structures 
     -- Provides different frequencies   
 --    Inst_Clock_Manager: Clock_Manager
@@ -219,7 +237,7 @@ Inst_ClockDistributor : Clock_distributor
 -- -- State declaration, outputs the current state
 Inst_MainFSM : Main_Game
   port map(
-	    BUTTON     => sig_buttons,
+	    BUTTON     => sig_butEDGED,
 	    LOSE       => sig_lose,
         CLK_100MHz => clk_FSM,
         STATE      => STATE
@@ -278,7 +296,7 @@ Inst_MainFSM : Main_Game
         "00001" when "100" ,
         "00000" when others;
       
-     with STATE select 
+     with STATE select  
       LED <= 
        "100" when "00",
        "010" when "01",
