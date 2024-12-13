@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sim_1/new/String_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'BigLetters_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Main_Game'

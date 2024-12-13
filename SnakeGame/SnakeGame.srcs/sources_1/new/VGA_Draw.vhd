@@ -88,39 +88,25 @@ drawSnake: process(snake_length, snake_mesh_xy, row, col, typeDraw)
     begin
     if enable = '1' then
         if typeDraw = '0' then 
---            --draw body
---            is_shape := '0';
---            for i in 0 to snake_length_max - 1 loop
---             if (i < snake_length) then  --if is valid snake body
---                dx := abs(signed(col) - signed(snake_mesh_xy(i)(31 downto 16)));
---                dy := abs(signed(row) - signed(snake_mesh_xy(i)(15 downto 0)));
---                    if (dx < head_width / 2 and dy < head_width / 2) then
---                        is_shape := '1';
---                    end if;
---                end if;
---            end loop;
+            --draw body
+            is_shape := '0';
+            for i in 0 to snake_length_max - 1 loop
+             if (i < snake_length) then  --if is valid snake body
+                dx := to_integer(abs(signed(col) - signed(snake_mesh_xy(i)(31 downto 16))));
+                dy := to_integer(abs(signed(row) - signed(snake_mesh_xy(i)(15 downto 0))));
+                    if (dx < head_width / 2 and dy < head_width / 2) then
+                        is_shape := '1';
+                    end if;
+                end if;
+            end loop;
             
---            dx := abs(signed(col) - signed(food_xy(31 downto 16)));
---            dy := abs(signed(row) - signed(food_xy(15 downto 0)));
---            if (dx < food_width / 2 and dy < food_width / 2) then
---                is_food := '1';
---            else 
---                is_food := '0';
---            end if;
-            
---            if (is_shape = '1') then
---                rout <= "0010";
---                gout <= "0100";
---                bout <= "0110";
---           elsif (is_food = '1') then
---                rout <= "1100";
---                gout <= "1111";
---                bout <= "0000";
---             else -- if it's background
---                rout <= "0100";
---                gout <= "1100";
---                bout <= "0100";
---             end if;
+            dx := to_integer(abs(signed(col) - signed(food_xy(31 downto 16))));
+            dy := to_integer(abs(signed(row) - signed(food_xy(15 downto 0))));
+            if (dx < food_width / 2 and dy < food_width / 2) then
+                is_food := '1';
+            else 
+                is_food := '0';
+            end if;
              
             elsif typeDraw = '1' then
                   -- Calculate relative positions
@@ -144,17 +130,24 @@ drawSnake: process(snake_length, snake_mesh_xy, row, col, typeDraw)
                     end if;
             
             -- Assign colors based on whether it is a text pixel
-            if (is_text_pixel = '1') then
+            if is_text_pixel = '1' then
                 rout <= "1111"; -- White text
                 gout <= "1111";
                 bout <= "1111";
+            elsif is_shape = '1' then
+                rout <= "0010";
+                gout <= "0100";
+                bout <= "0110";
+           elsif (is_food = '1') then
+                rout <= "1100";
+                gout <= "1111";
+                bout <= "0000";
             else
                 rout <= "0000"; -- Black background
                 gout <= "0000";
                 bout <= "0000";
             end if;
         end if;
-  
         else -- if not enabled
             rout <= "0000";
             gout <= "0000";

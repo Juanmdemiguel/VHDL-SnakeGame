@@ -124,9 +124,16 @@ ramdom_number_gen:
 end process;
     
     
-    snake_length  <= snake_length_i;
-    snake_mesh_xy <= snake_mesh_xy_i;
-    food_xy       <= food_xy_i;
-    lose          <= lose_i;
+output:
+    process(enable)  
+    begin  
+--    if (enable = '1' and inited = '1') then
+--        snake_length  <= snake_length_i;
+--        snake_mesh_xy <= snake_mesh_xy_i;
+--        food_xy       <= food_xy_i;
+--        lose          <= lose_i;
+        
+--    end if;
+end process;
     
 end architecture;

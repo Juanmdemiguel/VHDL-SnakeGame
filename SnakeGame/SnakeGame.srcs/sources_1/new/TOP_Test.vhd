@@ -242,20 +242,20 @@ Inst_MainFSM : Main_Game
         blue             => Blue
     );
    
-----   -- General game logic, outputs data for the vga to draw
---    Inst_GAME_Play: GAME_Play 
---     PORT MAP (
---        clk_60hz        => sig_60Hz,
---        reset           => reset,
---        play            => STATE(0),
---        joystick        => sig_buttons_lock,
+   -- General game logic, outputs data for the vga to draw
+    Inst_GAME_Play: GAME_Play 
+     PORT MAP (
+        clk_60hz        => sig_60Hz,
+        reset           => reset,
+        play            => STATE(0),
+        joystick        => sig_buttons_lock,
         
---        snake_length    => sig_snake_length,
---        snake_mesh_xy   => sig_snake_mesh_xy,
---        food_xy         => sig_food_xy,
+        snake_length    => sig_snake_length,
+        snake_mesh_xy   => sig_snake_mesh_xy,
+        food_xy         => sig_food_xy,
         
---        lose            => sig_lose
---    );
+        lose            => sig_lose
+    );
     
 --    -- Sync of buttons with clock
     Inst_Buttons_Sync: BUTTONS_Sync
@@ -270,7 +270,7 @@ Inst_MainFSM : Main_Game
             
             button_output => sig_buttons
     );
-    with sig_buttons select 
+    with sig_buttons_lock select 
         LEDs <= "10000" when "000" ,
         "01000" when "001" ,
         "00100" when "010" ,

@@ -1,7 +1,7 @@
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Users/juans/OneDrive/Documentos/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot BigLetters_tb_behav xil_defaultlib.BigLetters_tb -log elaborate.log 
+Running: C:/XILINX1/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_Main_Game_behav xil_defaultlib.tb_Main_Game -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,8 +11,6 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling package xil_defaultlib.letters
-Compiling architecture behavioral of entity xil_defaultlib.Scaler [scaler_default]
-Compiling architecture structural of entity xil_defaultlib.BigLetters [bigletters_default]
-Compiling architecture behavioral of entity xil_defaultlib.bigletters_tb
-Built simulation snapshot BigLetters_tb_behav
+Compiling architecture structural of entity xil_defaultlib.Main_Game [main_game_default]
+Compiling architecture tb of entity xil_defaultlib.tb_main_game
+Built simulation snapshot tb_Main_Game_behav

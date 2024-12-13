@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.sim/sim_1/impl/timing/xsim/tb_Main_Game_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUTTONS_Sync
+INFO: [VRFC 10-311] analyzing module Clock_Converter
+INFO: [VRFC 10-311] analyzing module Clock_distributor
+INFO: [VRFC 10-311] analyzing module Main_Game
+INFO: [VRFC 10-311] analyzing module PLL100to108
+INFO: [VRFC 10-311] analyzing module PLL100to108_clk_wiz
+INFO: [VRFC 10-311] analyzing module Scaled_String
+INFO: [VRFC 10-311] analyzing module Scaler
+INFO: [VRFC 10-311] analyzing module Scaler_0
+INFO: [VRFC 10-311] analyzing module Scaler_1
+INFO: [VRFC 10-311] analyzing module Scaler_2
+INFO: [VRFC 10-311] analyzing module Scaler_3
+INFO: [VRFC 10-311] analyzing module Scaler_4
+INFO: [VRFC 10-311] analyzing module Scaler_5
+INFO: [VRFC 10-311] analyzing module Scaler_6
+INFO: [VRFC 10-311] analyzing module Scaler_7
+INFO: [VRFC 10-311] analyzing module VGA_Draw
+INFO: [VRFC 10-311] analyzing module VGA_Manager
+INFO: [VRFC 10-311] analyzing module VGA_Sync
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module glbl

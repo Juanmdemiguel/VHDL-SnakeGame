@@ -87,7 +87,7 @@ st_reg: process (enable, clk_60Hz)  --State register
       end case;
   end process;
   
-  out_dec: process   --Third state // Solo entradas asincronas entre '()'
+  out_dec: process(cur_state)   --Third state // Solo entradas asincronas entre '()'
   begin
     case cur_state is
       when LOCK_NONE      =>  --Caso 1
