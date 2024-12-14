@@ -37,10 +37,10 @@ begin
    end process;
    
  with sreg select
-    EDGE <= "000" when "000000000",
-    "001" when "001000000",
-    "010" when "010000000",
-    "011" when "011000000",
-    "100" when "100000000",
+    EDGE <= "000" when "000101101",
+    "001" when "001101101",
+    "010" when "010101101",
+    "011" when "011101101",
+    "100" when "100101101",
     "101" when others;
  end Behavioral;

@@ -29,7 +29,7 @@ package Types is
     constant snake_begin_x       : integer := 300;
     constant snake_begin_y       : integer := 450;
     constant snake_length_begin  : integer := 1;
-    constant snake_length_max    : integer := 3;
+    constant snake_length_max    : integer := 20;
     constant food_width          : integer := 20;
     constant head_width          : integer := 20;
     constant snake_speed         : signed(15 downto 0) := to_signed(4, 16);     --Velocidad en pixel  ->  Constante de velocidad (6 por cada rising clk) 

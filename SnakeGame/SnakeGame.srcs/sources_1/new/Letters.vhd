@@ -31,8 +31,8 @@ package Letters is
     constant CHAR_LARGE_HEIGHT : integer := CHAR_SMALL_HEIGHT * SCALE_FACTOR;
     
     -- Define a type for character matrices
-    type char_small_matrix is array (0 to CHAR_SMALL_HEIGHT - 1) of std_logic_vector((CHAR_SMALL_WIDTH - 1) downto 0);
-    type char_big_matrix is array (0 to CHAR_LARGE_HEIGHT - 1) of std_logic_vector((CHAR_LARGE_WIDTH - 1) downto 0); -- matrix as big as the scaled letter
+    type char_small_matrix is array (0 to CHAR_SMALL_HEIGHT - 1) of std_logic_vector(0 to (CHAR_SMALL_WIDTH - 1));
+    type char_big_matrix is array (0 to CHAR_LARGE_HEIGHT - 1) of std_logic_vector(0 to (CHAR_LARGE_WIDTH - 1)); -- matrix as big as the scaled letter
   
     --Define a type for words and char arrays
    	type small_letter_array is array (0 to 8) of char_small_matrix;

@@ -8,14 +8,14 @@
   **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Fri Dec 13 12:36:22 2024
+  **** Start of session at: Fri Dec 13 17:27:57 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source top.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 521.691 ; gain = 235.625
-Command: read_checkpoint -auto_incremental -incremental {C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 539.332 ; gain = 237.141
+Command: read_checkpoint -auto_incremental -incremental C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top -part xc7a100tcsg324-1
 Starting synth_design
@@ -27,129 +27,165 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 13104
+INFO: [Synth 8-7075] Helper process launched with PID 23084
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1401.824 ; gain = 448.461
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1416.008 ; gain = 449.500
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:50]
-INFO: [Synth 8-3491] module 'Clock_distributor' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:27' bound to instance 'Inst_ClockDistributor' of component 'Clock_distributor' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:192]
-INFO: [Synth 8-638] synthesizing module 'Clock_distributor' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:35]
-INFO: [Synth 8-113] binding component instance 'bufg_inst' to cell 'BUFG' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'Clock_distributor' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:35]
-INFO: [Synth 8-3491] module 'PLL100to108' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-22704-LAPTOP-GEPADMVF/realtime/PLL100to108_stub.vhdl:6' bound to instance 'Inst_PLL' of component 'PLL100to108' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:202]
-INFO: [Synth 8-638] synthesizing module 'PLL100to108' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-22704-LAPTOP-GEPADMVF/realtime/PLL100to108_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'Clock_Converter' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:26' bound to instance 'Inst_Clock_Converter' of component 'Clock_Converter' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:208]
-INFO: [Synth 8-638] synthesizing module 'Clock_Converter' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:34]
-INFO: [Synth 8-256] done synthesizing module 'Clock_Converter' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:34]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:23' bound to instance 'Inst_edge' of component 'EDGEDTCTR' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:214]
-INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:29]
-INFO: [Synth 8-3491] module 'Scaled_String' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:24' bound to instance 'Inst_ScaledString' of component 'Scaled_String' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:230]
-INFO: [Synth 8-638] synthesizing module 'Scaled_String' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:32]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'Scaler' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'Scaler' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:32]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'Scaled_String' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:32]
-INFO: [Synth 8-3491] module 'Main_Game' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:25' bound to instance 'Inst_MainFSM' of component 'Main_Game' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:238]
-INFO: [Synth 8-638] synthesizing module 'Main_Game' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:34]
-INFO: [Synth 8-256] done synthesizing module 'Main_Game' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:34]
-INFO: [Synth 8-3491] module 'VGA_Manager' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:27' bound to instance 'Inst_VGA_Manager' of component 'VGA_Manager' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:247]
-INFO: [Synth 8-638] synthesizing module 'VGA_Manager' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:42]
-INFO: [Synth 8-3491] module 'VGA_Sync' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd:26' bound to instance 'Inst_VGA_Sync' of component 'VGA_Sync' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:70]
-INFO: [Synth 8-638] synthesizing module 'VGA_Sync' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd:54]
-INFO: [Synth 8-256] done synthesizing module 'VGA_Sync' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd:54]
-INFO: [Synth 8-3491] module 'VGA_Draw' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:28' bound to instance 'Inst_VGA_Draw' of component 'VGA_Draw' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:80]
-INFO: [Synth 8-638] synthesizing module 'VGA_Draw' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:48]
-WARNING: [Synth 8-614] signal 'mode' is read in the process but is not in the sensitivity list [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:58]
-WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:76]
-WARNING: [Synth 8-614] signal 'food_xy' is read in the process but is not in the sensitivity list [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:76]
-WARNING: [Synth 8-614] signal 'Strlen' is read in the process but is not in the sensitivity list [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:76]
-WARNING: [Synth 8-614] signal 'START' is read in the process but is not in the sensitivity list [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:76]
-WARNING: [Synth 8-614] signal 'GAMEOVER' is read in the process but is not in the sensitivity list [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:76]
-INFO: [Synth 8-256] done synthesizing module 'VGA_Draw' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'VGA_Manager' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:42]
-INFO: [Synth 8-3491] module 'GAME_Play' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:27' bound to instance 'Inst_GAME_Play' of component 'GAME_Play' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:264]
-INFO: [Synth 8-638] synthesizing module 'GAME_Play' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:42]
-WARNING: [Synth 8-614] signal 'cur_state' is read in the process but is not in the sensitivity list [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:154]
-WARNING: [Synth 8-614] signal 'snake_legth_output_reg' is read in the process but is not in the sensitivity list [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:154]
-WARNING: [Synth 8-614] signal 'snake_mesh_xy_output_reg' is read in the process but is not in the sensitivity list [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:154]
-WARNING: [Synth 8-614] signal 'food_xy_output_reg' is read in the process but is not in the sensitivity list [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:154]
-INFO: [Synth 8-3491] module 'Move_Init' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Init.vhd:27' bound to instance 'Inst_Move_Init' of component 'Move_Init' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:232]
-INFO: [Synth 8-638] synthesizing module 'Move_Init' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Init.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'Move_Init' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Init.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'GAME_Play' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:42]
-INFO: [Synth 8-3491] module 'BUTTONS_Sync' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:34' bound to instance 'Inst_Buttons_Sync' of component 'BUTTONS_Sync' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:279]
-INFO: [Synth 8-638] synthesizing module 'BUTTONS_Sync' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'BUTTONS_Sync' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:48]
-INFO: [Synth 8-3491] module 'BUTTON_Lock' declared at 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTON_Lock.vhd:25' bound to instance 'Inst_Buttons_Lock' of component 'BUTTON_Lock' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:307]
-INFO: [Synth 8-638] synthesizing module 'BUTTON_Lock' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTON_Lock.vhd:34]
-WARNING: [Synth 8-614] signal 'cur_state' is read in the process but is not in the sensitivity list [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTON_Lock.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'BUTTON_Lock' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTON_Lock.vhd:34]
-INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:50]
-WARNING: [Synth 8-3848] Net lose in module/entity Move_Init does not have driver. [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/MOVE_Init.vhd:37]
-WARNING: [Synth 8-7129] Port lose in module Move_Init is either unconnected or has no load
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:50]
+INFO: [Synth 8-3491] module 'Clock_distributor' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:27' bound to instance 'Inst_ClockDistributor' of component 'Clock_distributor' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'Clock_distributor' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:35]
+INFO: [Synth 8-113] binding component instance 'bufg_inst' to cell 'BUFG' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Clock_distributor' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:35]
+INFO: [Synth 8-3491] module 'PLL100to108' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-16076-DESKTOP-1V0CU1G/realtime/PLL100to108_stub.vhdl:6' bound to instance 'Inst_PLL' of component 'PLL100to108' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'PLL100to108' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-16076-DESKTOP-1V0CU1G/realtime/PLL100to108_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Clock_Converter' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:26' bound to instance 'Inst_Clock_Converter' of component 'Clock_Converter' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'Clock_Converter' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Converter' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:34]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:23' bound to instance 'Inst_edge' of component 'EDGEDTCTR' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:29]
+INFO: [Synth 8-3491] module 'Scaled_String' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:24' bound to instance 'Inst_ScaledString' of component 'Scaled_String' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'Scaled_String' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:32]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Scaler' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Scaler' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:32]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Scaled_String' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:32]
+INFO: [Synth 8-3491] module 'Main_Game' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:25' bound to instance 'Inst_MainFSM' of component 'Main_Game' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'Main_Game' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Main_Game' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:34]
+INFO: [Synth 8-3491] module 'GAME_Play' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:27' bound to instance 'Inst_GAME_Play' of component 'GAME_Play' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'GAME_Play' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:42]
+WARNING: [Synth 8-614] signal 'snake_mesh_xy_init_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'snake_length_init_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'food_xy_init_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'lose_init_sig' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'snake_mesh_xy_up_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'snake_length_up_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'food_xy_up_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'lose_up_sig' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'snake_mesh_xy_down_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'snake_length_down_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'food_xy_down_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'lose_down_sig' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'snake_mesh_xy_left_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'snake_length_left_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'food_xy_left_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'lose_left_sig' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'snake_mesh_xy_right_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'snake_length_right_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'food_xy_right_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'lose_right_sig' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:143]
+WARNING: [Synth 8-614] signal 'cur_state' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'snake_mesh_xy_init_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'snake_length_init_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'food_xy_init_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'snake_mesh_xy_up_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'snake_length_up_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'food_xy_up_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'snake_mesh_xy_down_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'snake_length_down_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'food_xy_down_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'snake_mesh_xy_left_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'snake_length_left_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'food_xy_left_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'snake_mesh_xy_right_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'snake_length_right_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+WARNING: [Synth 8-614] signal 'food_xy_right_reg' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:191]
+INFO: [Synth 8-256] done synthesizing module 'GAME_Play' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:42]
+INFO: [Synth 8-3491] module 'BUTTONS_Sync' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:34' bound to instance 'Inst_Buttons_Sync' of component 'BUTTONS_Sync' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:279]
+INFO: [Synth 8-638] synthesizing module 'BUTTONS_Sync' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'BUTTONS_Sync' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:48]
+INFO: [Synth 8-3491] module 'BUTTON_Lock' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTON_Lock.vhd:25' bound to instance 'Inst_Buttons_Lock' of component 'BUTTON_Lock' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:307]
+INFO: [Synth 8-638] synthesizing module 'BUTTON_Lock' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTON_Lock.vhd:34]
+WARNING: [Synth 8-614] signal 'cur_state' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTON_Lock.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'BUTTON_Lock' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTON_Lock.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:50]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_init_reg[0] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_up_reg[0] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_down_reg[0] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_left_reg[0] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_right_reg[0] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_init_reg[1] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_up_reg[1] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_down_reg[1] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_left_reg[1] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_right_reg[1] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_init_reg[2] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_up_reg[2] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_down_reg[2] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_left_reg[2] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net snake_mesh_xy_right_reg[2] in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:53]
+WARNING: [Synth 8-3848] Net food_xy_init_reg in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:56]
+WARNING: [Synth 8-3848] Net food_xy_up_reg in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:56]
+WARNING: [Synth 8-3848] Net food_xy_down_reg in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:56]
+WARNING: [Synth 8-3848] Net food_xy_left_reg in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:56]
+WARNING: [Synth 8-3848] Net food_xy_right_reg in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:56]
+WARNING: [Synth 8-3848] Net lose_init_sig in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:58]
+WARNING: [Synth 8-3848] Net lose_up_sig in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:58]
+WARNING: [Synth 8-3848] Net lose_down_sig in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:58]
+WARNING: [Synth 8-3848] Net lose_left_sig in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:58]
+WARNING: [Synth 8-3848] Net lose_right_sig in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:58]
+WARNING: [Synth 8-3917] design top has port HSync driven by constant 1
+WARNING: [Synth 8-3917] design top has port VSync driven by constant 1
 WARNING: [Synth 8-7129] Port play in module GAME_Play is either unconnected or has no load
-WARNING: [Synth 8-7129] Port snake_length[4] in module VGA_Manager is either unconnected or has no load
-WARNING: [Synth 8-7129] Port snake_length[3] in module VGA_Manager is either unconnected or has no load
-WARNING: [Synth 8-7129] Port snake_length[2] in module VGA_Manager is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1584.488 ; gain = 631.125
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1561.480 ; gain = 594.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1584.488 ; gain = 631.125
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1561.480 ; gain = 594.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1584.488 ; gain = 631.125
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1561.480 ; gain = 594.973
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1584.488 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.556 . Memory (MB): peak = 1561.480 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc] for cell 'Inst_PLL'
-Finished Parsing XDC File [c:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc] for cell 'Inst_PLL'
-Parsing XDC File [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
-Finished Parsing XDC File [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc] for cell 'Inst_PLL'
+Finished Parsing XDC File [c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc] for cell 'Inst_PLL'
+Parsing XDC File [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1848.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1684.082 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.282 . Memory (MB): peak = 1848.297 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 1684.082 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc}, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc}, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc, line 4).
 Applied set_property KEEP_HIERARCHY = SOFT for Inst_PLL. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'Main_Game'
 INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'GAME_Play'
@@ -161,11 +197,6 @@ INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'G
                    s2_go |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'one-hot' in module 'Main_Game'
-WARNING: [Synth 8-327] inferring latch for variable 'rout_reg' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:134]
-WARNING: [Synth 8-327] inferring latch for variable 'gout_reg' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:135]
-WARNING: [Synth 8-327] inferring latch for variable 'bout_reg' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:136]
-WARNING: [Synth 8-327] inferring latch for variable 'drawSnake.is_food_reg' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:106]
-WARNING: [Synth 8-327] inferring latch for variable 'drawSnake.is_shape_reg' [C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:92]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -176,51 +207,34 @@ WARNING: [Synth 8-327] inferring latch for variable 'drawSnake.is_shape_reg' [C:
                 state_up |                              100 |                              000
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'sequential' in module 'GAME_Play'
+WARNING: [Synth 8-327] inferring latch for variable 'Red_reg' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd:318]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:50 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input   32 Bit       Adders := 1     
-	   2 Input   32 Bit       Adders := 2     
-	   2 Input   31 Bit       Adders := 1     
 	   2 Input   20 Bit       Adders := 1     
-	   2 Input   17 Bit       Adders := 1     
-	   3 Input   16 Bit       Adders := 8     
-	   2 Input   16 Bit       Adders := 8     
-	   2 Input   11 Bit       Adders := 2     
 +---Registers : 
 	               80 Bit    Registers := 117   
-	               32 Bit    Registers := 1     
 	               20 Bit    Registers := 1     
-	               16 Bit    Registers := 2     
-	               11 Bit    Registers := 2     
 	                9 Bit    Registers := 1     
 	                3 Bit    Registers := 4     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 13    
-+---Multipliers : 
-	               8x32  Multipliers := 1     
+	                1 Bit    Registers := 10    
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 1     
-	   2 Input   31 Bit        Muxes := 1     
-	   2 Input   16 Bit        Muxes := 8     
-	   4 Input    5 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 4     
 	   6 Input    5 Bit        Muxes := 1     
-	   4 Input    4 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 3     
-	   2 Input    3 Bit        Muxes := 6     
 	   5 Input    3 Bit        Muxes := 6     
 	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 5     
 	   4 Input    3 Bit        Muxes := 2     
 	   3 Input    3 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 19    
-	   4 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 15    
 	   3 Input    1 Bit        Muxes := 1     
 	   5 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -237,26 +251,31 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design top has port HSync driven by constant 1
+WARNING: [Synth 8-3917] design top has port VSync driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (Inst_GAME_Play/FSM_sequential_cur_state_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (Inst_GAME_Play/FSM_sequential_cur_state_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (Inst_GAME_Play/FSM_sequential_cur_state_reg[0]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:01:26 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:01:36 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:38 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:01:39 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -274,37 +293,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:01:47 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:01:47 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:01:48 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:01:48 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:01:48 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:01:48 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -337,50 +356,45 @@ Report Cell Usage:
 +------+-----------------+------+
 |1     |PLL100to108_bbox |     1|
 |2     |BUFG             |     1|
-|3     |CARRY4           |   142|
-|4     |LUT1             |   100|
-|5     |LUT2             |   107|
-|6     |LUT3             |   122|
-|7     |LUT4             |   164|
-|8     |LUT5             |   266|
-|9     |LUT6             |   318|
-|10    |MUXF7            |    12|
-|11    |MUXF8            |     2|
-|12    |SRL16E           |     3|
-|13    |FDCE             |     5|
-|14    |FDPE             |     1|
-|15    |FDRE             |    94|
-|16    |LD               |     2|
-|17    |LDC              |     4|
-|18    |IBUF             |     6|
-|19    |OBUF             |    22|
+|3     |CARRY4           |     5|
+|4     |LUT1             |     2|
+|5     |LUT2             |     3|
+|6     |LUT3             |     4|
+|7     |LUT4             |     5|
+|8     |LUT5             |     2|
+|9     |LUT6             |     7|
+|10    |SRL16E           |     3|
+|11    |FDCE             |     2|
+|12    |FDPE             |     1|
+|13    |FDRE             |    36|
+|14    |LD               |     1|
+|15    |IBUF             |     5|
+|16    |OBUF             |    22|
 +------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:01:48 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1684.082 ; gain = 717.574
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:01:25 . Memory (MB): peak = 1848.297 ; gain = 631.125
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:01:48 . Memory (MB): peak = 1848.297 ; gain = 894.934
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1684.082 ; gain = 594.973
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1684.082 ; gain = 717.574
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1848.297 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 162 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1684.082 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'VGA_Sync' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1848.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1684.082 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 6 instances were transformed.
-  LD => LDCE: 2 instances
-  LDC => LDCE: 4 instances
+  A total of 1 instances were transformed.
+  LD => LDCE: 1 instance 
 
-Synth Design complete | Checksum: 6b019eb5
+Synth Design complete | Checksum: c50c8fdb
 INFO: [Common 17-83] Releasing license: Synthesis
-79 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+67 Infos, 72 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:01:59 . Memory (MB): peak = 1848.297 ; gain = 1313.695
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1848.297 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1684.082 ; gain = 1132.258
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1684.082 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/top.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 13 12:38:40 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 13 17:28:48 2024...

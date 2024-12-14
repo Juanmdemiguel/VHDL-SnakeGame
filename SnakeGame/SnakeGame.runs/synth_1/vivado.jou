@@ -3,22 +3,22 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Dec 13 12:36:22 2024
-# Process ID: 22704
-# Current directory: C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1
+# Start of session at: Fri Dec 13 17:27:57 2024
+# Process ID: 16076
+# Current directory: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/top.vds
-# Journal file: C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1\vivado.jou
-# Running On        :LAPTOP-GEPADMVF
+# Log file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/top.vds
+# Journal file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-1V0CU1G
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :22631
-# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-# CPU Frequency     :2419 MHz
-# CPU Physical cores:4
-# CPU Logical cores :8
-# Host memory       :16934 MB
-# Swap memory       :7784 MB
-# Total Virtual     :24719 MB
-# Available Virtual :12906 MB
+# Processor Detail  :Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+# CPU Frequency     :2208 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :17007 MB
+# Swap memory       :11274 MB
+# Total Virtual     :28281 MB
+# Available Virtual :9765 MB
 #-----------------------------------------------------------
 source top.tcl -notrace

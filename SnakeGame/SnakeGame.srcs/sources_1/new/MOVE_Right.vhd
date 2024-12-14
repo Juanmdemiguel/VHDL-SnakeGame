@@ -69,9 +69,11 @@ snake_move_up:process(clk_60hz, enable)
         
         elsif (inited = '0' and enable = '1') then          --Proceso de inicio
             snake_length_future    := snake_length_input;
+            snake_length_i         <= snake_length_input;
             snake_mesh_xy_i        <= snake_mesh_xy_input;
             snake_head_xy_future   := snake_mesh_xy_input(0);
             food_xy_future         := food_xy_input;
+            food_xy_i              <= food_xy_input;
             inited                 <= '1';
         
         elsif rising_edge(clk_60hz) then  --Caso dentro del juego (jugando)
@@ -94,7 +96,9 @@ snake_move_up:process(clk_60hz, enable)
                                                                           
                 if (dx < (food_width + head_width) / 2) then               --Compruebación de choque
                     --snake_length_future := snake_length_future + 1;       --Aumenta la longitud de la serpiente
+                    if(snake_length_future + 1 < snake_length_max) then
                     snake_length_i <= snake_length_future + 1; 
+                    end if;
                     
                     --food_xy_future := std_logic_vector(random_xy);        --Cambia la posición de la comida
                     food_xy_i <= std_logic_vector(random_xy);        --Cambia la posición de la comida
@@ -124,16 +128,21 @@ ramdom_number_gen:
 end process;
     
     
-output:
-    process(enable)  
-    begin  
---    if (enable = '1' and inited = '1') then
---        snake_length  <= snake_length_i;
---        snake_mesh_xy <= snake_mesh_xy_i;
---        food_xy       <= food_xy_i;
---        lose          <= lose_i;
-        
---    end if;
+output:process(enable, clk_60hz)  
+begin  
+    if rising_edge(clk_60hz) then
+        if (enable = '1') then
+            snake_length  <= snake_length_i;
+            snake_mesh_xy <= snake_mesh_xy_i;
+            food_xy       <= food_xy_i;
+            lose          <= lose_i;
+        else
+            snake_length  <= snake_length_input;
+            snake_mesh_xy <= snake_mesh_xy_input;
+            food_xy       <= food_xy_input;
+            lose          <= '0';
+        end if;
+    end if;
 end process;
     
 end architecture;

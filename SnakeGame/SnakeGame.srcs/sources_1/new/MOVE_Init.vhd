@@ -53,8 +53,8 @@ begin
             
             --Reseteo la posición de la serpiente
             for i in 0 to snake_length_max - 1 loop
-                snake_mesh_xy(i)(31 downto 16) <= std_logic_vector(to_signed(food_begin_x, 16));
-                snake_mesh_xy(i)(15 downto  0) <= std_logic_vector(to_signed(food_begin_y, 16));
+                snake_mesh_xy(i)(31 downto 16) <= std_logic_vector(to_signed(snake_begin_x, 16));
+                snake_mesh_xy(i)(15 downto  0) <= std_logic_vector(to_signed(snake_begin_y, 16));
             end loop;
 
             --Reseteo la posición de la manzana
@@ -67,6 +67,7 @@ begin
 --                init_secure := 0;
 --                game_inited <= '1';
 --            end if;
+            lose <= '0';
          end if;
     end process;
 

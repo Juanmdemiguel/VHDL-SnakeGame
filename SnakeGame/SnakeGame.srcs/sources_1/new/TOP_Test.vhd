@@ -312,6 +312,13 @@ Inst_MainFSM : Main_Game
         buttons_output => sig_buttons_lock
     );
     
+--    HSync <= '1';
+--    VSync <= '1';
+    
+--    red <= "1111" when STATE(0) = '1' else unaffected;
+--    green <= "1111" when STATE(0) = '1' else unaffected;
+--    blue <= "1111" when STATE(0) = '1' else unaffected;
+    
 end architecture;
 
 

@@ -35,6 +35,8 @@ entity GAME_Play is
         snake_mesh_xy   : out xys(0 to snake_length_max - 1);
         food_xy         : out xy;
         
+        --estado          : out STATE_T;
+        estado          : out std_logic_vector (2 downto 0);
         lose            : out std_logic
         );
 end entity;
@@ -43,12 +45,19 @@ architecture BEHAVIORAL of GAME_Play is
     --Signals
     type STATE_T is (STATE_UP,STATE_DOWN,STATE_RIGHT, STATE_LEFT, STATE_INIT);  --Tipo de datos
     signal cur_state : STATE_T := STATE_INIT;
-    signal nxt_state : STATE_T;  --Estado actual y proximo
+    signal nxt_state : STATE_T := STATE_INIT;  --Estado actual y proximo
     signal init_en, up_en, down_en, right_en, left_en : std_logic := '0' ; --Habilitador de estados
-    signal snake_legth_input_reg, snake_legth_output_reg : integer range 0 to snake_length_max;
-    signal snake_mesh_xy_input_reg, snake_mesh_xy_output_reg : xys(0 to snake_length_max - 1);
-    signal food_xy_input_reg, food_xy_output_reg : xy;
-    signal lose_sig : std_logic;
+    
+    signal snake_length_input_reg : integer range 0 to snake_length_max;
+    signal  snake_length_init_reg, snake_length_up_reg, snake_length_down_reg, snake_length_left_reg, snake_length_right_reg : integer range 0 to snake_length_max;
+    
+    signal snake_mesh_xy_input_reg : xys(0 to snake_length_max - 1):= (others => (others => '0'));
+    signal  snake_mesh_xy_init_reg, snake_mesh_xy_up_reg, snake_mesh_xy_down_reg, snake_mesh_xy_left_reg, snake_mesh_xy_right_reg : xys(0 to snake_length_max - 1):= (others => (others => '0'));
+    
+    signal food_xy_input_reg : xy:= (others => '0');
+    signal food_xy_init_reg, food_xy_up_reg, food_xy_down_reg, food_xy_left_reg, food_xy_right_reg : xy := (others => '0');
+    
+    signal lose_init_sig, lose_up_sig, lose_down_sig, lose_left_sig, lose_right_sig : std_logic := '0';
     
 component Move_Init is
     port(
@@ -127,18 +136,56 @@ component Move_Right is
         snake_length        : out integer range 0 to snake_length_max;
         snake_mesh_xy       : out xys(0 to snake_length_max - 1);
         food_xy             : out xy;
-        
+       
         lose                : out std_logic
     );
 end component;
 
 begin
+with cur_state select
+estado <=   "000" when STATE_INIT,
+            "001" when STATE_UP,
+            "010" when STATE_DOWN,
+            "011" when STATE_LEFT,
+            "100" when STATE_RIGHT,
+            "111" when others;
 
-    snake_mesh_xy   <= snake_mesh_xy_output_reg;
-    snake_length    <= snake_legth_output_reg;
-    food_xy         <= food_xy_output_reg;
-    
-    lose            <= '1';
+    Output: process(cur_state, clk_60hz)
+    begin
+    case cur_state is 
+    when STATE_INIT =>
+        snake_mesh_xy   <= snake_mesh_xy_init_reg;
+        snake_length    <= snake_length_init_reg;
+        food_xy         <= food_xy_init_reg;
+        lose            <= lose_init_sig;
+    when STATE_UP =>
+        snake_mesh_xy   <= snake_mesh_xy_up_reg;
+        snake_length    <= snake_length_up_reg;
+        food_xy         <= food_xy_up_reg;
+        lose            <= lose_up_sig;
+    when STATE_DOWN =>
+        snake_mesh_xy   <= snake_mesh_xy_down_reg;
+        snake_length    <= snake_length_down_reg;
+        food_xy         <= food_xy_down_reg;
+        lose            <= lose_down_sig;
+    when STATE_LEFT =>
+        snake_mesh_xy   <= snake_mesh_xy_left_reg;
+        snake_length    <= snake_length_left_reg;
+        food_xy         <= food_xy_left_reg;
+        lose            <= lose_left_sig;
+    when STATE_RIGHT =>
+        snake_mesh_xy   <= snake_mesh_xy_right_reg;
+        snake_length    <= snake_length_right_reg;
+        food_xy         <= food_xy_right_reg;
+        lose            <= lose_right_sig;
+    when others =>
+        snake_mesh_xy   <= snake_mesh_xy_init_reg;
+        snake_length    <= snake_length_init_reg;
+        food_xy         <= food_xy_init_reg;
+        lose            <= lose_init_sig;
+        
+    end case;
+    end process;
     
     
     STATE_REGISTER: process (reset, clk_60Hz)  --Registro  de estados
@@ -146,23 +193,21 @@ begin
         if reset = '1' then            --Reset
           cur_state <= STATE_INIT;
           
-        elsif rising_edge(clk_60Hz) then   --Cambio de estado
+        elsif rising_edge(clk_60Hz) and play = '1' then   --Cambio de estado
           cur_state <= nxt_state;
         end if;     
     end process;
    
-   NEXT_STATE_REGISTER: process (play, joystick)  --Next state register
+   NEXT_STATE_REGISTER: process (joystick, cur_state)  --Next state register
       begin
-        nxt_state <= cur_state; 
-        
-        snake_legth_input_reg   <= snake_legth_output_reg;
-        snake_mesh_xy_input_reg <= snake_mesh_xy_output_reg;
-        food_xy_input_reg       <= food_xy_output_reg;
-                                 
+        nxt_state <= cur_state;    
         case cur_state is
           when STATE_INIT    =>  --INICIO DEL JUEGO
+                                snake_mesh_xy_input_reg   <= snake_mesh_xy_init_reg;
+                                snake_length_input_reg    <= snake_length_init_reg;
+                                food_xy_input_reg         <= food_xy_init_reg;
             case joystick is
-                when "000" => nxt_state <= STATE_UP;
+                when "000" => nxt_state <= STATE_UP;    
                 when "001" => nxt_state <= STATE_DOWN;
                 when "010" => nxt_state <= STATE_LEFT;
                 when "011" => nxt_state <= STATE_RIGHT;
@@ -170,6 +215,9 @@ begin
             end case;
           
           when STATE_UP      =>  --HACIA ARRIBA
+                                snake_mesh_xy_input_reg   <= snake_mesh_xy_up_reg;
+                                snake_length_input_reg    <= snake_length_up_reg;
+                                food_xy_input_reg         <= food_xy_up_reg;
             case joystick is
                 when "000" => nxt_state <= STATE_UP;
                 when "001" => nxt_state <= STATE_DOWN;
@@ -179,6 +227,20 @@ begin
             end case;
           
           when STATE_DOWN    =>  --HACIA ABAJO
+                                snake_mesh_xy_input_reg   <= snake_mesh_xy_down_reg;
+                                snake_length_input_reg    <= snake_length_down_reg;
+                                food_xy_input_reg         <= food_xy_down_reg;
+            case joystick is
+                when "000" => nxt_state <= STATE_UP;
+                when "001" => nxt_state <= STATE_DOWN;
+                when "010" => nxt_state <= STATE_LEFT;
+                when "011" => nxt_state <= STATE_RIGHT;
+                when others => nxt_state <= STATE_INIT;
+            end case;
+          when STATE_LEFT    =>  --HACIA LA IZQUIERDA
+                                snake_mesh_xy_input_reg   <= snake_mesh_xy_left_reg;
+                                snake_length_input_reg    <= snake_length_left_reg;
+                                food_xy_input_reg         <= food_xy_left_reg;
             case joystick is
                 when "000" => nxt_state <= STATE_UP;
                 when "001" => nxt_state <= STATE_DOWN;
@@ -188,15 +250,9 @@ begin
             end case;
             
           when STATE_RIGHT   =>  --HACIA LA DERECHA
-            case joystick is
-                when "000" => nxt_state <= STATE_UP;
-                when "001" => nxt_state <= STATE_DOWN;
-                when "010" => nxt_state <= STATE_LEFT;
-                when "011" => nxt_state <= STATE_RIGHT;
-                when others => nxt_state <= STATE_INIT;
-            end case;
-            
-          when STATE_LEFT    =>  --HACIA LA IZQUIERDA
+                                snake_mesh_xy_input_reg   <= snake_mesh_xy_right_reg;
+                                snake_length_input_reg    <= snake_length_right_reg;
+                                food_xy_input_reg         <= food_xy_right_reg;
             case joystick is
                 when "000" => nxt_state <= STATE_UP;
                 when "001" => nxt_state <= STATE_DOWN;
@@ -228,83 +284,82 @@ begin
           when others      => init_en  <= '1';  
         end case;
    end process;
-
+   
     Inst_Move_Init: Move_Init
        PORT MAP (
          clk_60hz            => clk_60hz,
          enable              => init_en,
         
-         snake_length        => snake_legth_output_reg,
-         snake_mesh_xy       => snake_mesh_xy_output_reg,
-         food_xy             => food_xy_output_reg,
+         snake_length        => snake_length_init_reg,
+         snake_mesh_xy       => snake_mesh_xy_init_reg,
+         food_xy             => food_xy_init_reg,
         
-         lose                => lose_sig
+         lose                => lose_init_sig
     );
 
---    Inst_Move_Up: Move_Up
---       PORT MAP (
---         clk_60hz            => clk_60hz,
---         enable              => up_en,
+    Inst_Move_Up: Move_Up
+       PORT MAP (
+         clk_60hz            => clk_60hz,
+         enable              => up_en,
         
---         snake_length_input  => snake_legth_input_reg,
---         snake_mesh_xy_input => snake_mesh_xy_input_reg,
---         food_xy_input       => food_xy_input_reg,
+         snake_length_input  => snake_length_input_reg,
+         snake_mesh_xy_input => snake_mesh_xy_input_reg,
+         food_xy_input       => food_xy_input_reg,
         
---         snake_length        => snake_legth_output_reg,
---         snake_mesh_xy       => snake_mesh_xy_output_reg,
---         food_xy             => food_xy_output_reg,
+         snake_length        => snake_length_up_reg,
+         snake_mesh_xy       => snake_mesh_xy_up_reg,
+         food_xy             => food_xy_up_reg,
         
---         lose                => lose_sig
---    );
+         lose                => lose_up_sig
+    );
     
---    Inst_Move_Down: Move_Down
---       PORT MAP (
---         clk_60hz            => clk_60hz,
---         enable              => down_en,
+    Inst_Move_Down: Move_Down
+       PORT MAP (
+         clk_60hz            => clk_60hz,
+         enable              => down_en,
         
---         snake_length_input  => snake_legth_input_reg,
---         snake_mesh_xy_input => snake_mesh_xy_input_reg,
---         food_xy_input       => food_xy_input_reg,
+         snake_length_input  => snake_length_input_reg,
+         snake_mesh_xy_input => snake_mesh_xy_input_reg,
+         food_xy_input       => food_xy_input_reg,
         
---         snake_length        => snake_legth_output_reg,
---         snake_mesh_xy       => snake_mesh_xy_output_reg,
---         food_xy             => food_xy_output_reg,
+         snake_length        => snake_length_down_reg,
+         snake_mesh_xy       => snake_mesh_xy_down_reg,
+         food_xy             => food_xy_down_reg,
         
---         lose                => lose_sig
---    );
+         lose                => lose_down_sig
+    );
     
---    Inst_Move_Left: Move_Left
---       PORT MAP (
---         clk_60hz            => clk_60hz,
---         enable              => left_en,
+    Inst_Move_Left: Move_Left
+       PORT MAP (
+         clk_60hz            => clk_60hz,
+         enable              => left_en,
         
---         snake_length_input  => snake_legth_input_reg,
---         snake_mesh_xy_input => snake_mesh_xy_input_reg,
---         food_xy_input       => food_xy_input_reg,
+         snake_length_input  => snake_length_input_reg,
+         snake_mesh_xy_input => snake_mesh_xy_input_reg,
+         food_xy_input       => food_xy_input_reg,
         
---         snake_length        => snake_legth_output_reg,
---         snake_mesh_xy       => snake_mesh_xy_output_reg,
---         food_xy             => food_xy_output_reg,
+         snake_length        => snake_length_left_reg,
+         snake_mesh_xy       => snake_mesh_xy_left_reg,
+         food_xy             => food_xy_left_reg,
         
---         lose                => lose_sig
---    );
+         lose                => lose_left_sig
+    );
     
---    Inst_Move_Right: Move_Right
---       PORT MAP (
---         clk_60hz            => clk_60hz,
---         enable              => right_en,
+    Inst_Move_Right: Move_Right
+       PORT MAP (
+         clk_60hz            => clk_60hz,
+         enable              => right_en,
         
---         snake_length_input  => snake_legth_input_reg,
---         snake_mesh_xy_input => snake_mesh_xy_input_reg,
---         food_xy_input       => food_xy_input_reg,
+         snake_length_input  => snake_length_input_reg,
+         snake_mesh_xy_input => snake_mesh_xy_input_reg,
+         food_xy_input       => food_xy_input_reg,
         
---         snake_length        => snake_legth_output_reg,
---         snake_mesh_xy       => snake_mesh_xy_output_reg,
---         food_xy             => food_xy_output_reg,
+         snake_length        => snake_length_right_reg,
+         snake_mesh_xy       => snake_mesh_xy_right_reg,
+         food_xy             => food_xy_right_reg,
         
---         lose                => lose_sig
---    );
+         lose                => lose_right_sig
+    );
 
 end BEHAVIORAL;
-
 
