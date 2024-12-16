@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Mon Dec 16 11:16:25 2024
-| Host         : DESKTOP-1V0CU1G running 64-bit major release  (build 9200)
+| Date         : Mon Dec 16 19:38:09 2024
+| Host         : LAPTOP-GEPADMVF running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 | Design       : top
 | Device       : xc7a100tcsg324-1
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 2719
+             Violations found: 2717
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 2718       |
+| PDRC-153 | Warning  | Gated clock check                                   | 2716       |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -13625,16 +13625,6 @@ Related violations: <none>
 PDRC-153#2716 Warning
 Gated clock check  
 Net Inst_GAME_Play/Inst_Move_Up/snake_move_up.snake_head_xy_future_reg[9]_LDC_i_1_n_1 is a gated clock net sourced by a combinational pin Inst_GAME_Play/Inst_Move_Up/snake_move_up.snake_head_xy_future_reg[9]_LDC_i_1/O, cell Inst_GAME_Play/Inst_Move_Up/snake_move_up.snake_head_xy_future_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#2717 Warning
-Gated clock check  
-Net Inst_MainFSM/FSM_onehot_cur_state_reg[2]_0 is a gated clock net sourced by a combinational pin Inst_MainFSM/drawSnake.is_food_reg_i_2/O, cell Inst_MainFSM/drawSnake.is_food_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#2718 Warning
-Gated clock check  
-Net Inst_MainFSM/typeDraw is a gated clock net sourced by a combinational pin Inst_MainFSM/rout_reg[2]_i_2/O, cell Inst_MainFSM/rout_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

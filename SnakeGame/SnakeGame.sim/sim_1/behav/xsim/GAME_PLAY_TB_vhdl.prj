@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../SnakeGame.srcs/sources_1/new/Types.vhd" \
+"../../../../SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd" \
+"../../../../SnakeGame.srcs/sources_1/new/MOVE_Down.vhd" \
+"../../../../SnakeGame.srcs/sources_1/new/MOVE_Init.vhd" \
+"../../../../SnakeGame.srcs/sources_1/new/MOVE_Left.vhd" \
+"../../../../SnakeGame.srcs/sources_1/new/MOVE_Right.vhd" \
+"../../../../SnakeGame.srcs/sources_1/new/MOVE_Up.vhd" \
+"../../../../SnakeGame.srcs/sim_1/new/GAME_PLAY_TB.vhd" \
+
+# Do not sort compile order
+nosort
