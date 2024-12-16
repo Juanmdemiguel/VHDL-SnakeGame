@@ -58,7 +58,7 @@ begin
                     nxt_state <= S1_GAME;
                 end if;
             when S1_GAME =>
-                if (LOSE = '1' and BUTTON = "100") then
+                if (LOSE = '1' or BUTTON = "100") then
                     nxt_state <= S2_GO;
                 end if;
             when S2_GO =>
