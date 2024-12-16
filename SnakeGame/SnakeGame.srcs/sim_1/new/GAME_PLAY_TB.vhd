@@ -104,7 +104,7 @@ begin
     begin
         -- Reset the system
         reset <= '1';
-        wait for 2 * clk_period;
+        wait for 8 * clk_period;
         reset <= '0';
         
         -- Start the game

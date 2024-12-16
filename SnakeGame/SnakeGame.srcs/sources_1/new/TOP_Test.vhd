@@ -42,7 +42,13 @@ ENTITY top is
         HSync, VSync   : out std_logic;
         Red,Green,Blue : out std_logic_vector(3 DOWNTO 0);
         LEDs           : out std_logic_vector(4 downto 0);
-        LED            : out std_logic_vector(2 downto 0)
+        LED            : out std_logic_vector(2 downto 0);
+        
+        STATE_OUT       : out std_logic_vector(1 downto 0);
+        lose            : out std_logic;
+        snake_length    : out  integer range 0 to 20; 
+        snake_mesh_xy   : out  xys(0 to snake_length_max-1);
+        food_xy         : out xy
     );
     
 END top;
@@ -57,8 +63,8 @@ architecture Structural of top is
                 signal sig_snake_length   : integer range 0 to snake_length_max;
                 signal SyncEnable         : std_logic;
                 signal row_i, col_i       : std_logic_vector(15 downto 0); 
-                signal sig_snake_mesh_xy  : xys(0 to snake_length_max - 1);
-                signal sig_food_xy        : xy; 
+                signal sig_snake_mesh_xy  : xys(0 to snake_length_max - 1):= (others => (others => '0'));
+                signal sig_food_xy        : xy:= (others => '0'); 
 
             -- signals for scaled string
                 signal start    :  big_letter_array(0 to 4);
@@ -263,7 +269,7 @@ Inst_MainFSM : Main_Game
    -- General game logic, outputs data for the vga to draw
     Inst_GAME_Play: GAME_Play 
      PORT MAP (
-        clk_60hz        => sig_60Hz,
+        clk_60hz        => sig_108MHz,
         reset           => reset,
         play            => STATE(0),
         joystick        => sig_buttons_lock,
@@ -278,7 +284,7 @@ Inst_MainFSM : Main_Game
 --    -- Sync of buttons with clock
     Inst_Buttons_Sync: BUTTONS_Sync
      PORT MAP (
-            clk_60Hz => sig_60Hz,
+            clk_60Hz => sig_108MHz,
             
             button_up_input     => button_up,
             button_down_input   => button_down,
@@ -306,11 +312,17 @@ Inst_MainFSM : Main_Game
     -- Sync of buttons with clock
     Inst_Buttons_Lock: BUTTON_Lock
      PORT MAP (
-        clk_60Hz       => sig_60hz,
+        clk_60Hz       => sig_108Mhz,
         enable         => STATE(0),
         buttons_input  => sig_buttons,
         buttons_output => sig_buttons_lock
     );
+    
+    snake_length    <= sig_snake_length;
+    snake_mesh_xy   <= sig_snake_mesh_xy;
+    food_xy         <= sig_food_xy;
+    STATE_OUT       <= STATE;
+    lose <= sig_lose;
     
 --    HSync <= '1';
 --    VSync <= '1';
