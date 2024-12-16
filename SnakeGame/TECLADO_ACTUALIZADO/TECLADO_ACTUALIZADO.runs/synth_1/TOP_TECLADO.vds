@@ -1,0 +1,301 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Dec 17 00:23:57 2024
+# Process ID: 16220
+# Current directory: C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.runs/synth_1
+# Command line: vivado.exe -log TOP_TECLADO.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_TECLADO.tcl
+# Log file: C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.runs/synth_1/TOP_TECLADO.vds
+# Journal file: C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.runs/synth_1\vivado.jou
+# Running On        :Mario
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency     :2419 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8266 MB
+# Swap memory       :12138 MB
+# Total Virtual     :20405 MB
+# Available Virtual :2513 MB
+#-----------------------------------------------------------
+source TOP_TECLADO.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 523.680 ; gain = 237.023
+Command: synth_design -top TOP_TECLADO -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1432
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1387.629 ; gain = 446.469
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9694] invalid size of integer constant literal [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:39]
+INFO: [Synth 8-638] synthesizing module 'TOP_TECLADO' [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:24]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/imports/hdl/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/imports/hdl/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (0#1) [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:23]
+INFO: [Synth 8-638] synthesizing module 'MAQUINA_ESTADOS_TECLADO' [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:248]
+INFO: [Synth 8-226] default block is never used [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:290]
+INFO: [Synth 8-256] done synthesizing module 'MAQUINA_ESTADOS_TECLADO' (0#1) [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'TOP_TECLADO' (0#1) [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:24]
+WARNING: [Synth 8-3848] Net UART_TXD in module/entity TOP_TECLADO does not have driver. [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:15]
+WARNING: [Synth 8-7129] Port x[31] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[30] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[29] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[28] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[27] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[26] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[25] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[24] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[23] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[22] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[21] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[20] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[19] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[18] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[17] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[16] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[15] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[14] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[13] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[12] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[11] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[10] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[9] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[8] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UART_TXD in module TOP_TECLADO is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1500.934 ; gain = 559.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1500.934 ; gain = 559.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1500.934 ; gain = 559.773
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1500.934 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_TECLADO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_TECLADO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1599.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1599.715 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'MAQUINA_ESTADOS_TECLADO'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                es_reset |                            00001 |                              000
+              es_derecha |                            00010 |                              100
+                es_abajo |                            00100 |                              010
+            es_izquierda |                            01000 |                              011
+               es_arriba |                            10000 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'MAQUINA_ESTADOS_TECLADO'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input   32 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 4     
+	   3 Input    5 Bit        Muxes := 2     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 2     
+	  12 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'keyboard/keycode_reg' and it is trimmed from '32' to '24' bits. [C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:74]
+WARNING: [Synth 8-3917] design TOP_TECLADO has port DP driven by constant 1
+WARNING: [Synth 8-7129] Port UART_TXD in module TOP_TECLADO is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:37 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:37 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:37 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:43 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:43 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:43 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:43 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:44 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:44 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     4|
+|4     |LUT2   |     7|
+|5     |LUT3   |    14|
+|6     |LUT4   |    21|
+|7     |LUT5   |    13|
+|8     |LUT6   |    33|
+|9     |FDCE   |     4|
+|10    |FDPE   |     1|
+|11    |FDRE   |    64|
+|12    |FDSE   |     1|
+|13    |IBUF   |     4|
+|14    |OBUF   |    20|
+|15    |OBUFT  |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:44 . Memory (MB): peak = 1599.715 ; gain = 658.555
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:40 . Memory (MB): peak = 1599.715 ; gain = 559.773
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:44 . Memory (MB): peak = 1599.715 ; gain = 658.555
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1599.715 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1599.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 94a05866
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:52 . Memory (MB): peak = 1599.715 ; gain = 1076.035
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1599.715 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mariu/Downloads/TECLADO_DEF/TECLADO_DEF.runs/synth_1/TOP_TECLADO.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file TOP_TECLADO_utilization_synth.rpt -pb TOP_TECLADO_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 00:25:03 2024...
