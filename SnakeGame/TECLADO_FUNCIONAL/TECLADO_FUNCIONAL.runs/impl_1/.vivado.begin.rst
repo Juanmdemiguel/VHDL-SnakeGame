@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="4544" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="13456" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="11044" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="11796" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="20496" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="7540" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="22488" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="21456" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="22184" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="21936" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="1672" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="15980" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="4696" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="mariu" Host="MARIO" Pid="11416" HostCore="8" HostMemory="08266641408">
+    </Process>
+</ProcessHandle>
