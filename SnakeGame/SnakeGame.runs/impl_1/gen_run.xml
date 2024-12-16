@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1734343685">
-  <File Type="ROUTE-PWR" Name="top_power_routed.rpt"/>
+  <File Type="ROUTE-PWR" Name="VGA_Manager_power_routed.rpt"/>
   <File Type="PA-TCL" Name="top.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="top_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-SUM" Name="VGA_Manager_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
   <File Type="BITSTR-MSK" Name="top.msk"/>
+<<<<<<< Updated upstream
   <File Type="ROUTE-CLK" Name="top_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="top.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="top_bus_skew_postroute_physopted.pb"/>
+=======
+  <File Type="ROUTE-CLK" Name="VGA_Manager_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="top.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="VGA_Manager_bus_skew_postroute_physopted.pb"/>
+>>>>>>> Stashed changes
   <File Type="BG-BIT" Name="top.bit"/>
   <File Type="BG-DRC" Name="top.drc"/>
   <File Type="BG-BGN" Name="top.bgn"/>
@@ -16,6 +22,7 @@
   <File Type="BITSTR-NKY" Name="top.nky"/>
   <File Type="BITSTR-BMM" Name="top_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="top.mmi"/>
+<<<<<<< Updated upstream
   <File Type="ROUTE-METHODOLOGY-DRC" Name="top_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="top.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
@@ -59,13 +66,63 @@
   <File Type="ROUTE-DRC-RPX" Name="top_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="top.pdi"/>
+=======
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="VGA_Manager_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="VGA_Manager_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="top.ltx"/>
+>>>>>>> Stashed changes
   <File Type="BOOT-PDI-FILE" Name="top_boot.pdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="top.npi"/>
+  <File Type="OPT-DRC" Name="VGA_Manager_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="top.rbd"/>
+  <File Type="OPT-HWDEF" Name="top.hwdef"/>
+  <File Type="PLACE-IO" Name="VGA_Manager_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="VGA_Manager_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="VGA_Manager_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="VGA_Manager_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="VGA_Manager_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="VGA_Manager_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="VGA_Manager_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="VGA_Manager_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="VGA_Manager_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="top_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="top_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="top_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="VGA_Manager_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="VGA_Manager_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="VGA_Manager_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="VGA_Manager_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="VGA_Manager_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="VGA_Manager_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="top_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="top_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="top_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="top_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="VGA_Manager_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="VGA_Manager_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="VGA_Manager_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="VGA_Manager_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="VGA_Manager_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="VGA_Manager_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="VGA_Manager_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="top.pdi"/>
   <File Type="PL-PDI-FILE" Name="top_pld.pdi"/>
   <File Type="RCFI_FILE" Name="top.rcfi"/>
   <File Type="CFI_FILE" Name="top.cfi"/>
   <File Type="RNPI_FILE" Name="top.rnpi"/>
+<<<<<<< Updated upstream
   <File Type="NPI_FILE" Name="top.npi"/>
   <File Type="RBD_FILE" Name="top.rbd"/>
+=======
+>>>>>>> Stashed changes
   <File Type="ROUTE-RQS" Name="top_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="top_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>

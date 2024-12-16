@@ -2,6 +2,7 @@
 2020.2
 May 22 2024
 19:03:11
+<<<<<<< Updated upstream
 C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_sim_netlist.vhdl,1733758806,vhdl,,,,pll100to108;pll100to108_clk_wiz,,,,,,,,
 C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.sim/sim_1/behav/xsim/glbl.v,1733758809,verilog,,,,glbl,,,,,,,,
 C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sim_1/new/GAME_PLAY_TB.vhd,1734351033,vhdl,,,,game_play_tb,,,,,,,,
@@ -29,3 +30,12 @@ C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.src
 C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd,1734345014,vhdl,,,,vga_draw,,,,,,,,
 C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd,1734343212,vhdl,,,,vga_manager,,,,,,,,
 C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd,1733758809,vhdl,,,,vga_sync,,,,,,,,
+=======
+C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sim_1/new/VGA_Manager_tb.vhd,1734350516,vhdl,,,,vga_manager_tb,,,,,,,,
+C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Letters.vhd,1734346738,vhdl,C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd,,,letters,,,,,,,,
+C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Types.vhd,1734346738,vhdl,C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd,,,types,,,,,,,,
+C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd,1734350974,vhdl,,,,vga_drawgame,,,,,,,,
+C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd,1734348238,vhdl,,,,vga_drawstr,,,,,,,,
+C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd,1734350080,vhdl,,,,vga_manager,,,,,,,,
+C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd,1732729248,vhdl,,,,vga_sync,,,,,,,,
+>>>>>>> Stashed changes
