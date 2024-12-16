@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Dec 16 18:04:26 2024
+# Process ID: 5788
+# Current directory: C:/Users/mariu/Downloads/TECLADO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18184 C:\Users\mariu\Downloads\TECLADO\TECLADO.xpr
+# Log file: C:/Users/mariu/Downloads/TECLADO/vivado.log
+# Journal file: C:/Users/mariu/Downloads/TECLADO\vivado.jou
+# Running On        :Mario
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency     :2419 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8266 MB
+# Swap memory       :10413 MB
+# Total Virtual     :18680 MB
+# Available Virtual :3676 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mariu/Downloads/TECLADO/TECLADO.xpr
