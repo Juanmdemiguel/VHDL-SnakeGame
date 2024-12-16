@@ -77,21 +77,21 @@ begin
             col      => col_i
         );
 
---    Inst_VGA_Draw: VGA_Draw 
---      PORT MAP (
---        START          => START,
---        GAMEOVER       => GAMEOVER,
---        mode           => mode,
---        enable         => SyncEnable,
---        snake_length   => snake_length,
---        snake_mesh_xy  => snake_mesh_xy,
---        food_xy        =>  food_xy,
---        row            => row_i, 
---        col            => col_i,
---        rout           => red,
---        gout           => green,
---        bout           => blue
---    );
+    Inst_VGA_Draw: VGA_Draw 
+      PORT MAP (
+        START          => START,
+        GAMEOVER       => GAMEOVER,
+        mode           => mode,
+        enable         => SyncEnable,
+        snake_length   => snake_length,
+        snake_mesh_xy  => snake_mesh_xy,
+        food_xy        =>  food_xy,
+        row            => row_i, 
+        col            => col_i,
+        rout           => red,
+        gout           => green,
+        bout           => blue
+    );
 --    red <= "1111" when mode = "01" else unaffected;
 --    green <= "1111" when mode = "01" else unaffected;
 --    blue <= "1111" when mode = "01" else unaffected;

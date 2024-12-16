@@ -26,10 +26,6 @@ use work.Types.all;
 use work.Letters.all;
 
 entity VGA_Draw is
- generic(
-        head_width          : integer := 60;
-        snake_length_begin  : integer := 1;
-        snake_length_max    : integer := 3);
         
     port(
         --clk_108mhz          : in  std_logic
@@ -92,7 +88,6 @@ drawSnake: process(row, col)
     if enable = '1' then
         if typeDraw = '0' then 
             --draw body
-              --is_shape := '1';
             is_shape := '0';
             for i in 0 to snake_length_max - 1 loop
                 if (i < snake_length) then  --if is valid snake body
@@ -112,8 +107,7 @@ drawSnake: process(row, col)
              else 
                   is_food := '0';
              end if;
-                
-                 
+                                
         elsif typeDraw = '1' then
                   -- Calculate relative positions
                 dx := to_integer(unsigned(col)) - TEXT_START_X;
@@ -160,10 +154,6 @@ drawSnake: process(row, col)
             bout <= "0000";
         end if;
     end process;
---    rout <= "1111" when mode = "01" else unaffected;
---    gout <= "1111" when mode = "01" else unaffected;
---    bout <= "1111" when mode = "01" else unaffected;
-
 end;
 
 
