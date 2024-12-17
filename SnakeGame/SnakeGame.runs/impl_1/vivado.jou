@@ -3,11 +3,11 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec 17 12:53:03 2024
-# Process ID: 19580
+# Start of session at: Tue Dec 17 18:34:13 2024
+# Process ID: 19948
 # Current directory: C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/impl_1
-# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
-# Log file: C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/impl_1/top.vdi
+# Command line: vivado.exe -log TOP_2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOP_2.tcl -notrace
+# Log file: C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/impl_1/TOP_2.vdi
 # Journal file: C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/impl_1\vivado.jou
 # Running On        :LAPTOP-GEPADMVF
 # Platform          :Windows Server 2016 or Windows 10
@@ -19,6 +19,6 @@
 # Host memory       :16934 MB
 # Swap memory       :7784 MB
 # Total Virtual     :24719 MB
-# Available Virtual :13023 MB
+# Available Virtual :11272 MB
 #-----------------------------------------------------------
-source top.tcl -notrace
+source TOP_2.tcl -notrace
