@@ -43,9 +43,17 @@ ENTITY top is
         HSync, VSync   : out std_logic;
         Red,Green,Blue : out std_logic_vector(3 downto 0);
         
+        
         --Debug Leds
         LEDs           : out std_logic_vector(4 downto 0);
         LED            : out std_logic_vector(2 downto 0)
+        
+--        STATE_OUT       : OUT std_logic_vector(2 downto 0);
+--        MAINSTATE       : OUT std_logic_vector(1 downto 0);
+--        lose          : out std_logic; 
+--        snake_length  : OUT integer RANGE 0 TO 20;
+--        snake_mesh_xy : OUT xys(0 TO snake_length_max-1);
+--        food_xy       : OUT xy
     );
     
 END top;
@@ -322,6 +330,13 @@ Inst_MainFSM : Main_Game
         buttons_input  => sig_buttons,
         buttons_output => sig_buttons_lock
     );
+    
+--    STATE_OUT     <=GAMESTATE;
+--    MAINSTATE     <=STATE;
+--    lose          <= sig_lose; 
+--    snake_length  <= sig_snake_length;
+--    snake_mesh_xy <= sig_snake_mesh_xy;
+--    food_xy       <= sig_food_xy;
         
 end architecture;
 

@@ -44,7 +44,8 @@ ARCHITECTURE behavior OF top_tb IS
             Red, Green, Blue : OUT std_logic_vector(3 DOWNTO 0);
             LEDs           : out std_logic_vector(4 downto 0);
             LED            : out std_logic_vector(2 downto 0);
-            STATE_OUT       : OUT std_logic_vector(1 downto 0);
+            STATE_OUT       : OUT std_logic_vector(2 downto 0);
+            MAINSTATE       : OUT std_logic_vector(1 downto 0);
             lose          : out std_logic; 
             snake_length  : OUT integer RANGE 0 TO 20;
             snake_mesh_xy : OUT xys(0 TO snake_length_max-1);
@@ -63,9 +64,10 @@ ARCHITECTURE behavior OF top_tb IS
     SIGNAL HSync         : std_logic;
     SIGNAL VSync         : std_logic;
     SIGNAL Red, Green, Blue : std_logic_vector(3 DOWNTO 0);
-    SIGNAL LEDs           : std_logic_vector(4 downto 0);
+    SIGNAL LEDs          : std_logic_vector(4 downto 0);
     SIGNAL LED           : std_logic_vector(2 downto 0);
-    SIGNAL STATE_OUT       : std_logic_vector(1 downto 0);
+    SIGNAL STATE_OUT     : std_logic_vector(2 downto 0);
+    SIGNAL MAINSTATE     : std_logic_vector(1 downto 0);
     SIGNAL lose          : std_logic;
     SIGNAL snake_length  : integer RANGE 0 TO 20;
     SIGNAL snake_mesh_xy : xys(0 TO snake_length_max-1);
@@ -92,6 +94,7 @@ BEGIN
         leds => leds,
         led => led,
         state_out => state_out,
+        mainstate => mainstate,
         lose => lose,
         snake_length => snake_length,
         snake_mesh_xy => snake_mesh_xy,

@@ -1,2 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sim_1/new/GAME_PLAY_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'GAME_PLAY_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sim_1/new/TOP_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'
