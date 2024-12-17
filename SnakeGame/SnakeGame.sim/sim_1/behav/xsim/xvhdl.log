@@ -1,9 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_sim_netlist.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'PLL100to108_clk_wiz'
-INFO: [VRFC 10-3107] analyzing entity 'PLL100to108'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Clock_Converter'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Clock_Manager'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sim_1/new/Clock_Manager_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Clock_Manager_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/TOP_Test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juans/OneDrive/Escritorio/Universidad/Cuarto/Sistemas Electrnicos Digitales/TRABAJO/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sim_1/new/TOP_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'

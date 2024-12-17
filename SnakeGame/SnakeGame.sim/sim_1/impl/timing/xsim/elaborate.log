@@ -1,0 +1,12 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/XILINX1/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_Main_Game_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_Main_Game xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-718] formal port <BUTTON> does not exist in entity <\Main_Game\>.  Please compare the definition of block <\Main_Game\> to its component declaration and its instantion to detect the mismatch. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sim_1/new/Main_FSM_tb.vhd:35]
+ERROR: [VRFC 10-718] formal port <LOSE> does not exist in entity <\Main_Game\>.  Please compare the definition of block <\Main_Game\> to its component declaration and its instantion to detect the mismatch. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sim_1/new/Main_FSM_tb.vhd:36]
+ERROR: [VRFC 10-718] formal port <CLK_100MHz> does not exist in entity <\Main_Game\>.  Please compare the definition of block <\Main_Game\> to its component declaration and its instantion to detect the mismatch. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sim_1/new/Main_FSM_tb.vhd:37]
+ERROR: [VRFC 10-718] formal port <STATE> does not exist in entity <\Main_Game\>.  Please compare the definition of block <\Main_Game\> to its component declaration and its instantion to detect the mismatch. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sim_1/new/Main_FSM_tb.vhd:38]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

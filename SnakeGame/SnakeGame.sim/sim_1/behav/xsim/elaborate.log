@@ -1,7 +1,7 @@
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/XILINX1/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Clock_Manager_tb_behav xil_defaultlib.Clock_Manager_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Users/juans/OneDrive/Documentos/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -12,20 +12,40 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package unisim.vcomponents
 Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.types
+Compiling package xil_defaultlib.letters
+Compiling package unisim.vcomponents
 Compiling package ieee.std_logic_signed
 Compiling package ieee.vital_timing
 Compiling package ieee.vital_primitives
 Compiling package unisim.vpkg
 Compiling module xil_defaultlib.glbl
 Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture structural of entity xil_defaultlib.Clock_distributor [clock_distributor_default]
 Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
 Compiling architecture plle2_adv_v of entity unisim.PLLE2_ADV [\PLLE2_ADV(clkfbout_mult=54,clki...]
 Compiling architecture structure of entity xil_defaultlib.PLL100to108_clk_wiz [pll100to108_clk_wiz_default]
 Compiling architecture structure of entity xil_defaultlib.PLL100to108 [pll100to108_default]
 Compiling architecture behavioral of entity xil_defaultlib.Clock_Converter [clock_converter_default]
-Compiling architecture structural of entity xil_defaultlib.Clock_Manager [clock_manager_default]
-Compiling architecture behavioral of entity xil_defaultlib.clock_manager_tb
-Built simulation snapshot Clock_Manager_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.EDGEDTCTR [edgedtctr_default]
+Compiling architecture behavioral of entity xil_defaultlib.Scaler [scaler_default]
+Compiling architecture structural of entity xil_defaultlib.Scaled_String [scaled_string_default]
+Compiling architecture structural of entity xil_defaultlib.Main_Game [main_game_default]
+Compiling architecture behavioral of entity xil_defaultlib.VGA_Sync [vga_sync_default]
+Compiling architecture behavioral of entity xil_defaultlib.VGA_Draw [vga_draw_default]
+Compiling architecture behavioral of entity xil_defaultlib.VGA_DrawStr [vga_drawstr_default]
+Compiling architecture behavioral of entity xil_defaultlib.VGA_Manager [vga_manager_default]
+Compiling architecture behavioral of entity xil_defaultlib.Move_Init [move_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.Move_Up [move_up_default]
+Compiling architecture behavioral of entity xil_defaultlib.Move_Down [move_down_default]
+Compiling architecture behavioral of entity xil_defaultlib.Move_Left [move_left_default]
+Compiling architecture behavioral of entity xil_defaultlib.Move_Right [move_right_default]
+Compiling architecture behavioral of entity xil_defaultlib.GAME_Play [game_play_default]
+Compiling architecture behavioral of entity xil_defaultlib.BUTTONS_Sync [buttons_sync_default]
+Compiling architecture behavioral of entity xil_defaultlib.BUTTON_Lock [button_lock_default]
+Compiling architecture structural of entity xil_defaultlib.top [top_default]
+Compiling architecture behavior of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
