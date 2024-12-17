@@ -1,0 +1,23 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Users/juans/OneDrive/Documentos/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot GAME_PLAY_TB_behav xil_defaultlib.GAME_PLAY_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.types
+Compiling architecture behavioral of entity xil_defaultlib.Move_Init [move_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.Move_Up [move_up_default]
+Compiling architecture behavioral of entity xil_defaultlib.Move_Down [move_down_default]
+Compiling architecture behavioral of entity xil_defaultlib.Move_Left [move_left_default]
+Compiling architecture behavioral of entity xil_defaultlib.Move_Right [move_right_default]
+Compiling architecture behavioral of entity xil_defaultlib.GAME_Play [game_play_default]
+Compiling architecture behavioral of entity xil_defaultlib.game_play_tb
+Built simulation snapshot GAME_PLAY_TB_behav

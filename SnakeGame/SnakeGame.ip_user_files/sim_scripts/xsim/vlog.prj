@@ -1,0 +1,7 @@
+sv xpm --include "../../../SnakeGame.gen/sources_1/ip/PLL100to108" \
+"C:/Users/juans/OneDrive/Documentos/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
