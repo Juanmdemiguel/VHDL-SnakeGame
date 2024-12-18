@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Wed Dec 18 11:25:14 2024
+| Date         : Wed Dec 18 12:57:33 2024
 | Host         : Mario running 64-bit major release  (build 9200)
 | Command      : report_drc -file TOP_2_drc_routed.rpt -pb TOP_2_drc_routed.pb -rpx TOP_2_drc_routed.rpx
 | Design       : TOP_2
@@ -49,7 +49,7 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net Inst_Buttons_Sync/E[0] is a gated clock net sourced by a combinational pin Inst_Buttons_Sync/sig_buttons_lock_reg[2]_i_2/O, cell Inst_Buttons_Sync/sig_buttons_lock_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net Inst_Teclado/sevenSeg/E[0] is a gated clock net sourced by a combinational pin Inst_Teclado/sevenSeg/sig_buttons_lock_reg[2]_i_2/O, cell Inst_Teclado/sevenSeg/sig_buttons_lock_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

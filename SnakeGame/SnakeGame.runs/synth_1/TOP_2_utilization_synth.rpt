@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Wed Dec 18 11:23:28 2024
+| Date         : Wed Dec 18 12:56:07 2024
 | Host         : Mario running 64-bit major release  (build 9200)
 | Command      : report_utilization -file TOP_2_utilization_synth.rpt -pb TOP_2_utilization_synth.pb
 | Design       : TOP_2
@@ -31,8 +31,8 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                | 2899 |     0 |          0 |     63400 |  4.57 |
-|   LUT as Logic             | 2896 |     0 |          0 |     63400 |  4.57 |
+| Slice LUTs*                | 2900 |     0 |          0 |     63400 |  4.57 |
+|   LUT as Logic             | 2897 |     0 |          0 |     63400 |  4.57 |
 |   LUT as Memory            |    3 |     0 |          0 |     19000 |  0.02 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
 |     LUT as Shift Register  |    3 |     0 |            |           |       |
@@ -95,7 +95,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   45 |     0 |          0 |       210 | 21.43 |
+| Bonded IOB                  |   49 |     0 |          0 |       210 | 23.33 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |          0 |         6 |  0.00 |
@@ -163,7 +163,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | FDPE     |  171 |        Flop & Latch |
 | OBUF     |   39 |                  IO |
 | MUXF7    |   19 |               MuxFx |
-| IBUF     |    5 |                  IO |
+| IBUF     |    9 |                  IO |
 | SRL16E   |    3 |  Distributed Memory |
 | LDCE     |    3 |        Flop & Latch |
 | BUFG     |    2 |               Clock |

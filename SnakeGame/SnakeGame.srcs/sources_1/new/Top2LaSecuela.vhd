@@ -30,10 +30,10 @@ entity TOP_2 is
         clk            : in std_logic;
         reset          : in std_logic;
         
-        --button_up      : in std_logic;
-        --button_down    : in std_logic;
-        --button_left    : in std_logic;
-        --button_right   : in std_logic;
+        button_up      : in std_logic;
+        button_down    : in std_logic;
+        button_left    : in std_logic;
+        button_right   : in std_logic;
         button_center  : in std_logic;
         
         --VGA output
@@ -262,10 +262,10 @@ Inst_Clock_Converter: Clock_Converter
 Inst_Buttons_Sync: BUTTONS_Sync
      PORT MAP (
             clk_60Hz            => sig_60Hz,
-            button_up_input     => teclado_arriba,
-            button_down_input   => teclado_abajo,
-            button_left_input   => teclado_izquierda,
-            button_right_input  => teclado_derecha,
+            button_up_input     => button_up,
+            button_down_input   => button_down,
+            button_left_input   => button_left,
+            button_right_input  => button_right,
             button_center_input => button_center,
             button_output       => sig_buttons
     );
