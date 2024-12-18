@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec 17 16:58:39 2024
-# Process ID: 15596
+# Start of session at: Wed Dec 18 10:24:05 2024
+# Process ID: 12216
 # Current directory: C:/Users/mariu/Downloads/SnakeGame
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22176 C:\Users\mariu\Downloads\SnakeGame\SnakeGame.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16960 C:\Users\mariu\Downloads\SnakeGame\SnakeGame.xpr
 # Log file: C:/Users/mariu/Downloads/SnakeGame/vivado.log
 # Journal file: C:/Users/mariu/Downloads/SnakeGame\vivado.jou
 # Running On        :Mario
@@ -19,7 +19,7 @@
 # Host memory       :8266 MB
 # Swap memory       :10737 MB
 # Total Virtual     :19004 MB
-# Available Virtual :8964 MB
+# Available Virtual :11916 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/mariu/Downloads/SnakeGame/SnakeGame.xpr
@@ -129,8 +129,74 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1587.316 ; gain = 528.992
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 1575.000 ; gain = 494.734
 update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Wed Dec 18 10:25:01 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Dec 18 10:30:31 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Wed Dec 18 10:33:56 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.dcp' for cell 'Inst_PLL'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2024.172 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 599 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, Inst_PLL/inst/clkin1_ibufg, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'Inst_PLL/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_board.xdc] for cell 'Inst_PLL/inst'
+Finished Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_board.xdc] for cell 'Inst_PLL/inst'
+Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc] for cell 'Inst_PLL/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc:54]
+Finished Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc] for cell 'Inst_PLL/inst'
+Parsing XDC File [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command '-##' is not supported in the xdc constraint file. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2719.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 2720.809 ; gain = 1123.438
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2728.688 ; gain = 0.180
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2728.688 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2728.688 ; gain = 0.180
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 2730.742 ; gain = 2.055
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2730.742 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2730.742 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 2730.742 ; gain = 2.234
+[Wed Dec 18 10:39:17 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -155,16 +221,113 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1599.883 ; gain = 12.566
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 2735.621 ; gain = 0.000
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE3C91A
-set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE3C91A
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp with file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/TOP_2.dcp
+launch_runs synth_1 -jobs 8
+[Wed Dec 18 10:50:48 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Dec 18 10:55:11 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE3C91A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp with file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/TOP_2.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Dec 18 11:19:42 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
+[Wed Dec 18 11:19:42 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE3C91A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE3C91A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

@@ -43,29 +43,24 @@ ENTITY top is
         HSync, VSync   : out std_logic;
         Red,Green,Blue : out std_logic_vector(3 downto 0);
         
+        
         --Debug Leds
         LEDs           : out std_logic_vector(4 downto 0);
-        LED            : out std_logic_vector(2 downto 0);
-        --Teclado y salidas
-        PS2_DATA : in STD_LOGIC; --Datos de las teclas devueltos codificados
-        PS2_CLK : in STD_LOGIC; --Reloj para el comunicador USB
+        LED            : out std_logic_vector(2 downto 0)
         
-        SEG : out STD_LOGIC_VECTOR(6 downto 0); --Salida de displays de 7 segmentos
-        AN : out STD_LOGIC_VECTOR(7 downto 0); --Selector de los displays de 7 segmentos
-        DP : out STD_LOGIC; --Variable usada para poner o quitar los puntos de los displays
-        UART_TXD : out STD_LOGIC; 
-        
-        SALIDA_ARRIBA : out STD_LOGIC; --Señal para mover la serpiente hacia arriba
-        SALIDA_ABAJO : out STD_LOGIC; --Señal para mover la serpiente hacia abajo
-        SALIDA_IZQUIERDA : out STD_LOGIC; --Señal para mover la serpiente hacia la izquierda
-        SALIDA_DERECHA : out STD_LOGIC --Señal para mover la serpiente hacia la derecha 
+--        STATE_OUT       : OUT std_logic_vector(2 downto 0);
+--        MAINSTATE       : OUT std_logic_vector(1 downto 0);
+--        lose          : out std_logic; 
+--        snake_length  : OUT integer RANGE 0 TO 20;
+--        snake_mesh_xy : OUT xys(0 TO snake_length_max-1);
+--        food_xy       : OUT xy
     );
     
 END top;
 
 architecture Structural of top is
         -- signals for clock manager
-            signal clk_PLL, clk_FSM, clk_SC, clk_CV, clk_EDGE,clk_TEC : std_logic;
+            signal clk_PLL, clk_FSM, clk_SC, clk_CV, clk_EDGE : std_logic;
             signal sig_60Hz   : std_logic;
             signal sig_108MHz : std_logic;
         
@@ -124,8 +119,7 @@ COMPONENT Clock_distributor
            clk_out1 : out STD_LOGIC;
            clk_out2 : out STD_LOGIC;
            clk_out3 : out STD_LOGIC;
-           clk_out4 : out STD_LOGIC;
-           clk_out5 : out STD_LOGIC
+           clk_out4 : out STD_LOGIC
           );
 END COMPONENT;
 
@@ -209,22 +203,6 @@ COMPONENT Clock_Converter
      );
 END COMPONENT;
 
-COMPONENT TOP_TECLADO
-    port (
-        CLK100MHZ : in STD_LOGIC; --Entra el reloj de la FPGA a 100 MHZ
-        PS2_CLK : in STD_LOGIC; --Reloj para el comunicador USB
-        PS2_DATA : in STD_LOGIC; --Datos de las teclas devueltos codificados
-        RESET_TECLADO : in STD_LOGIC; --Reset que va al teclado para ponerlo a defecto
-        SEG : out STD_LOGIC_VECTOR(6 downto 0); --Salida de displays de 7 segmentos
-        AN : out STD_LOGIC_VECTOR(7 downto 0); --Selector de los displays de 7 segmentos
-        DP : out STD_LOGIC; --Variable usada para poner o quitar los puntos de los displays
-        UART_TXD : out STD_LOGIC; 
-        SALIDA_ARRIBA : out STD_LOGIC; --Señal para mover la serpiente hacia arriba
-        SALIDA_ABAJO : out STD_LOGIC; --Señal para mover la serpiente hacia abajo
-        SALIDA_IZQUIERDA : out STD_LOGIC; --Señal para mover la serpiente hacia la izquierda
-        SALIDA_DERECHA : out STD_LOGIC --Señal para mover la serpiente hacia la derecha   
-     );
-END COMPONENT;
 
 BEGIN
 
@@ -234,8 +212,7 @@ Inst_ClockDistributor : Clock_distributor
            clk_out1 => clk_FSM,
            clk_out2 => clk_SC,
            clk_out3 => clk_CV,
-           clk_out4 => clk_EDGE,
-           clk_out5 => clk_TEC
+           clk_out4 => clk_EDGE
            );
 
 
@@ -354,21 +331,13 @@ Inst_MainFSM : Main_Game
         buttons_output => sig_buttons_lock
     );
     
-     Inst_Teclado: TOP_TECLADO
-     PORT MAP (
-        CLK100MHZ=>clk_TEC,
-        PS2_CLK=>PS2_CLK,
-        PS2_DATA=>PS2_DATA,
-        RESET_TECLADO=>reset,
-        SEG=>seg,
-        AN=>AN,
-        DP=>DP,
-        UART_TXD=>UART_TXD,
-        SALIDA_ARRIBA=>SALIDA_ARRIBA,
-        SALIDA_ABAJO=>SALIDA_ABAJO,
-        SALIDA_IZQUIERDA=>SALIDA_IZQUIERDA,
-        SALIDA_DERECHA=>SALIDA_DERECHA
-    ); 
+--    STATE_OUT     <=GAMESTATE;
+--    MAINSTATE     <=STATE;
+--    lose          <= sig_lose; 
+--    snake_length  <= sig_snake_length;
+--    snake_mesh_xy <= sig_snake_mesh_xy;
+--    food_xy       <= sig_food_xy;
+        
 end architecture;
 
 

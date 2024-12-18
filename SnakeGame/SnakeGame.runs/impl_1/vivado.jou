@@ -3,11 +3,11 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec 17 14:39:00 2024
-# Process ID: 19420
+# Start of session at: Wed Dec 18 11:23:38 2024
+# Process ID: 18888
 # Current directory: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1
-# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
-# Log file: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/top.vdi
+# Command line: vivado.exe -log TOP_2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOP_2.tcl -notrace
+# Log file: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.vdi
 # Journal file: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1\vivado.jou
 # Running On        :Mario
 # Platform          :Windows Server 2016 or Windows 10
@@ -17,8 +17,8 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8266 MB
-# Swap memory       :11797 MB
-# Total Virtual     :20064 MB
-# Available Virtual :3320 MB
+# Swap memory       :10737 MB
+# Total Virtual     :19004 MB
+# Available Virtual :7263 MB
 #-----------------------------------------------------------
-source top.tcl -notrace
+source TOP_2.tcl -notrace

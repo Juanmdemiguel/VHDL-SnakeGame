@@ -30,8 +30,7 @@ entity Clock_distributor is
            clk_out2 : out STD_LOGIC;
            clk_out3 : out STD_LOGIC;
            clk_out4 : out STD_LOGIC;
-           clk_out5 : out STD_LOGIC
-           );
+           clk_out5 : out STD_LOGIC);
 end Clock_distributor;
 
 architecture Structural of Clock_distributor is

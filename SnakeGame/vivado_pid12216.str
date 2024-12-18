@@ -1,0 +1,1081 @@
+/*
+
+AMD Vivado v2024.1 (64-bit) [Major: 2024, Minor: 1]
+SW Build: 5076996 on Wed May 22 18:37:14 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+
+Process ID (PID): 12216
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Dec 18 10:24:23 CET 2024
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Windows 11
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 0, width = 1920, height = 1008
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+Scale size: 27
+OS font scaling: 150%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+JavaFX version: 21.0.1
+Java home: 	C:/Vivado/2024.1/tps/win64/jre21.0.1_12
+Java executable: 	C:/Vivado/2024.1/tps/win64/jre21.0.1_12/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	mariu
+User home directory: C:/Users/mariu
+User working directory: C:/Users/mariu/Downloads/SnakeGame
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Vivado
+HDI_APPROOT: C:/Vivado/2024.1
+RDI_DATADIR: C:/Vivado/2024.1/data
+RDI_BINDIR: C:/Vivado/2024.1/bin
+
+Vivado preferences file: C:/Users/mariu/AppData/Roaming/Xilinx/Vivado/2024.1/vivado.xml
+Vivado preferences directory: C:/Users/mariu/AppData/Roaming/Xilinx/Vivado/2024.1/
+Vivado layouts directory: C:/Users/mariu/AppData/Roaming/Xilinx/Vivado/2024.1/data/layouts
+PlanAhead jar file: 	C:/Vivado/2024.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/mariu/Downloads/SnakeGame/vivado.log
+Vivado journal file: 	C:/Users/mariu/Downloads/SnakeGame/vivado.jou
+Engine tmp dir: 	C:/Users/mariu/Downloads/SnakeGame/.Xil/Vivado-12216-Mario
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: C:/Vivado/2024.1
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent16960 "C:\Users\mariu\Downloads\SnakeGame\SnakeGame.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Vivado
+RDI_BINDIR: C:/Vivado/2024.1/bin
+RDI_BINROOT: C:/Vivado/2024.1/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Vivado/2024.1/data
+RDI_INSTALLROOT: C:
+RDI_INSTALLVER: 2024.1
+RDI_INSTALLVERSION: 2024.1
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/Vivado/2024.1/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Vivado/2024.1/tps/win64/javafx-sdk-21.0.1
+RDI_JAVAROOT: C:/Vivado/2024.1/tps/win64/jre21.0.1_12
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: C:/Vivado/2024.1/lib/win64.o
+RDI_MINGW_LIB: C:/Vivado/2024.1\tps\mingw\6.2.0\win64.o\nt\bin;C:/Vivado/2024.1\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/Vivado/2024.1/ids_lite/ISE/bin/nt64;C:/Vivado/2024.1/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/Vivado/2024.1/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Vivado/2024.1\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: C:/Vivado/2024.1\tps\win64\python-3.8.3
+RDI_PYTHONPATH: C:/Vivado/2024.1\tps\win64\python-3.8.3;C:/Vivado/2024.1\tps\win64\python-3.8.3\bin;C:/Vivado/2024.1\tps\win64\python-3.8.3\lib;C:/Vivado/2024.1\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Vivado/2024.1\tps\win64\python-3.8.3\lib
+RDI_SESSION_INFO: C:\Users\mariu\Downloads\SnakeGame:MARIO-18-12-2024_10-24-04,00
+RDI_SHARED_DATA: C:/SharedData/2024.1/data
+RDI_TPS_ROOT: C:/Vivado/2024.1/tps/win64
+RDI_USE_JDK21: True
+RDI_VERBOSE: False
+XILINX: C:/Vivado/2024.1/ids_lite/ISE
+XILINX_DSP: C:/Vivado/2024.1/ids_lite/ISE
+XILINX_HLS: C:/Vitis_HLS/2024.1
+XILINX_PLANAHEAD: C:/Vivado/2024.1
+XILINX_VIVADO: C:/Vivado/2024.1
+XILINX_VIVADO_HLS: C:/Vivado/2024.1
+_RDI_BINROOT: C:\Vivado\2024.1\bin
+_RDI_CWD: C:\Users\mariu\Downloads\SnakeGame
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 828 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\mariu\Downloads\SnakeGame\SnakeGame.xpr. Version: Vivado v2024.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/mariu/Downloads/SnakeGame/SnakeGame.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 839 MB. GUI used memory: 73 MB. Current time: 12/18/24, 10:24:24 AM CET
+// Tcl Message: INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 135 MB (+138752kb) [00:00:27]
+// [Engine Memory]: 1,173 MB (+1078274kb) [00:00:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  3404 ms.
+// Tcl Message: open_project C:/Users/mariu/Downloads/SnakeGame/SnakeGame.xpr 
+// Tcl Message: INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/2024.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,193 MB. GUI used memory: 77 MB. Current time: 12/18/24, 10:24:39 AM CET
+// Project name: SnakeGame; location: C:/Users/mariu/Downloads/SnakeGame; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 1575.000 ; gain = 494.734 
+dismissDialog("Open Project"); // bj (Open Project Progress)
+// [GUI Memory]: 149 MB (+8197kb) [00:00:31]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP_2(Behavioral) (Top2LaSecuela.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // f (dialog0)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed Dec 18 10:25:01 2024] Launched synth_1... Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bj (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 237 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+selectTab((HResource) null, (HResource) null, "Log", 2); // aa
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // g (PAResourceItoN.LogView_TABBED_PANE, MonitorView)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Simulation", 2); // g (PAResourceItoN.LogView_TABBED_PANE, MonitorView)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Synthesis", 0); // g (PAResourceItoN.LogView_TABBED_PANE, MonitorView)
+// Elapsed time: 14 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g (PAResourceQtoS.SyntheticaStateMonitor_CANCEL, Cancel)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g (PAResourceQtoS.SyntheticaStateMonitor_CANCEL, Cancel)
+selectButton("OptionPane.button", "Cancel Process", "Cancel Synthesis"); // JButton (OptionPane.button)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bj (Resetting Runs Progress)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 21); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// PAPropertyPanels.initPanels (Nexys-4-DDR-Master.xdc) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-4-DDR-Master.xdc]", 23, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-4-DDR-Master.xdc]", 23, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-4-DDR-Master.xdc]", 23, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-4-DDR-Master.xdc]", 23, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 40 seconds
+selectCodeEditor("Nexys-4-DDR-Master.xdc", 0, 215); // ac (Nexys-4-DDR-Master.xdc)
+selectCodeEditor("Nexys-4-DDR-Master.xdc", 1, 242); // ac (Nexys-4-DDR-Master.xdc)
+selectCodeEditor("Nexys-4-DDR-Master.xdc", 1, 264); // ac (Nexys-4-DDR-Master.xdc)
+selectCodeEditor("Nexys-4-DDR-Master.xdc", 2, 290); // ac (Nexys-4-DDR-Master.xdc)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+dismissDialog("Launch Runs"); // f (dialog1)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // f (dialog2)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Wed Dec 18 10:30:31 2024] Launched synth_1... Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bj (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 86 seconds
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // g (PAResourceItoN.LogView_TABBED_PANE, MonitorView)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Synthesis", 0); // g (PAResourceItoN.LogView_TABBED_PANE, MonitorView)
+// Elapsed time: 42 seconds
+selectCodeEditor("Nexys-4-DDR-Master.xdc", 223, 96); // ac (Nexys-4-DDR-Master.xdc)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP_2(Behavioral) (Top2LaSecuela.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP_2(Behavioral) (Top2LaSecuela.vhd)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 32 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "button"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+selectCodeEditor("Top2LaSecuela.vhd", 88, 43); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 88, 71); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 88, 82); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 81, 121); // ac (Top2LaSecuela.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 08m:52s
+// Elapsed Time for: 'L.f': 08m:56s
+// Elapsed time: 23 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g (PAResourceQtoS.SyntheticaStateMonitor_CANCEL, Cancel)
+selectButton("OptionPane.button", "Cancel Process", "Cancel Synthesis"); // JButton (OptionPane.button)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bj (Resetting Runs Progress)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // f (dialog3)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Wed Dec 18 10:33:56 2024] Launched synth_1... Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bj (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 245 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Synthesis Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Synthesis Completed"); // Q.a (dialog4)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 16); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 16); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 28, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,254 MB. GUI used memory: 84 MB. Current time: 12/18/24, 10:38:24 AM CET
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 84 MB. Current time: 12/18/24, 10:38:26 AM CET
+// [Engine Memory]: 1,519 MB (+301588kb) [00:14:16]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Users/mariu/Downloads/SnakeGame/.Xil/Vivado-12216-Mario/xc7a100t_detail.xgd_4299 elapsed time: 2s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 2.3s
+// [GUI Memory]: 165 MB (+8186kb) [00:14:20]
+// [Engine Memory]: 1,646 MB (+53709kb) [00:14:20]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2614 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library. INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.dcp' for cell 'Inst_PLL' 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2024.172 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 599 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_board.xdc] for cell 'Inst_PLL/inst' Finished Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_board.xdc] for cell 'Inst_PLL/inst' Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc] for cell 'Inst_PLL/inst' 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc:54] INFO: [Timing 38-2] Deriving generated clocks [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc:54] 
+// Tcl Message: Finished Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc] for cell 'Inst_PLL/inst' Parsing XDC File [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2719.980 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: CURR_DESIGN_SET
+// Device view-level: 0,0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 2720.809 ; gain = 1123.438 
+// Elapsed Time for: 'o.a': 21s
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// [GUI Memory]: 176 MB (+3331kb) [00:14:21]
+// Elapsed time: 21 seconds
+dismissDialog("Open Synthesized Design"); // bj (Open Synthesized Design Progress)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+// Elapsed time: 36 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // J (dialog5)
+// [GUI Memory]: 188 MB (+3454kb) [00:15:02]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 34, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes", "No Implementation Results Available"); // a (RDIResource.BaseDialog_YES)
+dismissDialog("No Implementation Results Available"); // t (dialog6)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+// 'cI' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cL (dialog7)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [Timing 38-480] Writing timing data to binary archive. 
+// Tcl Message: Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2728.688 ; gain = 0.180 Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2728.688 ; gain = 0.000 
+// Tcl Message: Writing XDEF routing. 
+// Tcl Message: Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2728.688 ; gain = 0.180 
+// Tcl Message: Writing XDEF routing logical nets. Writing XDEF routing special nets. 
+// Tcl Message: Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 2730.742 ; gain = 2.055 Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2730.742 ; gain = 0.000 Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2730.742 ; gain = 0.000 Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 2730.742 ; gain = 2.234 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Dec 18 10:39:17 2024] Launched impl_1... Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bj (Generate Bitstream Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,686 MB. GUI used memory: 113 MB. Current time: 12/18/24, 10:39:19 AM CET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 119 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+selectTab((HResource) null, (HResource) null, "Log", 2); // aa
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aa
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aa
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aa
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+selectTab((HResource) null, (HResource) null, "Log", 2); // aa
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // g (PAResourceItoN.LogView_TABBED_PANE, MonitorView)
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Bitstream Generation Completed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Tcl (Dont Echo) Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1303 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // u (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+dismissDialog("Open Hardware Manager"); // bj (Open Hardware Manager Progress)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 311ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 32 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g (PAResourceOtoP.ProgramDebugTab_OPEN_TARGET)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ap (PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, auto_connect_target_menu)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2024.1.0   **** Build date : Mar  6 2024 at 20:50:54     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2024.1.0   ****** Build date   : Mar 09 2024-01:00:37     **** Build number : 2024.1.1709942437       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.       ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 2735.621 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE3C91A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// Elapsed time: 12 seconds
+dismissDialog("Auto Connect"); // bj (Auto Connect Progress)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // a (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aP (dialog9)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bj (Program Device Progress)
+// Elapsed time: 93 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2, false, true); // o (PlanAheadTabBaseWorkspace_JideTabbedPane) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (PAResourceOtoP.PAViews_BASE_WORKSPACE, PlanAheadTabBaseWorkspace)
+// Elapsed time: 58 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 360, 434); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 360, 434, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 361, 421); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 353, 436); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 353, 436, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 371, 362); // ac (Top2LaSecuela.vhd)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE3C91A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 48 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 1221, 103); // ac (Top2LaSecuela.vhd)
+dismissDialog("Close Hardware Target"); // j.a (dialog10)
+// Elapsed time: 20 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 282, 368); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 413, 371); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 651, 372); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 1015, 297); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 551, 362); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 602, 359); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 394, 393); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 396, 422); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 395, 438); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 794, 428); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 412, 410); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 435, 413); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 582, 415); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 426, 361); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 588, 390); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 605, 204); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 655, 190); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 599, 185); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 203, 515); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 785, 525); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 175, 521); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 174, 543); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 178, 570); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 738, 558); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 12 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 393, 440); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 420, 365); // ac (Top2LaSecuela.vhd)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Top2LaSecuela.vhd", 393, 391); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 319, 446); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 368, 470); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 510, 472); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 385, 466); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 459, 489); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 416, 514); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 619, 424); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 98, 547); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 31 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 260, 547); // ac (Top2LaSecuela.vhd)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Top2LaSecuela.vhd", 260, 547); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 13 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 404, 311); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 236, 482); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 386, 335); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 220, 506); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 413, 491); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 389, 517); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 470, 370); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 251, 538); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 428, 390); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 250, 569); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 478, 543); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 510, 456); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 20 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "teclado_izquierda"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+selectCodeEditor("Top2LaSecuela.vhd", 611, 362); // ac (Top2LaSecuela.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 26m:00s
+// Elapsed Time for: 'L.f': 26m:04s
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 11, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 204 MB (+6662kb) [00:26:37]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp with file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/TOP_2.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // f (dialog11)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Wed Dec 18 10:50:48 2024] Launched synth_1... Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bj (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 196 seconds
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Synthesis", 0); // g (PAResourceItoN.LogView_TABBED_PANE, MonitorView)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 60 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Synthesis Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Synthesis Completed"); // Q.a (dialog12)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 29, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes", "No Implementation Results Available"); // a (RDIResource.BaseDialog_YES)
+dismissDialog("No Implementation Results Available"); // t (dialog13)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cL (dialog14)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed Dec 18 10:55:11 2024] Launched impl_1... Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 102 seconds
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // g (PAResourceItoN.LogView_TABBED_PANE, MonitorView)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 20 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Bitstream Generation Completed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // u (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+dismissDialog("Bitstream Generation Completed"); // Q.a (dialog15)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 44 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // a (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aP (dialog16)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bj (Program Device Progress)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 26 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 225, 212); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 78 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "button_center"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-4-DDR-Master.xdc", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("Nexys-4-DDR-Master.xdc", 1057, 181); // ac (Nexys-4-DDR-Master.xdc)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("Top2LaSecuela.vhd", 219, 99); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 28 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 185, 91); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 185, 91, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 181, 151); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 187, 190); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 13 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 212, 163); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 214, 144); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 194, 187); // ac (Top2LaSecuela.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-4-DDR-Master.xdc", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-4-DDR-Master.xdc", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 27 seconds
+selectCodeEditor("Nexys-4-DDR-Master.xdc", 441, 171); // ac (Nexys-4-DDR-Master.xdc)
+selectCodeEditor("Nexys-4-DDR-Master.xdc", 441, 171, false, false, false, false, true); // ac (Nexys-4-DDR-Master.xdc) - Double Click
+selectCodeEditor("Nexys-4-DDR-Master.xdc", 441, 171); // ac (Nexys-4-DDR-Master.xdc)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("Top2LaSecuela.vhd", 375, 286); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 375, 286, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 387, 289); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 387, 289, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 387, 289); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 387, 289, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 486, 248); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 395, 290); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 395, 290, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 490, 255); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 444, 266); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 111 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 311, 135); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 311, 135, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 372, 95); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 372, 95, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 372, 95); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 471, 95); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 60 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 131, 210); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 188, 308); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 132, 345); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 196, 256); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 534, 348); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 47 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 309, 143); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 309, 143, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 327, 148); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 117, 290); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 350, 272); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 350, 272, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 320, 287); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 16 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 166, 183); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 166, 183, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 166, 183); // ac (Top2LaSecuela.vhd)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R (PAResourceOtoP.PAViews_SOURCES, Sources)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP_2(Behavioral) (Top2LaSecuela.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP_2(Behavioral) (Top2LaSecuela.vhd), Inst_GAME_Play : GAME_Play(main) (GAME_PLAY.vhd)]", 10, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP_2(Behavioral) (Top2LaSecuela.vhd), Inst_GAME_Play : GAME_Play(main) (GAME_PLAY.vhd)]", 10, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2, false, true); // o (PlanAheadTabBaseWorkspace_JideTabbedPane) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (PAResourceOtoP.PAViews_BASE_WORKSPACE, PlanAheadTabBaseWorkspace)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2, false, true); // o (PlanAheadTabBaseWorkspace_JideTabbedPane) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (PAResourceOtoP.PAViews_BASE_WORKSPACE, PlanAheadTabBaseWorkspace)
+selectCodeEditor("Top2LaSecuela.vhd", 108, 194); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 77, 187); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 77, 187, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 50, 34, false, false, false, true, false); // ac (Top2LaSecuela.vhd) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ap (RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS)
+// [GUI Memory]: 229 MB (+15176kb) [00:43:41]
+selectCodeEditor("Top2LaSecuela.vhd", 156, 177); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 40, 181, false, false, false, true, false); // ac (Top2LaSecuela.vhd) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ap (RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS)
+selectCodeEditor("Top2LaSecuela.vhd", 243, 195); // ac (Top2LaSecuela.vhd)
+// [GUI Memory]: 252 MB (+12348kb) [00:44:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,689 MB. GUI used memory: 129 MB. Current time: 12/18/24, 11:09:20 AM CET
+// Elapsed time: 98 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 63, 298); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "GAME_PLAY.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 31 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 217, 309); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 20 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 192, 326); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 27 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 143, 391); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 17 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 47m:15s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 47m:19s
+// Tcl Message: update_compile_order -fileset sources_1 
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R (PAResourceOtoP.PAViews_SOURCES, Sources)
+// Elapsed Time for: 'L.f': 47m:21s
+// Elapsed Time for: 'L.f': 47m:23s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP_2(Behavioral) (Top2LaSecuela.vhd), Inst_Buttons_Sync : BUTTONS_Sync(Behavioral) (BUTTONS_SYNCHRONIZER.vhd)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP_2(Behavioral) (Top2LaSecuela.vhd), Inst_Buttons_Sync : BUTTONS_Sync(Behavioral) (BUTTONS_SYNCHRONIZER.vhd)]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 70 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 370, 433); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BUTTONS_SYNCHRONIZER.vhd", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "GAME_PLAY.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("Top2LaSecuela.vhd", 43, 432); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 2, 487); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 2, 487); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 2, 487); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 161, 468); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 68, 440); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 118, 486); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 435, 489); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 2, 492); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 41, 386); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 389, 511); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 391, 516); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 232, 394); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 232, 394, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 232, 394); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 243, 434); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 243, 434, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 243, 434); // ac (Top2LaSecuela.vhd)
+// Elapsed time: 17 seconds
+selectCodeEditor("Top2LaSecuela.vhd", 240, 496); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 232, 540); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 232, 540, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+selectCodeEditor("Top2LaSecuela.vhd", 232, 540); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 232, 540); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 232, 540, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+// Elapsed time: 99 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BUTTONS_SYNCHRONIZER.vhd", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "GAME_PLAY.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("Top2LaSecuela.vhd", 349, 511); // ac (Top2LaSecuela.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "GAME_PLAY.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("Top2LaSecuela.vhd", 348, 462); // ac (Top2LaSecuela.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "GAME_PLAY.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "GAME_PLAY.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("Top2LaSecuela.vhd", 358, 410); // ac (Top2LaSecuela.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "GAME_PLAY.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top2LaSecuela.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 53m:59s
+selectCodeEditor("Top2LaSecuela.vhd", 328, 560); // ac (Top2LaSecuela.vhd)
+// Elapsed Time for: 'L.f': 54m:03s
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 54m:11s
+// Elapsed Time for: 'L.f': 54m:15s
+selectCodeEditor("Top2LaSecuela.vhd", 159, 267); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 159, 267, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 285, 216); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 173, 312); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 173, 312, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 455, 218); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 461, 218); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 186, 362); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 186, 362, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 603, 215); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 183, 416); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 183, 416, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 796, 213); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 172, 467); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 172, 467, false, false, false, false, true); // ac (Top2LaSecuela.vhd) - Double Click
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'c'); // ac (Top2LaSecuela.vhd)
+selectCodeEditor("Top2LaSecuela.vhd", 757, 224); // ac (Top2LaSecuela.vhd)
+typeControlKey((HResource) null, "Top2LaSecuela.vhd", 'v'); // ac (Top2LaSecuela.vhd)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 54m:57s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 33, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// Elapsed Time for: 'L.f': 55m:01s
+selectButton(RDIResource.BaseDialog_YES, "Yes", "Synthesis is Out-of-date"); // a (RDIResource.BaseDialog_YES)
+dismissDialog("Synthesis is Out-of-date"); // t (dialog17)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp with file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/TOP_2.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+// 'cI' command handler elapsed time: 3 seconds
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Launch Runs"); // cL (dialog18)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed Dec 18 11:19:42 2024] Launched synth_1... Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log [Wed Dec 18 11:19:42 2024] Launched impl_1... Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE3C91A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 13 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Close Hardware Target"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Close Hardware Target"); // j.a (dialog19)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1013 ms. Increasing delay to 3039 ms.
+// Elapsed time: 356 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Bitstream Generation Completed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // u (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+dismissDialog("Bitstream Generation Completed"); // Q.a (dialog20)
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 20 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // a (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aP (dialog21)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bj (Program Device Progress)
+// Elapsed time: 374 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // a (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aP (dialog22)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.bit} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bj (Program Device Progress)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE3C91A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 29 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Close Hardware Target"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Close Hardware Target"); // j.a (dialog23)
