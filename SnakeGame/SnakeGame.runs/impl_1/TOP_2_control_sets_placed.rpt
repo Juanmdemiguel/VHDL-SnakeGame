@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Thu Dec 19 11:24:29 2024
-| Host         : Mario running 64-bit major release  (build 9200)
+| Date         : Thu Dec 19 18:23:47 2024
+| Host         : DESKTOP-1V0CU1G running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TOP_2_control_sets_placed.rpt
 | Design       : TOP_2
 | Device       : xc7a100t
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    23 |
-|    Minimum number of control sets                        |    23 |
+| Total control sets                                       |    21 |
+|    Minimum number of control sets                        |    21 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   113 |
+| Unused register locations in slices containing registers |    97 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    23 |
-| >= 0 to < 4        |     8 |
-| >= 4 to < 6        |     4 |
-| >= 6 to < 8        |     0 |
+| Total control sets |    21 |
+| >= 0 to < 4        |     6 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     1 |
 | >= 12 to < 14      |     0 |
-| >= 14 to < 16      |     1 |
-| >= 16              |     8 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     9 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             146 |           48 |
-| No           | No                    | Yes                    |             586 |          220 |
-| No           | Yes                   | No                     |              54 |           20 |
-| Yes          | No                    | No                     |              20 |            8 |
-| Yes          | No                    | Yes                    |              57 |           25 |
+| No           | No                    | No                     |            1730 |          862 |
+| No           | No                    | Yes                    |            2971 |         1126 |
+| No           | Yes                   | No                     |              54 |           18 |
+| Yes          | No                    | No                     |              16 |            5 |
+| Yes          | No                    | Yes                    |              44 |           15 |
 | Yes          | Yes                   | No                     |               8 |            2 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,32 +70,30 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------+------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
-|            Clock Signal            |                        Enable Signal                       |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
-+------------------------------------+------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
-|  Inst_Teclado/CLK50MHZ             |                                                            | Inst_Teclado/keyboard/debounce/Iv1_i_1_n_0                |                1 |              1 |         1.00 |
-|  Inst_Teclado/CLK50MHZ             | Inst_Teclado/keyboard/debounce/O10_out                     |                                                           |                1 |              1 |         1.00 |
-|  Inst_Teclado/CLK50MHZ             | Inst_Teclado/keyboard/debounce/O01_out                     |                                                           |                1 |              1 |         1.00 |
-|  Inst_Teclado/CLK50MHZ             | Inst_Teclado/keyboard/debounce/clear                       |                                                           |                1 |              1 |         1.00 |
-|  Inst_Teclado/CLK50MHZ             | Inst_Teclado/keyboard/debounce/Iv1_i_1_n_0                 |                                                           |                1 |              1 |         1.00 |
-|  Inst_PLL/inst/clk_out1            |                                                            | Inst_VGA_Manager/Inst_VGA_Sync/h_sync0                    |                1 |              1 |         1.00 |
-|  Inst_PLL/inst/clk_out1            |                                                            | Inst_VGA_Manager/Inst_VGA_Sync/v_sync0                    |                1 |              1 |         1.00 |
-|  Inst_Teclado/sevenSeg/E[0]        |                                                            |                                                           |                1 |              3 |         3.00 |
-|  Inst_Teclado/CLK50MHZ             | Inst_Teclado/keyboard/debounce/cnt1[3]_i_1_n_0             | Inst_Teclado/keyboard/debounce/Iv1_i_1_n_0                |                1 |              4 |         4.00 |
-| ~Inst_Teclado/keyboard/debounce/O0 | Inst_Teclado/keyboard/cnt__3                               | Inst_Teclado/keyboard/cnt[3]_i_1_n_0                      |                1 |              4 |         4.00 |
-|  Inst_ClockDistributor/clk_TEC     | Inst_Teclado/keyboard/E[0]                                 | Inst_Teclado/sevenSeg/FSM_onehot_current_state[4]_i_3_n_0 |                3 |              5 |         1.67 |
-|  Inst_Teclado/CLK50MHZ             |                                                            |                                                           |                2 |              5 |         2.50 |
-| ~Inst_Teclado/keyboard/debounce/O0 |                                                            |                                                           |                3 |              9 |         3.00 |
-|  Inst_PLL/inst/clk_out1            |                                                            | Inst_VGA_Manager/Inst_VGA_Sync/p_0_in                     |                6 |             11 |         1.83 |
-|  sig_60Hz_BUFG                     | Inst_GAME_Play/snake_move.snake_head_xy_future[31]_i_1_n_0 | Inst_GAME_Play/snake_head_xy_future0                      |                9 |             15 |         1.67 |
-|  Inst_Teclado/keyboard/flag        | Inst_Teclado/keyboard/dataprev[7]_i_1_n_0                  |                                                           |                4 |             16 |         4.00 |
-|  Inst_ClockDistributor/clk_TEC     |                                                            | Inst_Clock_Converter/clk_temp                             |                6 |             20 |         3.33 |
-|  Inst_ClockDistributor/clk_TEC     |                                                            | Inst_Teclado/sevenSeg/FSM_onehot_current_state[4]_i_3_n_0 |                5 |             20 |         4.00 |
-|  Inst_ClockDistributor/clk_TEC     |                                                            |                                                           |               12 |             28 |         2.33 |
-|  Inst_PLL/inst/clk_out1            |                                                            |                                                           |               10 |             34 |         3.40 |
-|  sig_60Hz_BUFG                     | Inst_GAME_Play/snake_length_future0                        | Inst_GAME_Play/snake_head_xy_future0                      |               13 |             37 |         2.85 |
-|  sig_60Hz_BUFG                     |                                                            |                                                           |               20 |             70 |         3.50 |
-|  sig_60Hz_BUFG                     |                                                            | Inst_GAME_Play/snake_head_xy_future0                      |              220 |            586 |         2.66 |
-+------------------------------------+------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
++---------------------------------------------------+------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
+|                    Clock Signal                   |                     Enable Signal                    |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------------------+------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
+|  Inst_Clock_Manager/Inst_PLL/inst/clk_out1        |                                                      | Inst_VGA_Manager/Inst_VGA_Sync/h_sync0                    |                1 |              1 |         1.00 |
+|  Inst_Clock_Manager/Inst_PLL/inst/clk_out1        |                                                      | Inst_VGA_Manager/Inst_VGA_Sync/v_sync0                    |                1 |              1 |         1.00 |
+|  Inst_Teclado/CLK50MHZ                            |                                                      | Inst_Teclado/keyboard/debounce/cnt1[3]_i_1_n_0            |                1 |              1 |         1.00 |
+|  snake_head_xy_future0                            |                                                      |                                                           |                1 |              1 |         1.00 |
+|  clk_IBUF                                         |                                                      |                                                           |                1 |              1 |         1.00 |
+|  Inst_Teclado/sevenSeg/E[0]                       |                                                      |                                                           |                1 |              3 |         3.00 |
+| ~Inst_Teclado/keyboard/debounce/O0                | Inst_Teclado/keyboard/cnt__3                         | Inst_Teclado/keyboard/cnt[3]_i_1_n_0                      |                1 |              4 |         4.00 |
+|  Inst_Teclado/CLK50MHZ                            | Inst_Teclado/keyboard/debounce/cnt1[3]_i_2_n_0       | Inst_Teclado/keyboard/debounce/cnt1[3]_i_1_n_0            |                1 |              4 |         4.00 |
+|  Inst_Clock_Manager/Inst_ClockDistributor/clk_TEC | Inst_Teclado/keyboard/E[0]                           | Inst_Teclado/sevenSeg/FSM_onehot_current_state[4]_i_3_n_0 |                3 |              5 |         1.67 |
+|  Inst_Teclado/CLK50MHZ                            |                                                      |                                                           |                1 |              6 |         6.00 |
+| ~Inst_Teclado/keyboard/debounce/O0                |                                                      |                                                           |                5 |              9 |         1.80 |
+|  Inst_Clock_Manager/Inst_PLL/inst/clk_out1        |                                                      | Inst_VGA_Manager/Inst_VGA_Sync/p_0_in                     |                4 |             11 |         2.75 |
+|  Inst_Teclado/keyboard/flag                       | Inst_Teclado/keyboard/dataprev[7]_i_1_n_0            |                                                           |                5 |             16 |         3.20 |
+|  Inst_Clock_Manager/Inst_ClockDistributor/clk_TEC |                                                      | Inst_Teclado/sevenSeg/FSM_onehot_current_state[4]_i_3_n_0 |                5 |             20 |         4.00 |
+|  clk_IBUF                                         |                                                      | Inst_Clock_Manager/Inst_Clock_Converter/clk_temp          |                6 |             20 |         3.33 |
+|  SyncEnable                                       |                                                      |                                                           |                8 |             31 |         3.88 |
+|  Inst_Clock_Manager/Inst_ClockDistributor/clk_TEC |                                                      |                                                           |               16 |             35 |         2.19 |
+|  ramdom_number_gen.random_y_reg[15]_i_1_n_0       | Inst_GAME_Play/snake_move.food_xy_future[31]_i_1_n_0 | snake_head_xy_future0                                     |               12 |             39 |         3.25 |
+|  ramdom_number_gen.random_y_reg[15]_i_1_n_0       |                                                      |                                                           |               19 |             70 |         3.68 |
+|  Inst_Clock_Manager/Inst_PLL/inst/clk_out1        |                                                      |                                                           |              810 |           1577 |         1.95 |
+|  ramdom_number_gen.random_y_reg[15]_i_1_n_0       |                                                      | snake_head_xy_future0                                     |             1126 |           2971 |         2.64 |
++---------------------------------------------------+------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
 
 

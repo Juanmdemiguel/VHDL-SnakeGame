@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec 17 20:02:51 2024
-# Process ID: 21564
+# Start of session at: Thu Dec 19 11:01:41 2024
+# Process ID: 17544
 # Current directory: C:/Users/mariu/Downloads/SnakeGame
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15960 C:\Users\mariu\Downloads\SnakeGame\SnakeGame.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5832 C:\Users\mariu\Downloads\SnakeGame\SnakeGame.xpr
 # Log file: C:/Users/mariu/Downloads/SnakeGame/vivado.log
 # Journal file: C:/Users/mariu/Downloads/SnakeGame\vivado.jou
 # Running On        :Mario
@@ -17,12 +17,12 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8266 MB
-# Swap memory       :13022 MB
-# Total Virtual     :21289 MB
-# Available Virtual :4853 MB
+# Swap memory       :10737 MB
+# Total Virtual     :19004 MB
+# Available Virtual :10912 MB
 #-----------------------------------------------------------
-start_guioopen_project C:/Users/mariu/Downloads/SnakeGame/SnakeGame.xpr
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+start_gui
+open_project C:/Users/mariu/Downloads/SnakeGame/SnakeGame.xpr
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
@@ -124,23 +124,153 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 availa
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-344] 'open_project' was cancelledeexit
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 20:08:19 2024...
-do IP repository 'C:/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:01:01 ; elapsed = 00:01:01 . Memory (MB): peak = 1577.309 ; gain = 446.328
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:37 ; elapsed = 00:00:50 . Memory (MB): peak = 1574.352 ; gain = 525.223
 update_compile_order -fileset sources_1
-set_property top TOP_2 [current_fileset]
-update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
 reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp with file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/top.dcp
+INFO: [Project 1-1161] Replacing file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp with file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/TOP_2.dcp
 launch_runs synth_1 -jobs 8
-[Tue Dec 17 20:05:55 2024] Launched synth_1...
+[Thu Dec 19 11:15:17 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Dec 19 11:18:59 2024] Launched synth_1...
 Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
 reset_run synth_1
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
 WARNING: [Vivado 12-1017] Problems encountered:
 1. Failed to delete one or more files in run directory C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1
 
-INFO: [Common 17-344] 'reset_runs' was cancelled
-exit
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 20:08:13 2024...
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 19 11:19:17 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
+[Thu Dec 19 11:19:17 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.1.0
+  **** Build date : Mar  6 2024 at 20:50:54
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Mar 09 2024-01:00:37
+    **** Build number : 2024.1.1709942437
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1646.551 ; gain = 14.602
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE3A67A
+set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/TOP_2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+save_project_as SNAKE_FUNCIONAL C:/Users/mariu/Downloads/SNAKE_FUNCIONAL -force
+save_project_as: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1712.453 ; gain = 6.242

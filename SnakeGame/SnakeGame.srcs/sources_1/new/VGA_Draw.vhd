@@ -49,13 +49,16 @@ architecture BEHAVIORAL of VGA_Draw is
         --if current pixel is food
         variable is_food       : std_logic := '0';
         variable is_text_pixel : std_logic := '0';
-   
+        variable draw_management : integer := 2;
     begin
     if enable = '1' then
        
             --draw body
             is_shape := '0';
+         
             for i in 0 to snake_length_max - 1 loop
+              draw_management := draw_management - 1;
+            if draw_management = 1 then
                 if (i < snake_length) then  --if is valid snake body
                     dx := abs(signed(col) - signed(snake_mesh_xy(i)(31 downto 16)));
                     dy := abs(signed(row) - signed(snake_mesh_xy(i)(15 downto 0)));
@@ -63,8 +66,10 @@ architecture BEHAVIORAL of VGA_Draw is
                             is_shape := '1';
                         end if;
                  end if;
+                 draw_management := grow;
+             end if;
              end loop;
-            
+        
              dx := abs(signed(col) - signed(food_xy(31 downto 16)));
              dy := abs(signed(row) - signed(food_xy(15 downto 0)));
              

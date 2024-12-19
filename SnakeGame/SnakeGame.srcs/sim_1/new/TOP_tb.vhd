@@ -31,7 +31,7 @@ END top_tb;
 ARCHITECTURE behavior OF top_tb IS
 
     -- Component Declaration for the Unit Under Test (UUT)
-    COMPONENT top
+    COMPONENT TOP_2
         PORT(
             clk           : IN std_logic;
             reset         : IN std_logic;
@@ -43,7 +43,7 @@ ARCHITECTURE behavior OF top_tb IS
             HSync, VSync  : OUT std_logic;
             Red, Green, Blue : OUT std_logic_vector(3 DOWNTO 0);
             LEDs           : out std_logic_vector(4 downto 0);
-            LED            : out std_logic_vector(2 downto 0);
+            --LED            : out std_logic_vector(2 downto 0);
             STATE_OUT       : OUT std_logic_vector(2 downto 0);
             MAINSTATE       : OUT std_logic_vector(1 downto 0);
             lose          : out std_logic; 
@@ -65,7 +65,7 @@ ARCHITECTURE behavior OF top_tb IS
     SIGNAL VSync         : std_logic;
     SIGNAL Red, Green, Blue : std_logic_vector(3 DOWNTO 0);
     SIGNAL LEDs          : std_logic_vector(4 downto 0);
-    SIGNAL LED           : std_logic_vector(2 downto 0);
+    --SIGNAL LED           : std_logic_vector(2 downto 0);
     SIGNAL STATE_OUT     : std_logic_vector(2 downto 0);
     SIGNAL MAINSTATE     : std_logic_vector(1 downto 0);
     SIGNAL lose          : std_logic;
@@ -78,7 +78,7 @@ ARCHITECTURE behavior OF top_tb IS
 BEGIN
 
     -- Instantiate the Unit Under Test (UUT)
-    uut: top PORT MAP (
+    uut: TOP_2 PORT MAP (
         clk => clk,
         reset => reset,
         button_up => button_up,
@@ -92,7 +92,7 @@ BEGIN
         Green => Green,
         Blue => Blue,
         leds => leds,
-        led => led,
+        --led => led,
         state_out => state_out,
         mainstate => mainstate,
         lose => lose,

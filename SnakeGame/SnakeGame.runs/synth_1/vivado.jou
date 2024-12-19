@@ -3,22 +3,22 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Dec 19 11:19:26 2024
-# Process ID: 2608
-# Current directory: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1
+# Start of session at: Thu Dec 19 18:15:55 2024
+# Process ID: 3188
+# Current directory: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1
 # Command line: vivado.exe -log TOP_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_2.tcl
-# Log file: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/TOP_2.vds
-# Journal file: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1\vivado.jou
-# Running On        :Mario
+# Log file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/TOP_2.vds
+# Journal file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-1V0CU1G
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :22631
-# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-# CPU Frequency     :2419 MHz
-# CPU Physical cores:4
-# CPU Logical cores :8
-# Host memory       :8266 MB
-# Swap memory       :10737 MB
-# Total Virtual     :19004 MB
-# Available Virtual :8857 MB
+# Processor Detail  :Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+# CPU Frequency     :2208 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :17007 MB
+# Swap memory       :11274 MB
+# Total Virtual     :28281 MB
+# Available Virtual :5931 MB
 #-----------------------------------------------------------
 source TOP_2.tcl -notrace

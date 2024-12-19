@@ -65,10 +65,10 @@ architecture Behavioral of GAME_PLAY_TB is
     signal snake_mesh_xy   : xys(0 to snake_length_max - 1);
     signal food_xy         : xy;
     signal estado          : std_logic_vector (2 downto 0);
-    signal lose            : std_logic;
+    signal lose            : std_logic :='0';
 
     -- Clock period definition
-    constant clk_period : time := 100 ns; -- 60Hz clock
+    constant clk_period : time := 10 ns; -- 60Hz clock
 
 begin
     -- Instantiate the GAME_Play entity
@@ -133,6 +133,9 @@ begin
         
         -- Stop the game
         play <= '0';
+        wait for 50 * clk_period;
+        
+        play <= '1';
         wait for 5 * clk_period;
         
         joystick <= "000"; -- Move up

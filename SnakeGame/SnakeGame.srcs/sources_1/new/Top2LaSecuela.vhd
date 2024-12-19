@@ -17,8 +17,6 @@
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 USE work.Types.ALL;
@@ -79,58 +77,82 @@ architecture Behavioral of TOP_2 is
                 -- CLOCK SIGNALS --
                 signal sig_108MHz : std_logic;
                 signal sig_60Hz : std_logic;
-                signal clk_PLL, clk_FSM, clk_SC, clk_CV, clk_EDGE,clk_TEC : std_logic;
-                -- BUTTONS SIGNALS --
+                signal clk_FSM, clk_SC, clk_CV, clk_EDGE,clk_TEC : std_logic;
                 
+                -- BUTTONS SIGNALS --
                 signal sig_buttons : std_logic_vector(2 downto 0); --Used in START and GAMEOVER
                 signal sig_buttons_lock : std_logic_vector(2 downto 0);
                 signal sig_butEDGED : std_logic_vector(2 downto 0);
+                
                 -- GAME SIGNALS --
                 signal sig_lose : std_logic :='0';
                 signal STATE : std_logic_vector(1 downto 0);
                 signal sig_snake_length   : integer range 0 to snake_length_max;
                 signal sig_snake_mesh_xy  : xys(0 to snake_length_max - 1):= (others => (others => '0'));
                 signal sig_food_xy        : xy:= (others => '0'); 
+                
                 -- SCALED STRING SIGNALS --
                 signal start    :  big_letter_array(0 to 4);
                 signal gameover :  big_letter_array(0 to 8);
+                
+                -- FLIPFLOP SIGNALS --
+                signal sig_snake_length_flipflop  : integer range 0 to snake_length_max;
+                signal sig_snake_mesh_xy_flipflop : xys(0 to snake_length_max - 1);
+                signal sig_food_xy_flipflop       : xy;
+                
                 -- TEST ONLY SIGNALS --
                 signal sig_estado_juego          : std_logic_vector (2 downto 0);
                 
-               signal teclado_arriba :std_logic;
-               signal teclado_abajo :std_logic;
-               signal teclado_izquierda :std_logic;
-               signal teclado_derecha :std_logic;
+                signal teclado_arriba :std_logic;
+                signal teclado_abajo :std_logic;
+                signal teclado_izquierda :std_logic;
+                signal teclado_derecha :std_logic;
                
 -----------------------------------------------COMPONENTS FOR DATA PROCESSING-----------------------------------------
- COMPONENT Scaled_String 
+
+COMPONENT FLIP_FLOP_String 
+    Port (
+        clk            : in  std_logic;
+        reset         : in  std_logic;
+        START_in      : in big_letter_array(0 to 4);
+        GAMEOVER_in   : in big_letter_array(0 to 8);
+        START_out     : out big_letter_array(0 to 4);
+        GAMEOVER_out  : out big_letter_array(0 to 8)
+    );
+END COMPONENT;
+
+COMPONENT FLIP_FLOP_Snake 
+    Port (
+        clk     : in  std_logic;
+        reset   : in  std_logic;
+        snake_length_in    : in integer range 0 to snake_length_max;
+        snake_mesh_xy_in   : in xys(0 to snake_length_max - 1);
+        food_xy_in         : in xy;
+        snake_length_out   : out integer range 0 to snake_length_max;
+        snake_mesh_xy_out  : out xys(0 to snake_length_max - 1);
+        food_xy_out        : out xy
+    );
+END COMPONENT;
+
+COMPONENT Scaled_String 
     Port (
         clk : in std_logic;
         GAME_OVER: out big_letter_array(0 to 8);
         START    : out big_letter_array(0 to 4)
       );
 END COMPONENT;
-COMPONENT Clock_distributor
-    Port ( 
-        clk_in : in STD_LOGIC;
-        clk_out1 : out STD_LOGIC;
-        clk_out2 : out STD_LOGIC;
-        clk_out3 : out STD_LOGIC;
-        clk_out4 : out STD_LOGIC;
-        clk_out5 : out STD_LOGIC
-     );
-END COMPONENT;
-COMPONENT PLL100to108
-    Port (
-        clk_in1  : in std_logic;
-        clk_out1 : out std_logic
-     );
-END COMPONENT;
-COMPONENT Clock_Converter
-    Port (
-        clk_in   : in  std_logic;
-        clk_out  : out std_logic   
-     );
+
+COMPONENT Clock_manager 
+ Port (
+  clk_input  : in std_logic; 
+  clk_FSM    : out std_logic;
+  clk_SC     : out std_logic;     
+  clk_CV     : out std_logic;     
+  clk_EDGE   : out std_logic;     
+  clk_TEC    : out std_logic;          
+  clk_108MHz : out std_logic;
+  clk_60Hz   : out std_logic
+);
 END COMPONENT;
 COMPONENT BUTTONS_Sync 
     Port ( 
@@ -189,7 +211,7 @@ COMPONENT VGA_Manager
         GAMEOVER        : in big_letter_array(0 to 8);
         mode            : in std_logic_vector(1 downto 0);
         clk             : in std_logic;
-        snake_length    : in  integer range 0 to 20; 
+        snake_length    : in  integer range 0 to snake_length_max; 
         snake_mesh_xy   : in  xys(0 to snake_length_max-1);
         food_xy         : in xy;
         HSync, VSync    : out std_logic;
@@ -232,7 +254,28 @@ begin
     end if;
 end process;
 
-
+    Inst_Flip_Flop: FLIP_FLOP_Snake
+      PORT MAP (
+        clk     => sig_108MHz,
+        reset   => '0',
+        snake_length_in    => sig_snake_length,
+        snake_mesh_xy_in   => sig_snake_mesh_xy,
+        food_xy_in         => sig_food_xy,
+        snake_length_out   => sig_snake_length_flipflop,
+        snake_mesh_xy_out  => sig_snake_mesh_xy_flipflop,
+        food_xy_out        => sig_food_xy_flipflop
+    );
+Inst_Clock_Manager : Clock_Manager
+ PORT MAP (
+  clk_input   => clk,
+  clk_FSM     => clk_FSM,
+  clk_SC      => clk_SC,     
+  clk_CV      => clk_CV,     
+  clk_EDGE    => clk_EDGE,     
+  clk_TEC     => clk_TEC,          
+  clk_108MHz  => sig_108MHz,
+  clk_60Hz    => sig_60Hz 
+);
 
 -- provides the strings for the start and gameover state
 Inst_ScaledString : Scaled_String 
@@ -241,25 +284,8 @@ Inst_ScaledString : Scaled_String
       GAME_OVER => gameover,
       START    => start
     );
-Inst_ClockDistributor : Clock_distributor
-    PORT MAP ( 
-            clk_in   => clk,
-            clk_out1 => clk_FSM,
-            clk_out2 => clk_SC,
-            clk_out3 => clk_CV,
-            clk_out4 => clk_EDGE,
-            clk_out5 => clk_TEC
-    );
-Inst_PLL: PLL100to108
-    PORT MAP(
-            clk_in1  => clk,
-            clk_out1 => sig_108MHz
-    );
-Inst_Clock_Converter: Clock_Converter 
-     PORT MAP (
-            clk_in              =>  clk_CV,
-            clk_out             =>  sig_60Hz
-    );
+    
+
 Inst_Buttons_Sync: BUTTONS_Sync
      PORT MAP (
             clk_60Hz            => sig_60Hz,
@@ -270,14 +296,7 @@ Inst_Buttons_Sync: BUTTONS_Sync
             button_center_input => button_center,
             button_output       => sig_buttons
     );
----- Sync of buttons with clock
---    Inst_Buttons_Lock: BUTTON_Lock
---     PORT MAP (
---        clk_60Hz       => sig_60Hz,
---        enable         => STATE(0),
---        buttons_input  => sig_buttons,
---        buttons_output => sig_buttons_lock
---    );
+
 
 Inst_edge: EDGEDTCTR  
      PORT MAP (
@@ -314,9 +333,9 @@ Inst_GAME_Play: GAME_Play
         GAMEOVER         => gameover,
         mode             => STATE,
         clk              => sig_108MHz,
-        snake_length	 => sig_snake_length,
-        snake_mesh_xy	 => sig_snake_mesh_xy,
-        food_xy          => sig_food_xy,
+        snake_length	 => sig_snake_length_flipflop,
+        snake_mesh_xy	 => sig_snake_mesh_xy_flipflop,
+        food_xy          => sig_food_xy_flipflop,
         HSync            => HSync,
         VSync            => VSync,
         red              => Red,
