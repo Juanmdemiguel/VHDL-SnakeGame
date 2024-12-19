@@ -35,9 +35,8 @@ entity GAME_Play is
         snake_mesh_xy   : out xys(0 to snake_length_max - 1);
         food_xy         : out xy;
         
-        --estado          : out STATE_T;
         estado          : out std_logic_vector (2 downto 0);
-        lose            : out std_logic
+        lose            : inout std_logic
         );
 end entity;
 
@@ -48,6 +47,7 @@ architecture main of GAME_Play is
     signal sig_snake_mesh_xy        : xys(0 to snake_length_max - 1);
     signal sig_food_xy              : xy;
     signal random_xy            : unsigned(31 downto 0);
+    signal pierdes_s  : std_logic :='0';
 begin
 
 snake_move:
@@ -108,6 +108,7 @@ snake_move:
                     signed(snake_head_xy_future(31 downto 16)) >= screen_width or
                     signed(snake_head_xy_future(15 downto 0)) < 0 or
                     signed(snake_head_xy_future(15 downto 0)) >= screen_height) then
+                    pierdes_s<='1'; 
                     inited := '0';
                 end if;
 
@@ -122,7 +123,8 @@ snake_move:
                 end if;
             end if;
     end process;
-
+        lose<=pierdes_s;
+        lose<='0';
 
 ramdom_number_gen:
     process(clk_60hz)

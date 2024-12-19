@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Wed Dec 18 12:57:35 2024
+| Date         : Thu Dec 19 11:25:17 2024
 | Host         : Mario running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file TOP_2_timing_summary_routed.rpt -pb TOP_2_timing_summary_routed.pb -rpx TOP_2_timing_summary_routed.rpx -warn_on_violation
 | Design       : TOP_2
@@ -3300,9 +3300,9 @@ Slack:                    inf
                          net (fo=1, routed)           0.000     9.535    Inst_GAME_Play/snake_length_future1_carry__0_i_4_n_0
     SLICE_X13Y93         CARRY4 (Prop_carry4_S[0]_CO[2])
                                                       0.536    10.071 r  Inst_GAME_Play/snake_length_future1_carry__0/CO[2]
-                         net (fo=1, routed)           1.107    11.178    Inst_GAME_Play/snake_length_future1_carry__0_n_1
+                         net (fo=1, routed)           1.107    11.178    Inst_GAME_Play/snake_length_future1__19
     SLICE_X6Y89          LUT2 (Prop_lut2_I1_O)        0.313    11.491 r  Inst_GAME_Play/snake_move.food_xy_future[31]_i_1/O
-                         net (fo=37, routed)          1.615    13.106    Inst_GAME_Play/snake_move.food_xy_future[31]_i_1_n_0
+                         net (fo=37, routed)          1.615    13.106    Inst_GAME_Play/snake_length_future0
     SLICE_X7Y98          FDCE                                         r  Inst_GAME_Play/snake_move.snake_length_future_reg[4]/CE
   -------------------------------------------------------------------    -------------------
 

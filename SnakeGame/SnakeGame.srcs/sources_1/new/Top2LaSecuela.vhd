@@ -101,6 +101,7 @@ architecture Behavioral of TOP_2 is
                signal teclado_abajo :std_logic;
                signal teclado_izquierda :std_logic;
                signal teclado_derecha :std_logic;
+               
 -----------------------------------------------COMPONENTS FOR DATA PROCESSING-----------------------------------------
  COMPONENT Scaled_String 
     Port (
@@ -161,7 +162,7 @@ END COMPONENT;
 COMPONENT Main_Game
     Port (
 	    BUTTON     :  in std_logic_vector(2 downto 0);
-	    LOSE       :  in std_logic;
+	    LOSE       :  inout std_logic;
         CLK_100MHz :  in std_logic;
         STATE      :  out std_logic_vector(1 downto 0)
     );
@@ -178,7 +179,7 @@ COMPONENT GAME_Play
         snake_mesh_xy   : out xys(0 to snake_length_max - 1);
         food_xy         : out xy;
         estado          : out std_logic_vector (2 downto 0);
-        lose            : out std_logic
+        lose            : inout std_logic
     );
 END COMPONENT;
 -- Component for VGA
