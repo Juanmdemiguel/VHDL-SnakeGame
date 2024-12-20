@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Thu Dec 19 18:22:12 2024
+| Date         : Fri Dec 20 12:32:33 2024
 | Host         : DESKTOP-1V0CU1G running 64-bit major release  (build 9200)
 | Command      : report_utilization -file TOP_2_utilization_synth.rpt -pb TOP_2_utilization_synth.pb
 | Design       : TOP_2
@@ -28,20 +28,20 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+----------------------------+------+-------+------------+-----------+-------+
-|          Site Type         | Used | Fixed | Prohibited | Available | Util% |
-+----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                | 8874 |     0 |          0 |     63400 | 14.00 |
-|   LUT as Logic             | 8871 |     0 |          0 |     63400 | 13.99 |
-|   LUT as Memory            |    3 |     0 |          0 |     19000 |  0.02 |
-|     LUT as Distributed RAM |    0 |     0 |            |           |       |
-|     LUT as Shift Register  |    3 |     0 |            |           |       |
-| Slice Registers            | 4823 |     0 |          0 |    126800 |  3.80 |
-|   Register as Flip Flop    | 4788 |     0 |          0 |    126800 |  3.78 |
-|   Register as Latch        |   35 |     0 |          0 |    126800 |  0.03 |
-| F7 Muxes                   |   12 |     0 |          0 |     31700 |  0.04 |
-| F8 Muxes                   |    2 |     0 |          0 |     15850 |  0.01 |
-+----------------------------+------+-------+------------+-----------+-------+
++----------------------------+-------+-------+------------+-----------+-------+
+|          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
++----------------------------+-------+-------+------------+-----------+-------+
+| Slice LUTs*                | 18198 |     0 |          0 |     63400 | 28.70 |
+|   LUT as Logic             | 18195 |     0 |          0 |     63400 | 28.70 |
+|   LUT as Memory            |     3 |     0 |          0 |     19000 |  0.02 |
+|     LUT as Distributed RAM |     0 |     0 |            |           |       |
+|     LUT as Shift Register  |     3 |     0 |            |           |       |
+| Slice Registers            |  4915 |     0 |          0 |    126800 |  3.88 |
+|   Register as Flip Flop    |  4880 |     0 |          0 |    126800 |  3.85 |
+|   Register as Latch        |    35 |     0 |          0 |    126800 |  0.03 |
+| F7 Muxes                   |    12 |     0 |          0 |     31700 |  0.04 |
+| F8 Muxes                   |     2 |     0 |          0 |     15850 |  0.01 |
++----------------------------+-------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
 Warning! For any ECO changes, please run place_design if there are unplaced instances
@@ -59,9 +59,9 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 804   |          Yes |           - |          Set |
-| 2246  |          Yes |           - |        Reset |
-| 1     |          Yes |         Set |            - |
+| 812   |          Yes |           - |          Set |
+| 2329  |          Yes |           - |        Reset |
+| 2     |          Yes |         Set |            - |
 | 1772  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
@@ -95,7 +95,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   49 |     0 |          0 |       210 | 23.33 |
+| Bonded IOB                  |   50 |     0 |          0 |       210 | 23.81 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |          0 |         6 |  0.00 |
@@ -151,15 +151,15 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT1     | 5395 |                 LUT |
-| FDCE     | 2211 |        Flop & Latch |
-| CARRY4   | 1990 |          CarryLogic |
+| LUT1     | 8364 |                 LUT |
+| LUT2     | 7379 |                 LUT |
+| CARRY4   | 4004 |          CarryLogic |
+| FDCE     | 2294 |        Flop & Latch |
+| LUT4     | 1865 |                 LUT |
 | FDRE     | 1772 |        Flop & Latch |
-| LUT2     | 1403 |                 LUT |
-| LUT5     | 1182 |                 LUT |
-| FDPE     |  804 |        Flop & Latch |
-| LUT4     |  749 |                 LUT |
-| LUT6     |  538 |                 LUT |
+| LUT5     | 1459 |                 LUT |
+| LUT6     |  959 |                 LUT |
+| FDPE     |  812 |        Flop & Latch |
 | LUT3     |  290 |                 LUT |
 | OBUF     |   40 |                  IO |
 | LDCE     |   35 |        Flop & Latch |
@@ -168,7 +168,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | BUFG     |    4 |               Clock |
 | SRL16E   |    3 |  Distributed Memory |
 | MUXF8    |    2 |               MuxFx |
-| FDSE     |    1 |        Flop & Latch |
+| FDSE     |    2 |        Flop & Latch |
+| OBUFT    |    1 |                  IO |
 +----------+------+---------------------+
 
 

@@ -53,7 +53,7 @@ entity TOP_2 is
 --        sig_snake_mesh_xy_out  : out xys(0 to snake_length_max - 1);
 --        sig_food_xy_out        : out xy;
 --        estado_juego           : out std_logic_vector (2 downto 0)
-        
+        led_choque      : out std_logic;
          --Teclado y salidas
         PS2_DATA : in STD_LOGIC; --Datos de las teclas devueltos codificados
         PS2_CLK : in STD_LOGIC; --Reloj para el comunicador USB
@@ -193,6 +193,7 @@ END COMPONENT;
 COMPONENT GAME_Play
     Port(
         clk_60hz        : in  std_logic;
+        clk_108Mhz      : in  std_logic;
         reset           : in std_logic;
         play            : in std_logic;
         joystick        : in std_logic_vector(2 downto 0);
@@ -201,7 +202,8 @@ COMPONENT GAME_Play
         snake_mesh_xy   : out xys(0 to snake_length_max - 1);
         food_xy         : out xy;
         estado          : out std_logic_vector (2 downto 0);
-        lose            : inout std_logic
+        lose            : inout std_logic;
+        led_choque      : out std_logic
     );
 END COMPONENT;
 -- Component for VGA
@@ -316,6 +318,7 @@ Inst_MainFSM : Main_Game
 Inst_GAME_Play: GAME_Play 
      PORT MAP (
         clk_60hz        => sig_60Hz,
+        clk_108Mhz      => sig_108Mhz,
         reset           => '0',
         play            => STATE(0),
         joystick        => sig_buttons_lock,
@@ -324,7 +327,8 @@ Inst_GAME_Play: GAME_Play
         snake_mesh_xy   => sig_snake_mesh_xy,
         food_xy         => sig_food_xy,
         estado          => sig_estado_juego,
-        lose            => sig_lose
+        lose            => sig_lose,
+        led_choque      => led_choque
     );
 -- -- Inputs draw depending on the state
     Inst_VGA_Manager: VGA_Manager

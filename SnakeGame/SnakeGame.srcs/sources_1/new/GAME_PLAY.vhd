@@ -27,6 +27,7 @@ use work.Types.all;
 entity GAME_Play is
     port(
         clk_60hz        : in  std_logic;
+        clk_108Mhz      : in  std_logic;
         reset           : in std_logic;
         play            : in std_logic;
         joystick        : in std_logic_vector(2 downto 0);
@@ -36,19 +37,22 @@ entity GAME_Play is
         food_xy         : out xy;
         
         estado          : out std_logic_vector (2 downto 0);
-        lose            : out std_logic
+        lose            : out std_logic;
+        
+        led_choque      : out std_logic
         );
 end entity;
 
 architecture BEHAVIORAL of GAME_Play is
 
     --assume the left most xy is the head position
-    signal sig_snake_length         : integer range 0 to snake_length_max;
+    --signal sig_snake_length         : integer range 0 to snake_length_max;
     signal sig_snake_mesh_xy        : xys(0 to snake_length_max - 1);
     signal sig_food_xy              : xy;
     signal random_xy                : unsigned(31 downto 0);
     signal sig_lose                 : std_logic :='0';
     signal inited                   : std_logic := '0';
+    signal s_led_choque             : std_logic := '0';
 begin
 lose<= sig_lose;
 snake_move:
@@ -61,7 +65,7 @@ snake_move:
         variable food_xy_future             : xy := (others => '0');
         variable snake_length_future        : integer := 0;
         variable dx, dy                     : signed(15 downto 0) := (others => '0');
-        variable count                      : integer;
+        variable count                      : integer := 0;
     begin
         food_xy         <= food_xy_future;
         snake_length    <= snake_length_future;
@@ -70,6 +74,7 @@ snake_move:
         if (reset = '1' or inited = '0' or play = '0') then
             --reset snake length
             snake_length_future := snake_length_begin;
+            count := 0;
 
             --set food position
             food_xy_future(31 downto 16) := std_logic_vector(to_signed(food_begin_x, 16));
@@ -114,19 +119,22 @@ snake_move:
                     sig_lose<='1';
                 end if;
                 
---                if count < 3 then
---                    count := count + 1;
---                end if;
+                if count < 101 then
+                    count := count + 1;
+                end if;
                 
---                if count = 3 then
---                    for i in snake_length_max - 1 downto 1 loop
---                        dx := abs(signed(snake_head_xy_future(31 downto 16)) - signed(sig_snake_mesh_xy(i)(31 downto 16)));
---                        dy := abs(signed(snake_head_xy_future(15 downto 0))  - signed(sig_snake_mesh_xy(i)(15 downto 0)));
---                        if (dx = 0 and dy = 0) then          --Compruebación de choque con serpiente
---                            sig_lose <= '1';
---                        end if;
---                    end loop;
---                end if;
+                if count > 100 then
+                    for i in snake_length_max - 1 downto 1 loop
+                        if (i < snake_length_future) then
+                         s_led_choque<='1';
+                            dx := abs(signed(snake_head_xy_future(31 downto 16)) - signed(sig_snake_mesh_xy(i)(31 downto 16)));
+                            dy := abs(signed(snake_head_xy_future(15 downto 0))  - signed(sig_snake_mesh_xy(i)(15 downto 0)));
+                            if (dx = 0 and dy = 0) then          --Compruebación de choque con serpiente
+                                sig_lose <= '1';
+                            end if;
+                        end if;
+                    end loop;
+                end if;
     
                 --food check
                 dx := abs(signed(snake_head_xy_future(31 downto 16)) - signed(food_xy_future(31 downto 16)));
@@ -137,16 +145,20 @@ snake_move:
                     --change food position 
                     food_xy_future := std_logic_vector(random_xy);
                 end if;
+                
+                if snake_length_future > snake_length_max then 
+                    sig_lose <= '1';
+                end if;
             end if;
     end process;
-
+led_choque<=s_led_choque;
 
 ramdom_number_gen:
-    process(clk_60hz)
+    process(clk_108Mhz)
         variable random_x : unsigned(15 downto 0) := (others => '0');
         variable random_y : unsigned(15 downto 0) := (others => '0');
     begin
-        if (rising_edge(clk_60hz)) then
+        if (rising_edge(clk_108Mhz)) then
             if (random_x = to_unsigned(screen_width - 14, 16)) then 
                 random_x := (others => '0');
             end if;

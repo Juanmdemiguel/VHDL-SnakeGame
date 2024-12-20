@@ -1,40 +1,30 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="23592" HostCore="16" HostMemory="017007575040">
+    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="5436" HostCore="16" HostMemory="017007575040">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="15444" HostCore="16" HostMemory="017007575040">
+    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="24548" HostCore="16" HostMemory="017007575040">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="17196" HostCore="16" HostMemory="017007575040">
+    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="7388" HostCore="16" HostMemory="017007575040">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="22764" HostCore="16" HostMemory="017007575040">
+    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="1856" HostCore="16" HostMemory="017007575040">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="20884" HostCore="16" HostMemory="017007575040">
+    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="28448" HostCore="16" HostMemory="017007575040">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="15648" HostCore="16" HostMemory="017007575040">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="25260" HostCore="16" HostMemory="017007575040">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="28892" HostCore="16" HostMemory="017007575040">
+    <Process Command="vivado.bat" Owner="ivano" Host="DESKTOP-1V0CU1G" Pid="18056" HostCore="16" HostMemory="017007575040">
     </Process>
 </ProcessHandle>
