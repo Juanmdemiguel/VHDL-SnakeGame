@@ -23,31 +23,31 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.Types.all;
 
-entity FLIP_FLOP_Snake is
+entity FLIP_FLOP_Pyton is
     Port (
         clk     : in  std_logic;
         reset   : in  std_logic;
-        snake_length_in    : in integer range 0 to snake_length_max;
-        snake_mesh_xy_in   : in xys(0 to snake_length_max - 1);
-        food_xy_in         : in xy;
-        snake_length_out   : out integer range 0 to snake_length_max;
-        snake_mesh_xy_out  : out xys(0 to snake_length_max - 1);
-        food_xy_out        : out xy
+        pyton_length_in    : in integer range 0 to snake_length_max;
+        pyton_mesh_pos_in   : in xys(0 to snake_length_max - 1);
+        apple_pos_in        : in xy;
+        pyton_length_out   : out integer range 0 to snake_length_max;
+        pyton_mesh_pos_out  : out xys(0 to snake_length_max - 1);
+        apple_pos_out       : out xy
     );
-end FLIP_FLOP_Snake;
+end FLIP_FLOP_Pyton;
 
-architecture BEHAVIORAL of FLIP_FLOP_Snake is
+architecture BEHAVIORAL of FLIP_FLOP_Pyton is
 begin
     process(clk, reset)
     begin
         if reset = '1' then
-            snake_length_out   <= 0;
-            snake_mesh_xy_out  <= (others => (others => '0'));
-            food_xy_out        <= (others => '0');
+            pyton_length_out   <= 0;
+            pyton_mesh_pos_out  <= (others => (others => '0'));
+            apple_pos_out       <= (others => '0');
         elsif rising_edge(clk) then
-            snake_length_out    <= snake_length_in;
-            snake_mesh_xy_out  <= snake_mesh_xy_in;
-            food_xy_out        <= food_xy_in;
+            pyton_length_out   <= pyton_length_in;
+            pyton_mesh_pos_out  <= pyton_mesh_pos_in;
+            apple_pos_out       <= apple_pos_in;
         end if;
     end process;
 

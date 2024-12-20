@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Fri Dec 20 13:25:10 2024
+| Date             : Fri Dec 20 14:17:42 2024
 | Host             : DESKTOP-1V0CU1G running 64-bit major release  (build 9200)
 | Command          : report_power -file TOP_2_power_routed.rpt -pb TOP_2_power_summary_routed.pb -rpx TOP_2_power_routed.rpx
 | Design           : TOP_2
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.389        |
+| Total On-Chip Power (W)  | 0.390        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.291        |
+| Dynamic (W)              | 0.292        |
 | Device Static (W)        | 0.098        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 83.2         |
@@ -52,19 +52,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.023 |        6 |       --- |             --- |
-| Slice Logic    |     0.068 |    28957 |       --- |             --- |
-|   LUT as Logic |     0.055 |    17820 |     63400 |           28.11 |
+| Clocks         |     0.022 |        6 |       --- |             --- |
+| Slice Logic    |     0.068 |    28922 |       --- |             --- |
+|   LUT as Logic |     0.055 |    17784 |     63400 |           28.05 |
 |   CARRY4       |     0.013 |     4004 |     15850 |           25.26 |
 |   Register     |    <0.001 |     4909 |    126800 |            3.87 |
 |   F7/F8 Muxes  |    <0.001 |       15 |     63400 |            0.02 |
 |   BUFG         |    <0.001 |        3 |        32 |            9.38 |
 |   Others       |     0.000 |       62 |       --- |             --- |
-| Signals        |     0.072 |    23645 |       --- |             --- |
+| Signals        |     0.075 |    23610 |       --- |             --- |
 | PLL            |     0.113 |        1 |         6 |           16.67 |
 | I/O            |     0.014 |       46 |       210 |           21.90 |
 | Static Power   |     0.098 |          |           |                 |
-| Total          |     0.389 |          |           |                 |
+| Total          |     0.390 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.191 |       0.175 |      0.016 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.192 |       0.177 |      0.016 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.075 |       0.057 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.008 |       0.004 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -146,19 +146,19 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| TOP_2                      |     0.291 |
+| TOP_2                      |     0.292 |
 |   Inst_Clock_Manager       |     0.114 |
 |     Inst_PLL               |     0.113 |
 |       inst                 |     0.113 |
 |   Inst_Flip_Flop           |     0.020 |
-|   Inst_GAME_Play           |     0.033 |
+|   Inst_GAME_Play           |     0.034 |
 |   Inst_ScaledString        |     0.003 |
-|     scaling[1].Inst_Scaler |     0.002 |
-|   Inst_Teclado             |     0.002 |
+|     scaling[1].Inst_Scaler |     0.001 |
+|   Inst_Teclado             |     0.001 |
 |     sevenSeg               |     0.001 |
-|   Inst_VGA_Manager         |     0.104 |
-|     Inst_VGA_Draw          |     0.064 |
-|     Inst_VGA_Sync          |     0.040 |
+|   Inst_VGA_Manager         |     0.107 |
+|     Inst_VGA_Draw          |     0.066 |
+|     Inst_VGA_Sync          |     0.041 |
 +----------------------------+-----------+
 
 

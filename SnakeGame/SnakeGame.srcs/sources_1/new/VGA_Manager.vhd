@@ -30,9 +30,9 @@ entity VGA_Manager is
         GAMEOVER        : in big_letter_array(0 to 8);
         mode            : in std_logic_vector(1 downto 0);
         clk             : in std_logic;
-        snake_length    : in  integer range 0 to snake_length_max; 
-        snake_mesh_xy   : in  xys(0 to snake_length_max-1);
-        food_xy         : in xy;
+        pyton_length    : in  integer range 0 to snake_length_max; 
+        pyton_mesh_pos  : in  xys(0 to snake_length_max-1);
+        apple_pos       : in xy;
         HSync, VSync    : out std_logic;
         red, green, blue: out std_logic_vector(3 downto 0)
         
@@ -69,9 +69,9 @@ END COMPONENT;
 COMPONENT VGA_Draw 
      port(
         enable              : in std_logic;
-        snake_length		: in  integer range 0 to snake_length_max;
-        snake_mesh_xy		: in  xys(0 to snake_length_max - 1);
-        food_xy             : in xy;
+        pyton_length		: in  integer range 0 to snake_length_max;
+        pyton_mesh_pos		: in  xys(0 to snake_length_max - 1);
+        apple_pos             : in xy;
         row, col            : in  std_logic_vector(15 downto 0);
         rout, gout, bout    : out std_logic_vector(3 downto 0));
 END COMPONENT;
@@ -90,9 +90,9 @@ begin
     Inst_VGA_Draw: VGA_Draw 
       PORT MAP (
         enable         => SyncEnable,
-        snake_length   => snake_length,
-        snake_mesh_xy  => snake_mesh_xy,
-        food_xy        =>  food_xy,
+        pyton_length   => pyton_length,
+        pyton_mesh_pos => pyton_mesh_pos,
+        apple_pos      => apple_pos,
         row            => row_i, 
         col            => col_i,
         rout           => red_g,

@@ -96,9 +96,9 @@ architecture Behavioral of TOP_2 is
                 signal gameover :  big_letter_array(0 to 8);
                 
                 -- FLIPFLOP SIGNALS --
-                signal sig_snake_length_flipflop  : integer range 0 to snake_length_max;
-                signal sig_snake_mesh_xy_flipflop : xys(0 to snake_length_max - 1);
-                signal sig_food_xy_flipflop       : xy;
+                signal sig_pyton_length_flipflop  : integer range 0 to snake_length_max;
+                signal sig_pyton_mesh_pos_flipflop : xys(0 to snake_length_max - 1);
+                signal sig_apple_pos_flipflop       : xy;
                 
                 -- TEST ONLY SIGNALS --
                 signal sig_estado_juego          : std_logic_vector (2 downto 0);
@@ -110,27 +110,16 @@ architecture Behavioral of TOP_2 is
                
 -----------------------------------------------COMPONENTS FOR DATA PROCESSING-----------------------------------------
 
-COMPONENT FLIP_FLOP_String 
-    Port (
-        clk            : in  std_logic;
-        reset         : in  std_logic;
-        START_in      : in big_letter_array(0 to 4);
-        GAMEOVER_in   : in big_letter_array(0 to 8);
-        START_out     : out big_letter_array(0 to 4);
-        GAMEOVER_out  : out big_letter_array(0 to 8)
-    );
-END COMPONENT;
-
-COMPONENT FLIP_FLOP_Snake 
+COMPONENT FLIP_FLOP_Pyton 
     Port (
         clk     : in  std_logic;
         reset   : in  std_logic;
-        snake_length_in    : in integer range 0 to snake_length_max;
-        snake_mesh_xy_in   : in xys(0 to snake_length_max - 1);
-        food_xy_in         : in xy;
-        snake_length_out   : out integer range 0 to snake_length_max;
-        snake_mesh_xy_out  : out xys(0 to snake_length_max - 1);
-        food_xy_out        : out xy
+        pyton_length_in    : in integer range 0 to snake_length_max;
+        pyton_mesh_pos_in   : in xys(0 to snake_length_max - 1);
+        apple_pos_in         : in xy;
+        pyton_length_out   : out integer range 0 to snake_length_max;
+        pyton_mesh_pos_out  : out xys(0 to snake_length_max - 1);
+        apple_pos_out        : out xy
     );
 END COMPONENT;
 
@@ -209,9 +198,9 @@ COMPONENT VGA_Manager
         GAMEOVER        : in big_letter_array(0 to 8);
         mode            : in std_logic_vector(1 downto 0);
         clk             : in std_logic;
-        snake_length    : in  integer range 0 to snake_length_max; 
-        snake_mesh_xy   : in  xys(0 to snake_length_max-1);
-        food_xy         : in xy;
+        pyton_length    : in  integer range 0 to snake_length_max; 
+        pyton_mesh_pos  : in  xys(0 to snake_length_max-1);
+        apple_pos       : in xy;
         HSync, VSync    : out std_logic;
         red, green, blue: out std_logic_vector(3 downto 0)
         
@@ -252,16 +241,16 @@ begin
     end if;
 end process;
 
-    Inst_Flip_Flop: FLIP_FLOP_Snake
+    Inst_Flip_Flop: FLIP_FLOP_Pyton
       PORT MAP (
         clk     => sig_108MHz,
         reset   => '0',
-        snake_length_in    => sig_snake_length,
-        snake_mesh_xy_in   => sig_snake_mesh_xy,
-        food_xy_in         => sig_food_xy,
-        snake_length_out   => sig_snake_length_flipflop,
-        snake_mesh_xy_out  => sig_snake_mesh_xy_flipflop,
-        food_xy_out        => sig_food_xy_flipflop
+        pyton_length_in    => sig_snake_length,
+        pyton_mesh_pos_in   => sig_snake_mesh_xy,
+        apple_pos_in         => sig_food_xy,
+        pyton_length_out   => sig_pyton_length_flipflop,
+        pyton_mesh_pos_out  => sig_pyton_mesh_pos_flipflop,
+        apple_pos_out        => sig_apple_pos_flipflop
     );
 Inst_Clock_Manager : Clock_Manager
  PORT MAP (
@@ -329,9 +318,9 @@ Inst_GAME_Play: GAME_Play
         GAMEOVER         => gameover,
         mode             => STATE,
         clk              => sig_108MHz,
-        snake_length	 => sig_snake_length_flipflop,
-        snake_mesh_xy	 => sig_snake_mesh_xy_flipflop,
-        food_xy          => sig_food_xy_flipflop,
+        pyton_length	 => sig_pyton_length_flipflop,
+        pyton_mesh_pos   => sig_pyton_mesh_pos_flipflop,
+        apple_pos        => sig_apple_pos_flipflop,
         HSync            => HSync,
         VSync            => VSync,
         red              => Red,

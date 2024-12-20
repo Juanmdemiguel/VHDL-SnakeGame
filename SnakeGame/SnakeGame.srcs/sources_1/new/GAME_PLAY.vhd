@@ -172,5 +172,21 @@ ramdom_number_gen:
         end if;
     end process;
     
+--ramdom_number_gen:
+--   process(clk_60hz)
+--    begin
+--        if rising_edge(clk_60hz) then
+--            -- Generación de nuevo valor para lfsr_x (LFSR para X)
+--            lfsr_x <= lfsr_x(14 downto 0) & (lfsr_x(15) xor lfsr_x(14));  -- Polinomio LFSR para 16 bits
+            
+--            -- Generación de nuevo valor para lfsr_y (LFSR para Y)
+--            lfsr_y <= lfsr_y(14 downto 0) & (lfsr_y(15) xor lfsr_y(14));  -- Polinomio LFSR para 16 bits
+
+--            -- Ajustar los valores dentro del rango de la pantalla (screen_width y screen_height)
+--            random_xy(31 downto 16) <= lfsr_x + to_unsigned(7, 16);  -- X con un ajuste de 7
+--            random_xy(15 downto 0) <= lfsr_y + to_unsigned(7, 16);  -- Y con un ajuste de 7
+--        end if;
+--    end process;
+    
  end BEHAVIORAL;
 
