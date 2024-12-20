@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Main_Game is
   port(
-	    BUTTON     :  in std_logic_vector(2 downto 0);
+	    BUTTON     :  in std_logic;
 	    LOSE       :  inout std_logic;
         CLK_100MHz :  in std_logic;
         STATE      :  out std_logic_vector(1 downto 0)
@@ -55,17 +55,17 @@ begin
         nxt_state <= cur_state; -- Por defecto, permanece en el estado actual
         case cur_state is
             when S0_START =>
-                if BUTTON = "100" then
+                if BUTTON = '1' then
                     nxt_state <= S1_GAME;
                     s_lose<='0';
                 end if;
             when S1_GAME =>
-                if (LOSE = '1' or BUTTON = "100") then
+                if (LOSE = '1' or BUTTON = '1') then
                     nxt_state <= S2_GO;
                     s_lose<='1';
                 end if;
             when S2_GO =>
-                if BUTTON = "100" then
+                if BUTTON = '1' then
                     nxt_state <= S0_START;
                     s_lose<='0';
                 end if;

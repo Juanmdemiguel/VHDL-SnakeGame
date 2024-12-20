@@ -34,36 +34,20 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity BUTTONS_Sync is
     Port ( 
             clk_60Hz : in std_logic;
-            
-            button_up_input : in std_logic;
-            button_down_input : in std_logic;
-            button_left_input : in std_logic;
-            button_right_input : in std_logic;
             button_center_input : in std_logic;
-            
-            button_output : out std_logic_vector(2 downto 0)    
+            button_output : out std_logic
     );
 end BUTTONS_Sync;
 
 architecture Behavioral of BUTTONS_Sync is
-    subtype button_type is std_logic_vector (2 downto 0);
-    type button_list is array (1 downto 0) of button_type;
-    signal sreg : button_list;
+    signal sreg : std_logic_vector(1 downto 0) := "00";
 begin
 
 process (clk_60Hz)
 begin
-    if rising_edge(clk_60Hz) then
-        
-        button_output <= sreg(1);
-        
-        if    button_up_input = '1' then sreg <= sreg(0) & "000";
-        elsif button_down_input = '1' then sreg <= sreg(0) & "001";
-        elsif button_left_input = '1' then sreg <= sreg(0) & "010";
-        elsif button_right_input = '1' then sreg <= sreg(0) & "011";
-        elsif button_center_input = '1' then sreg <= sreg(0) & "100";
-        else sreg <= sreg(0) & "101";
-        end if;
-    end if;
+     if rising_edge(clk_60hz) then
+         button_output <= sreg(1);
+         sreg <= sreg(0) & button_center_input;
+     end if; 
  end process;
 end Behavioral;

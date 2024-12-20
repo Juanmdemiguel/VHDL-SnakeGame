@@ -28,10 +28,10 @@ entity TOP_2 is
         clk            : in std_logic;
         reset          : in std_logic;
         
-        button_up      : in std_logic;
-        button_down    : in std_logic;
-        button_left    : in std_logic;
-        button_right   : in std_logic;
+--        button_up      : in std_logic;
+--        button_down    : in std_logic;
+--        button_left    : in std_logic;
+--        button_right   : in std_logic;
         button_center  : in std_logic;
         
         --VGA output
@@ -80,9 +80,9 @@ architecture Behavioral of TOP_2 is
                 signal clk_FSM, clk_SC, clk_CV, clk_EDGE,clk_TEC : std_logic;
                 
                 -- BUTTONS SIGNALS --
-                signal sig_buttons : std_logic_vector(2 downto 0); --Used in START and GAMEOVER
+                signal sig_buttons : std_logic; --Used in START and GAMEOVER
                 signal sig_buttons_lock : std_logic_vector(2 downto 0);
-                signal sig_butEDGED : std_logic_vector(2 downto 0);
+                signal sig_butEDGED : std_logic;
                 
                 -- GAME SIGNALS --
                 signal sig_lose : std_logic :='0';
@@ -157,12 +157,8 @@ END COMPONENT;
 COMPONENT BUTTONS_Sync 
     Port ( 
         clk_60Hz : in std_logic;
-        button_up_input : in std_logic;
-        button_down_input : in std_logic;
-        button_left_input : in std_logic;
-        button_right_input : in std_logic;
         button_center_input : in std_logic;
-        button_output : out std_logic_vector(2 downto 0)    
+        button_output : out std_logic  
     );
 END COMPONENT;
  --component to lock the buttons signal
@@ -170,20 +166,20 @@ COMPONENT BUTTON_Lock
     Port ( 
         clk_60Hz       : in std_logic;
         enable         : in std_logic;
-        buttons_input  : in std_logic_vector (2 downto 0);
-        buttons_output : out std_logic_vector (2 downto 0)   
+        buttons_input  : in std_logic;
+        buttons_output : out std_logic 
     );
 END COMPONENT;
 COMPONENT EDGEDTCTR
     Port (
         CLK : in STD_LOGIC;
-        SYNC_IN : in STD_LOGIC_VECTOR(2 downto 0);
-        EDGE : out STD_LOGIC_VECTOR(2 downto 0)
+        SYNC_IN : in STD_LOGIC;
+        EDGE : out STD_LOGIC
     );
 END COMPONENT;
 COMPONENT Main_Game
     Port (
-	    BUTTON     :  in std_logic_vector(2 downto 0);
+	    BUTTON     :  in std_logic;
 	    LOSE       :  inout std_logic;
         CLK_100MHz :  in std_logic;
         STATE      :  out std_logic_vector(1 downto 0)
@@ -251,7 +247,7 @@ begin
         sig_buttons_lock <= "010"; 
     elsif teclado_derecha = '1' then 
         sig_buttons_lock <= "011"; 
-    elsif sig_buttons = "100" then 
+    elsif sig_buttons = '1' then 
         sig_buttons_lock <= "100";                   
     end if;
 end process;
@@ -291,10 +287,6 @@ Inst_ScaledString : Scaled_String
 Inst_Buttons_Sync: BUTTONS_Sync
      PORT MAP (
             clk_60Hz            => sig_60Hz,
-            button_up_input     => button_up,
-            button_down_input   => button_down,
-            button_left_input   => button_left,
-            button_right_input  => button_right,
             button_center_input => button_center,
             button_output       => sig_buttons
     );
@@ -349,13 +341,13 @@ Inst_GAME_Play: GAME_Play
     
     ------------------------------------------------TESTEO---------------------------------------------
 
-    with sig_buttons select 
-            LEDs <= "10000" when "000" ,
-                    "01000" when "001" ,
-                    "00100" when "010" ,
-                    "00010" when "011" ,
-                    "00001" when "100" ,
-                    "00000" when others;
+--    with sig_buttons select 
+--            LEDs <= "10000" when "000" ,
+--                    "01000" when "001" ,
+--                    "00100" when "010" ,
+--                    "00010" when "011" ,
+--                    "00001" when "100" ,
+--                    "00000" when others;
                 
 --    sig_buttons_out       <= sig_buttons;
 --    sig_buttons_lock_out  <= sig_buttons_lock;
