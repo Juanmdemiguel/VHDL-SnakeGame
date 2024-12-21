@@ -3,133 +3,958 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Dec  9 16:37:45 2024
-# Process ID: 19692
-# Current directory: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26352 C:\Users\ivano\OneDrive\Documentos\GitHub\VHDL-SnakeGame\SnakeGame\SnakeGame.xpr
-# Log file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/vivado.log
-# Journal file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame\vivado.jou
-# Running On        :DESKTOP-1V0CU1G
+# Start of session at: Fri Dec 20 22:12:55 2024
+# Process ID: 3956
+# Current directory: C:/Users/mariu/Downloads/SnakeGame
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18080 C:\Users\mariu\Downloads\SnakeGame\SnakeGame.xpr
+# Log file: C:/Users/mariu/Downloads/SnakeGame/vivado.log
+# Journal file: C:/Users/mariu/Downloads/SnakeGame\vivado.jou
+# Running On        :Mario
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :22631
-# Processor Detail  :Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
-# CPU Frequency     :2208 MHz
-# CPU Physical cores:8
-# CPU Logical cores :16
-# Host memory       :17007 MB
-# Swap memory       :11274 MB
-# Total Virtual     :28281 MB
-# Available Virtual :9377 MB
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency     :2419 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8266 MB
+# Swap memory       :10737 MB
+# Total Virtual     :19004 MB
+# Available Virtual :6389 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.xpr
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/eclypse-z7/A.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/eclypse-z7/B.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.2 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.2 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:2.0 available at C:/XILINX1/Vivado/2024.1/data/boards/board_files/zybo/B.4/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kd240_som/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/XILINX1/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+open_project C:/Users/mariu/Downloads/SnakeGame/SnakeGame.xpr
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at C:/Vivado/2024.1/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.0 available at C:/Vivado/2024.1/data/boards/board_files/eclypse-z7/A.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/eclypse-z7/B.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at C:/Vivado/2024.1/data/boards/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Vivado/2024.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.1 available at C:/Vivado/2024.1/data/boards/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.2 available at C:/Vivado/2024.1/data/boards/board_files/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.2 available at C:/Vivado/2024.1/data/boards/board_files/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Vivado/2024.1/data/boards/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:2.0 available at C:/Vivado/2024.1/data/boards/board_files/zybo/B.4/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kd240_som/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Project 1-313] Project file moved from 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XILINX1/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 1632.305 ; gain = 515.656
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1586.320 ; gain = 520.363
 update_compile_order -fileset sources_1
+open_hw_manager
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.dcp' for cell 'Inst_Clock_Manager/Inst_PLL'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.205 . Memory (MB): peak = 2062.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4020 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, Inst_Clock_Manager/Inst_PLL/inst/clkin1_ibufg, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'Inst_Clock_Manager/Inst_PLL/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_board.xdc] for cell 'Inst_Clock_Manager/Inst_PLL/inst'
+Finished Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_board.xdc] for cell 'Inst_Clock_Manager/Inst_PLL/inst'
+Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc] for cell 'Inst_Clock_Manager/Inst_PLL/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc:54]
+Finished Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc] for cell 'Inst_Clock_Manager/Inst_PLL/inst'
+Parsing XDC File [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'button_up'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button_left'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button_right'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button_down'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2776.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:35 . Memory (MB): peak = 2776.984 ; gain = 1158.395
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp with file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/TOP_2.dcp
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 21 00:07:52 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
+[Sat Dec 21 00:07:52 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/runme.log
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_Draw.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\VGA_DrawStr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Main_Game.vhd:]
+ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors.
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+reset_run synth_1
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-39] 'reset_runs' failed due to earlier errors.
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 21 00:29:48 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
+[Sat Dec 21 00:29:48 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 21 00:36:15 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
+[Sat Dec 21 00:36:15 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp with file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/TOP_2.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 21 02:19:30 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
+[Sat Dec 21 02:19:30 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.263 . Memory (MB): peak = 3438.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3999 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'Inst_Clock_Manager/Inst_PLL/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 3538.129 ; gain = 8.129
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 3689.984 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 3689.984 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3706.957 ; gain = 16.973
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3706.957 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.606 . Memory (MB): peak = 3719.863 ; gain = 12.906
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3719.863 ; gain = 29.879
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3719.863 ; gain = 29.879
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3719.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 3736.535 ; gain = 316.953
+open_report: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 3736.535 ; gain = 0.000
+create_dataflow_design
+INFO: [Vivado_Tcl 4-1924] Creating dataflow design from design 'impl_1'. Use the current_design command to change the design from which dataflow design is created.
+INFO: [Implflow 47-2768] Generation of Dataflow netlist complete, took 0 seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 3736.535 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3736.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+create_dataflow_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3736.535 ; gain = 0.000
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-53] User Exception: This command is not allowed on a Dataflow design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-53] User Exception: This command is not allowed on a Dataflow design
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP_2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23380
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 3827.434 ; gain = 90.898
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9694] invalid size of integer constant literal [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:39]
+INFO: [Synth 8-638] synthesizing module 'TOP_2' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:75]
+INFO: [Synth 8-3491] module 'FLIP_FLOP_Pyton' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Snake.vhd:26' bound to instance 'Inst_Flip_Flop' of component 'FLIP_FLOP_Pyton' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'FLIP_FLOP_Pyton' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Snake.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'FLIP_FLOP_Pyton' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Snake.vhd:39]
+INFO: [Synth 8-3491] module 'Clock_Manager' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:25' bound to instance 'Inst_Clock_Manager' of component 'Clock_manager' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'Clock_Manager' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:39]
+INFO: [Synth 8-3491] module 'Clock_distributor' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:27' bound to instance 'Inst_ClockDistributor' of component 'clock_distributor' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'Clock_distributor' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:36]
+INFO: [Synth 8-113] binding component instance 'bufg_inst' to cell 'BUFG' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Clock_distributor' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:36]
+INFO: [Synth 8-3491] module 'PLL100to108' declared at 'C:/Users/mariu/Downloads/SnakeGame/.Xil/Vivado-3956-Mario/realtime/PLL100to108_stub.vhdl:6' bound to instance 'Inst_PLL' of component 'PLL100to108' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'PLL100to108' [C:/Users/mariu/Downloads/SnakeGame/.Xil/Vivado-3956-Mario/realtime/PLL100to108_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Clock_Converter' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:26' bound to instance 'Inst_Clock_Converter' of component 'Clock_Converter' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'Clock_Converter' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Converter' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Manager' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:39]
+INFO: [Synth 8-3491] module 'Scaled_String' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:24' bound to instance 'Inst_ScaledString' of component 'Scaled_String' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:268]
+INFO: [Synth 8-638] synthesizing module 'Scaled_String' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:32]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Scaler' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Scaler' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:32]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Scaled_String' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:32]
+INFO: [Synth 8-3491] module 'BUTTONS_Sync' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:4' bound to instance 'Inst_Buttons_Sync' of component 'BUTTONS_Sync' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'BUTTONS_Sync' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'BUTTONS_Sync' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:12]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:5' bound to instance 'Inst_edge' of component 'EDGEDTCTR' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:284]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:12]
+INFO: [Synth 8-3491] module 'Main_Game' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:5' bound to instance 'Inst_MainFSM' of component 'Main_Game' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:291]
+INFO: [Synth 8-638] synthesizing module 'Main_Game' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Main_Game' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:15]
+INFO: [Synth 8-3491] module 'GAME_Play' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:7' bound to instance 'Inst_GAME_Play' of component 'GAME_Play' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'GAME_Play' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:27]
+WARNING: [Synth 8-614] signal 'sig_GRID_SNAKE_xy' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:39]
+WARNING: [Synth 8-614] signal 'inited' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'GAME_Play' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:27]
+INFO: [Synth 8-3491] module 'VGA_Manager' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:27' bound to instance 'Inst_VGA_Manager' of component 'VGA_Manager' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:315]
+INFO: [Synth 8-638] synthesizing module 'VGA_Manager' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:42]
+INFO: [Synth 8-3491] module 'VGA_Sync' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd:26' bound to instance 'Inst_VGA_Sync' of component 'VGA_Sync' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'VGA_Sync' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'VGA_Sync' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd:54]
+INFO: [Synth 8-3491] module 'VGA_Draw' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:28' bound to instance 'Inst_VGA_Draw' of component 'VGA_Draw' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'VGA_Draw' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:41]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:44]
+WARNING: [Synth 8-614] signal 'pyton_length' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:44]
+WARNING: [Synth 8-614] signal 'pyton_mesh_pos' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:44]
+WARNING: [Synth 8-614] signal 'apple_pos' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'VGA_Draw' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:41]
+INFO: [Synth 8-3491] module 'VGA_DrawStr' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:33' bound to instance 'Inst_VGA_DrawStr' of component 'VGA_DrawStr' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'VGA_DrawStr' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:46]
+WARNING: [Synth 8-614] signal 'mode' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:56]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:68]
+WARNING: [Synth 8-614] signal 'Strlen' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:68]
+WARNING: [Synth 8-614] signal 'START' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:68]
+WARNING: [Synth 8-614] signal 'GAMEOVER' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'VGA_DrawStr' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:46]
+WARNING: [Synth 8-614] signal 'mode' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+WARNING: [Synth 8-614] signal 'red_s' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+WARNING: [Synth 8-614] signal 'green_s' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+WARNING: [Synth 8-614] signal 'blue_s' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+WARNING: [Synth 8-614] signal 'red_g' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+WARNING: [Synth 8-614] signal 'green_g' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+WARNING: [Synth 8-614] signal 'blue_g' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+INFO: [Synth 8-256] done synthesizing module 'VGA_Manager' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:42]
+INFO: [Synth 8-3491] module 'TOP_TECLADO' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:6' bound to instance 'Inst_Teclado' of component 'TOP_TECLADO' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:359]
+INFO: [Synth 8-638] synthesizing module 'TOP_TECLADO' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:24]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:23]
+INFO: [Synth 8-638] synthesizing module 'MAQUINA_ESTADOS_TECLADO' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:248]
+INFO: [Synth 8-226] default block is never used [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:290]
+INFO: [Synth 8-256] done synthesizing module 'MAQUINA_ESTADOS_TECLADO' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'TOP_TECLADO' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'TOP_2' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:75]
+WARNING: [Synth 8-3848] Net estado in module/entity GAME_Play does not have driver. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:19]
+WARNING: [Synth 8-3848] Net UART_TXD in module/entity TOP_TECLADO does not have driver. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:15]
+WARNING: [Synth 8-3848] Net LEDs in module/entity TOP_2 does not have driver. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:42]
+WARNING: [Synth 8-7129] Port x[31] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[30] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[29] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[28] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[27] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[26] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[25] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[24] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[23] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[22] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[21] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[20] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[19] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[18] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[17] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[16] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[15] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[14] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[13] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[12] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[11] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[10] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[9] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[8] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UART_TXD in module TOP_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port estado[2] in module GAME_Play is either unconnected or has no load
+WARNING: [Synth 8-7129] Port estado[1] in module GAME_Play is either unconnected or has no load
+WARNING: [Synth 8-7129] Port estado[0] in module GAME_Play is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[4] in module TOP_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[3] in module TOP_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[2] in module TOP_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[1] in module TOP_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[0] in module TOP_2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 4090.734 ; gain = 354.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 4108.578 ; gain = 372.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 4108.578 ; gain = 372.043
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.dcp' for cell 'Inst_Clock_Manager/Inst_PLL'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4152.766 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_board.xdc] for cell 'Inst_Clock_Manager/Inst_PLL/inst'
+Finished Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_board.xdc] for cell 'Inst_Clock_Manager/Inst_PLL/inst'
+Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc] for cell 'Inst_Clock_Manager/Inst_PLL/inst'
+Finished Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc] for cell 'Inst_Clock_Manager/Inst_PLL/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'button_up'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'button_left'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'button_right'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'button_down'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:89]
+Finished Parsing XDC File [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/TOP_2_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 4395.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 4633.281 ; gain = 896.746
+79 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 4633.281 ; gain = 896.746
+current_design impl_1
+set_property target_constrs_file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc [current_fileset -constrset]
+create_dataflow_design
+INFO: [Vivado_Tcl 4-1924] Creating dataflow design from design 'impl_1'. Use the current_design command to change the design from which dataflow design is created.
+INFO: [Implflow 47-2768] Generation of Dataflow netlist complete, took 0 seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 4777.949 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4777.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+create_dataflow_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 4856.859 ; gain = 78.910
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp with file C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/TOP_2.dcp
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+launch_runs synth_1 -jobs 8
+[Sat Dec 21 02:58:58 2024] Launched synth_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\BUTTONS_SYNCHRONIZER.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\GAME_PLAY.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\EDGEDTCTR.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\MOVE_Down.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaler.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Scaled_String.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Top2LaSecuela.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\mariu\Downloads\SnakeGame\SnakeGame.srcs\sources_1\new\Clock_Manager.vhd:]
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.dcp' for cell 'Inst_Clock_Manager/Inst_PLL'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.293 . Memory (MB): peak = 4886.176 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3999 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, Inst_Clock_Manager/Inst_PLL/inst/clkin1_ibufg, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'Inst_Clock_Manager/Inst_PLL/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_board.xdc] for cell 'Inst_Clock_Manager/Inst_PLL/inst'
+Finished Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_board.xdc] for cell 'Inst_Clock_Manager/Inst_PLL/inst'
+Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc] for cell 'Inst_Clock_Manager/Inst_PLL/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc:54]
+CRITICAL WARNING: [Common 17-697] get_clocks: option '-of_objects' requires explicit objects, e.g. -of_objects [get_cells lut2], implicit search for '-of_objects' using name or pattern is not supported. [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc:54]
+Finished Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc] for cell 'Inst_Clock_Manager/Inst_PLL/inst'
+Parsing XDC File [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'button_up'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button_left'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button_right'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button_down'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 4975.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 4975.539 ; gain = 89.363
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 4975.539 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4975.539 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.246 . Memory (MB): peak = 4975.539 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.640 . Memory (MB): peak = 4975.539 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4975.539 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.016 . Memory (MB): peak = 4975.539 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.704 . Memory (MB): peak = 4975.539 ; gain = 0.000
+[Sat Dec 21 03:08:18 2024] Launched impl_1...
+Run output will be captured here: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4975.539 ; gain = 0.000
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 16:38:31 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 21 03:14:13 2024...

@@ -1,0 +1,100 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sat Dec 21 03:11:04 2024
+| Host         : Mario running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_2_control_sets_placed.rpt
+| Design       : TOP_2
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    22 |
+|    Minimum number of control sets                        |    22 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    99 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    22 |
+| >= 0 to < 4        |     8 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1724 |          787 |
+| No           | No                    | Yes                    |            3086 |         1333 |
+| No           | Yes                   | No                     |              55 |           20 |
+| Yes          | No                    | No                     |              16 |            4 |
+| Yes          | No                    | Yes                    |              20 |           14 |
+| Yes          | Yes                   | No                     |               8 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------+---------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
+|                    Clock Signal                   |                      Enable Signal                      |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------------------+---------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
+|  Inst_Clock_Manager/Inst_PLL/inst/clk_out1        |                                                         | Inst_VGA_Manager/Inst_VGA_Sync/h_sync0                    |                1 |              1 |         1.00 |
+|  Inst_Clock_Manager/Inst_PLL/inst/clk_out1        |                                                         | Inst_VGA_Manager/Inst_VGA_Sync/v_sync0                    |                1 |              1 |         1.00 |
+|  Inst_Teclado/CLK50MHZ                            |                                                         | Inst_Teclado/keyboard/debounce/cnt1[3]_i_1_n_0            |                1 |              1 |         1.00 |
+|  cabeza_snake_xy_f0                               |                                                         |                                                           |                1 |              1 |         1.00 |
+|  sig_60Hz_BUFG                                    |                                                         | Inst_GAME_Play/s_led_choque0                              |                1 |              1 |         1.00 |
+|  clk_IBUF                                         |                                                         |                                                           |                1 |              1 |         1.00 |
+|  Inst_Teclado/sevenSeg/E[0]                       |                                                         |                                                           |                1 |              3 |         3.00 |
+|  sig_60Hz_BUFG                                    |                                                         |                                                           |                1 |              3 |         3.00 |
+| ~Inst_Teclado/keyboard/debounce/O0                | Inst_Teclado/keyboard/cnt__3                            | Inst_Teclado/keyboard/cnt[3]_i_1_n_0                      |                1 |              4 |         4.00 |
+|  Inst_Teclado/CLK50MHZ                            | Inst_Teclado/keyboard/debounce/cnt1[3]_i_2_n_0          | Inst_Teclado/keyboard/debounce/cnt1[3]_i_1_n_0            |                1 |              4 |         4.00 |
+|  Inst_Clock_Manager/Inst_ClockDistributor/clk_TEC | Inst_Teclado/keyboard/E[0]                              | Inst_Teclado/sevenSeg/FSM_onehot_current_state[4]_i_3_n_0 |                2 |              5 |         2.50 |
+|  Inst_Teclado/CLK50MHZ                            |                                                         |                                                           |                3 |              6 |         2.00 |
+| ~Inst_Teclado/keyboard/debounce/O0                |                                                         |                                                           |                3 |              9 |         3.00 |
+|  Inst_Clock_Manager/Inst_PLL/inst/clk_out1        |                                                         | Inst_VGA_Manager/Inst_VGA_Sync/p_0_in_0                   |                5 |             11 |         2.20 |
+|  sig_60Hz_BUFG                                    | Inst_GAME_Play/snake_move.cabeza_snake_xy_f[31]_i_1_n_0 | cabeza_snake_xy_f0                                        |               12 |             15 |         1.25 |
+|  Inst_Teclado/keyboard/flag                       | Inst_Teclado/keyboard/dataprev[7]_i_1_n_0               |                                                           |                4 |             16 |         4.00 |
+|  Inst_Clock_Manager/Inst_ClockDistributor/clk_TEC |                                                         | Inst_Teclado/sevenSeg/FSM_onehot_current_state[4]_i_3_n_0 |                5 |             20 |         4.00 |
+|  clk_IBUF                                         |                                                         | Inst_Clock_Manager/Inst_Clock_Converter/clk_temp          |                6 |             20 |         3.33 |
+|  Inst_Clock_Manager/Inst_ClockDistributor/clk_TEC |                                                         |                                                           |               13 |             29 |         2.23 |
+|  SyncEnable                                       |                                                         |                                                           |                8 |             31 |         3.88 |
+|  Inst_Clock_Manager/Inst_PLL/inst/clk_out1        |                                                         |                                                           |              756 |           1641 |         2.17 |
+|  sig_60Hz_BUFG                                    |                                                         | cabeza_snake_xy_f0                                        |             1333 |           3086 |         2.32 |
++---------------------------------------------------+---------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
+
+

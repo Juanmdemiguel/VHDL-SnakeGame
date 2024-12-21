@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../SnakeGame.srcs/sources_1/new/Types.vhd" \
+"../../../../SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd" \
+"../../../../SnakeGame.srcs/sim_1/new/GAME_PLAY_TB.vhd" \
+
+# Do not sort compile order
+nosort

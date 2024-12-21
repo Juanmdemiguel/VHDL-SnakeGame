@@ -1,0 +1,465 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Dec 21 02:59:02 2024
+# Process ID: 19580
+# Current directory: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1
+# Command line: vivado.exe -log TOP_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_2.tcl
+# Log file: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/TOP_2.vds
+# Journal file: C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1\vivado.jou
+# Running On        :Mario
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency     :2419 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8266 MB
+# Swap memory       :13141 MB
+# Total Virtual     :21407 MB
+# Available Virtual :2832 MB
+#-----------------------------------------------------------
+source TOP_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 523.547 ; gain = 238.461
+Command: read_checkpoint -auto_incremental -incremental C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+read_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 536.160 ; gain = 0.000
+Command: synth_design -top TOP_2 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12228
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1397.906 ; gain = 447.598
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9694] invalid size of integer constant literal [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:39]
+INFO: [Synth 8-638] synthesizing module 'TOP_2' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:75]
+INFO: [Synth 8-3491] module 'FLIP_FLOP_Pyton' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Snake.vhd:26' bound to instance 'Inst_Flip_Flop' of component 'FLIP_FLOP_Pyton' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'FLIP_FLOP_Pyton' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Snake.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'FLIP_FLOP_Pyton' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Snake.vhd:39]
+INFO: [Synth 8-3491] module 'Clock_Manager' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:25' bound to instance 'Inst_Clock_Manager' of component 'Clock_manager' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'Clock_Manager' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:39]
+INFO: [Synth 8-3491] module 'Clock_distributor' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:27' bound to instance 'Inst_ClockDistributor' of component 'clock_distributor' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'Clock_distributor' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:36]
+INFO: [Synth 8-113] binding component instance 'bufg_inst' to cell 'BUFG' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Clock_distributor' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:36]
+INFO: [Synth 8-3491] module 'PLL100to108' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-19580-Mario/realtime/PLL100to108_stub.vhdl:6' bound to instance 'Inst_PLL' of component 'PLL100to108' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'PLL100to108' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-19580-Mario/realtime/PLL100to108_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Clock_Converter' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:26' bound to instance 'Inst_Clock_Converter' of component 'Clock_Converter' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'Clock_Converter' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Converter' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Manager' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:39]
+INFO: [Synth 8-3491] module 'Scaled_String' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:24' bound to instance 'Inst_ScaledString' of component 'Scaled_String' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:268]
+INFO: [Synth 8-638] synthesizing module 'Scaled_String' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:32]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Scaler' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Scaler' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:32]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:24' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Scaled_String' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:32]
+INFO: [Synth 8-3491] module 'BUTTONS_Sync' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:4' bound to instance 'Inst_Buttons_Sync' of component 'BUTTONS_Sync' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'BUTTONS_Sync' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'BUTTONS_Sync' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:12]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:5' bound to instance 'Inst_edge' of component 'EDGEDTCTR' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:284]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:12]
+INFO: [Synth 8-3491] module 'Main_Game' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:5' bound to instance 'Inst_MainFSM' of component 'Main_Game' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:291]
+INFO: [Synth 8-638] synthesizing module 'Main_Game' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Main_Game' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:15]
+INFO: [Synth 8-3491] module 'GAME_Play' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:7' bound to instance 'Inst_GAME_Play' of component 'GAME_Play' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'GAME_Play' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:27]
+WARNING: [Synth 8-614] signal 'sig_GRID_SNAKE_xy' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:39]
+WARNING: [Synth 8-614] signal 'inited' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'GAME_Play' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:27]
+INFO: [Synth 8-3491] module 'VGA_Manager' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:27' bound to instance 'Inst_VGA_Manager' of component 'VGA_Manager' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:315]
+INFO: [Synth 8-638] synthesizing module 'VGA_Manager' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:42]
+INFO: [Synth 8-3491] module 'VGA_Sync' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd:26' bound to instance 'Inst_VGA_Sync' of component 'VGA_Sync' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'VGA_Sync' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'VGA_Sync' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd:54]
+INFO: [Synth 8-3491] module 'VGA_Draw' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:28' bound to instance 'Inst_VGA_Draw' of component 'VGA_Draw' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'VGA_Draw' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:41]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:44]
+WARNING: [Synth 8-614] signal 'pyton_length' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:44]
+WARNING: [Synth 8-614] signal 'pyton_mesh_pos' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:44]
+WARNING: [Synth 8-614] signal 'apple_pos' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'VGA_Draw' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:41]
+INFO: [Synth 8-3491] module 'VGA_DrawStr' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:33' bound to instance 'Inst_VGA_DrawStr' of component 'VGA_DrawStr' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'VGA_DrawStr' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:46]
+WARNING: [Synth 8-614] signal 'mode' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:56]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:68]
+WARNING: [Synth 8-614] signal 'Strlen' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:68]
+WARNING: [Synth 8-614] signal 'START' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:68]
+WARNING: [Synth 8-614] signal 'GAMEOVER' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'VGA_DrawStr' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd:46]
+WARNING: [Synth 8-614] signal 'mode' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+WARNING: [Synth 8-614] signal 'red_s' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+WARNING: [Synth 8-614] signal 'green_s' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+WARNING: [Synth 8-614] signal 'blue_s' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+WARNING: [Synth 8-614] signal 'red_g' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+WARNING: [Synth 8-614] signal 'green_g' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+WARNING: [Synth 8-614] signal 'blue_g' is read in the process but is not in the sensitivity list [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
+INFO: [Synth 8-256] done synthesizing module 'VGA_Manager' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:42]
+INFO: [Synth 8-3491] module 'TOP_TECLADO' declared at 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:6' bound to instance 'Inst_Teclado' of component 'TOP_TECLADO' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:359]
+INFO: [Synth 8-638] synthesizing module 'TOP_TECLADO' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:24]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:23]
+INFO: [Synth 8-638] synthesizing module 'MAQUINA_ESTADOS_TECLADO' [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:248]
+INFO: [Synth 8-226] default block is never used [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:290]
+INFO: [Synth 8-256] done synthesizing module 'MAQUINA_ESTADOS_TECLADO' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'TOP_TECLADO' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'TOP_2' (0#1) [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:75]
+WARNING: [Synth 8-3848] Net estado in module/entity GAME_Play does not have driver. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:19]
+WARNING: [Synth 8-3848] Net UART_TXD in module/entity TOP_TECLADO does not have driver. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:15]
+WARNING: [Synth 8-3848] Net LEDs in module/entity TOP_2 does not have driver. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:42]
+WARNING: [Synth 8-7129] Port x[31] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[30] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[29] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[28] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[27] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[26] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[25] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[24] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[23] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[22] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[21] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[20] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[19] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[18] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[17] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[16] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[15] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[14] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[13] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[12] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[11] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[10] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[9] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x[8] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UART_TXD in module TOP_TECLADO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port estado[2] in module GAME_Play is either unconnected or has no load
+WARNING: [Synth 8-7129] Port estado[1] in module GAME_Play is either unconnected or has no load
+WARNING: [Synth 8-7129] Port estado[0] in module GAME_Play is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[4] in module TOP_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[3] in module TOP_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[2] in module TOP_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[1] in module TOP_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[0] in module TOP_2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:31 . Memory (MB): peak = 1654.125 ; gain = 703.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:42 . Memory (MB): peak = 1654.125 ; gain = 703.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:42 . Memory (MB): peak = 1654.125 ; gain = 703.816
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1665.316 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc] for cell 'Inst_Clock_Manager/Inst_PLL'
+Finished Parsing XDC File [c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc] for cell 'Inst_Clock_Manager/Inst_PLL'
+Parsing XDC File [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'button_up'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'button_left'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'button_right'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'button_down'. [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc:89]
+Finished Parsing XDC File [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/TOP_2_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1965.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.862 . Memory (MB): peak = 1965.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:02:01 . Memory (MB): peak = 1965.168 ; gain = 1014.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:02:01 . Memory (MB): peak = 1965.168 ; gain = 1014.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/mariu/Downloads/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for Inst_Clock_Manager/Inst_PLL. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:02:01 . Memory (MB): peak = 1965.168 ; gain = 1014.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:33 ; elapsed = 00:02:04 . Memory (MB): peak = 1965.168 ; gain = 1014.859
+---------------------------------------------------------------------------------
+GAME_Play__GB3VGA_Manager__GC0VGA_DrawStr__GB1VGA_Draw__GB4VGA_DrawStr__GB3VGA_Draw__GB1GAME_Play__GB2VGA_DrawStr__GB2GAME_Play__GB0GAME_Play__GB1VGA_DrawStr__GB0TOP_2__GC0VGA_Draw__GB3VGA_Draw__GB0VGA_Draw__GB2---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:37 ; elapsed = 00:02:14 . Memory (MB): peak = 1965.168 ; gain = 1014.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:02:16 . Memory (MB): peak = 1965.168 ; gain = 1014.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Mimic Skeleton from Reference
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:38 ; elapsed = 00:02:18 . Memory (MB): peak = 1965.168 ; gain = 1014.859
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: yes
+
+   Stitch points used : changed
+
+
+2. Change Summary
+
+Report Incremental Modules: 
++-+----------------+------------+----------+----------+
+| |Changed Modules |Replication |Instances |Changed % |
++-+----------------+------------+----------+----------+
++-+----------------+------------+----------+----------+
+
+
+   Full Design Size (number of cells) : 216307
+   Resynthesis Design Size (number of cells) : 0
+   Resynth % : 0.0000,  Reuse % : 100.0000
+
+3. Reference Checkpoint Information
+
++---------------------------------------------------------------------------------------------------------+
+| DCP Location:  | C:/Users/mariu/Downloads/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp |
++---------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+------------------------------+
+|         DCP Information        |             Value            |
++--------------------------------+------------------------------+
+| Vivado Version                 |                    v2024.1 |
+| DCP State                      |                              |
++--------------------------------+------------------------------+
+
+
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |GAME_Play__GB0_#REUSE#   |           1|         0|
+|2     |GAME_Play__GB1_#REUSE#   |           1|         0|
+|3     |GAME_Play__GB2_#REUSE#   |           1|         0|
+|4     |GAME_Play__GB3_#REUSE#   |           1|         0|
+|5     |VGA_Draw__GB0_#REUSE#    |           1|         0|
+|6     |VGA_Draw__GB1_#REUSE#    |           1|         0|
+|7     |VGA_Draw__GB2_#REUSE#    |           1|         0|
+|8     |VGA_Draw__GB3_#REUSE#    |           1|         0|
+|9     |VGA_Draw__GB4_#REUSE#    |           1|         0|
+|10    |VGA_DrawStr__GB0_#REUSE# |           1|         0|
+|11    |VGA_DrawStr__GB1_#REUSE# |           1|         0|
+|12    |VGA_DrawStr__GB2_#REUSE# |           1|         0|
+|13    |VGA_DrawStr__GB3_#REUSE# |           1|         0|
+|14    |VGA_Manager__GC0_#REUSE# |           1|         0|
+|15    |TOP_2__GC0_#REUSE#       |           1|         0|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+WARNING: [Synth 8-7129] Port LEDs[4] in module TOP_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[3] in module TOP_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[2] in module TOP_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[1] in module TOP_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEDs[0] in module TOP_2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:02:26 . Memory (MB): peak = 1965.168 ; gain = 1014.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged AreaOpt Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:41 ; elapsed = 00:02:28 . Memory (MB): peak = 1965.168 ; gain = 1014.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:04:05 . Memory (MB): peak = 2044.629 ; gain = 1094.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:04:06 . Memory (MB): peak = 2044.922 ; gain = 1094.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:04:08 . Memory (MB): peak = 2069.906 ; gain = 1119.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:01:16 ; elapsed = 00:04:11 . Memory (MB): peak = 2087.660 ; gain = 1137.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:04:22 . Memory (MB): peak = 2092.371 ; gain = 1142.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:04:22 . Memory (MB): peak = 2092.371 ; gain = 1142.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:04:24 . Memory (MB): peak = 2092.371 ; gain = 1142.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:04:24 . Memory (MB): peak = 2092.371 ; gain = 1142.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:04:25 . Memory (MB): peak = 2092.371 ; gain = 1142.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:20 ; elapsed = 00:04:25 . Memory (MB): peak = 2092.371 ; gain = 1142.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |PLL100to108   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |PLL100to108_bbox |     1|
+|2     |BUFG             |     4|
+|3     |CARRY4           |  3984|
+|4     |LUT1             |  8499|
+|5     |LUT2             |  7351|
+|6     |LUT3             |   275|
+|7     |LUT4             |  1275|
+|8     |LUT5             |  1424|
+|9     |LUT6             |  1405|
+|10    |MUXF7            |    12|
+|11    |MUXF8            |     2|
+|12    |FDCE             |  2294|
+|13    |FDPE             |   812|
+|14    |FDRE             |  1766|
+|15    |FDSE             |     2|
+|16    |LD               |    35|
+|17    |IBUF             |     4|
+|18    |OBUF             |    36|
+|19    |OBUFT            |     5|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:20 ; elapsed = 00:04:25 . Memory (MB): peak = 2092.371 ; gain = 1142.062
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:03:16 . Memory (MB): peak = 2092.371 ; gain = 831.020
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:04:25 . Memory (MB): peak = 2092.371 ; gain = 1142.062
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.455 . Memory (MB): peak = 2092.371 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4033 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2094.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 35 instances were transformed.
+  LD => LDCE: 35 instances
+
+Synth Design complete | Checksum: a66bf57e
+INFO: [Common 17-83] Releasing license: Synthesis
+86 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:04:56 . Memory (MB): peak = 2094.062 ; gain = 1557.902
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 2094.062 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mariu/Downloads/SnakeGame/SnakeGame.runs/synth_1/TOP_2.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2094.062 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file TOP_2_utilization_synth.rpt -pb TOP_2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 21 03:04:34 2024...

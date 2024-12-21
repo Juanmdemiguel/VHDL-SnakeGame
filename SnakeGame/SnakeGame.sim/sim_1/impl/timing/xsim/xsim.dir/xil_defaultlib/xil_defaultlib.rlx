@@ -1,0 +1,6 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.sim/sim_1/impl/timing/xsim/tb_Main_Game_time_impl.v,1734075889,verilog,,,,BUTTONS_Sync;Clock_Converter;Clock_distributor;Main_Game;PLL100to108;PLL100to108_clk_wiz;Scaled_String;Scaler;Scaler_0;Scaler_1;Scaler_2;Scaler_3;Scaler_4;Scaler_5;Scaler_6;Scaler_7;VGA_Draw;VGA_Manager;VGA_Sync;glbl;top,,,../../../../../SnakeGame.ip_user_files/ipstatic,,,,,
+C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sim_1/new/Main_FSM_tb.vhd,1734075594,vhdl,,,,tb_main_game,,,,,,,,
