@@ -3,12 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Nov 28 19:00:47 2024
-# Process ID: 33304
-# Current directory: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1
-# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/top.vds
-# Journal file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1\vivado.jou
+# Start of session at: Thu Jan 16 12:38:28 2025
+# Process ID: 25144
+# Current directory: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.runs/synth_1
+# Command line: vivado.exe -log TOP_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_2.tcl
+# Log file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.runs/synth_1/TOP_2.vds
+# Journal file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.runs/synth_1\vivado.jou
 # Running On        :DESKTOP-1V0CU1G
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :22631
@@ -17,8 +17,8 @@
 # CPU Physical cores:8
 # CPU Logical cores :16
 # Host memory       :17007 MB
-# Swap memory       :14080 MB
-# Total Virtual     :31088 MB
-# Available Virtual :6273 MB
+# Swap memory       :8589 MB
+# Total Virtual     :25597 MB
+# Available Virtual :3998 MB
 #-----------------------------------------------------------
-source top.tcl -notrace
+source TOP_2.tcl -notrace

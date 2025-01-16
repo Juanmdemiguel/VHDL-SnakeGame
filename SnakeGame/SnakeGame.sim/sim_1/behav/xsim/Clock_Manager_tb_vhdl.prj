@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_sim_netlist.vhdl" \
-"../../../../SnakeGame.srcs/sources_1/new/Clock_Converter.vhd" \
-"../../../../SnakeGame.srcs/sources_1/new/Clock_Manager.vhd" \
-"../../../../SnakeGame.srcs/sim_1/new/Clock_Manager_tb.vhd" \
-
-# Do not sort compile order
-nosort
