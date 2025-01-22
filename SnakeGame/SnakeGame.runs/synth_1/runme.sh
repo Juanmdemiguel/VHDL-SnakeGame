@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.runs/synth_1'
+HD_PWD='C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

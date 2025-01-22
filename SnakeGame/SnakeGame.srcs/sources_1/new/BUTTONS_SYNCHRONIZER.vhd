@@ -1,14 +1,16 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: UPM
+-- Engineer: Iván Asensio Díez
+-- Engineer: Mario Luna López
+-- Engineer: Juan Muñoz de Bustillo de Miguel
 -- 
--- Create Date: 11.12.2024 18:00:57
--- Design Name: 
--- Module Name: BUTTONS_SYNCHRONIZER - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
+-- Create Date: 12.12.2024 21:09:15
+-- Design Name: BUTTONS_Sync
+-- Module Name: BUTTONS_Sync - Behavioral
+-- Project Name: VHDL_SnakeGame
+-- Target Devices: Nexys4 - DDR
+-- Tool Versions: Vivado 2024.1
+-- Description: Synchronize the pressed buttons with the clock cycles
 -- 
 -- Dependencies: 
 -- 
@@ -21,15 +23,6 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity BUTTONS_Sync is
     Port ( 

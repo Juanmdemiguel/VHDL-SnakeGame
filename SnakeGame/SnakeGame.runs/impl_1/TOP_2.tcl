@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.runs/impl_1/TOP_2.tcl"
+  variable script "C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/impl_1/TOP_2.tcl"
   variable category "vivado_impl"
 }
 
@@ -113,17 +113,17 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.cache/wt [current_project]
-  set_property parent.project_path C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.xpr [current_project]
-  set_property ip_output_repo C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.cache/wt [current_project]
+  set_property parent.project_path C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.xpr [current_project]
+  set_property ip_output_repo C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.runs/synth_1/TOP_2.dcp
-  read_ip -quiet C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/ip/PLL100to108/PLL100to108.xci
+  add_files -quiet C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/TOP_2.dcp
+  read_ip -quiet C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/ip/PLL100to108/PLL100to108.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc
+  read_xdc C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.runs/synth_1/TOP_2.tcl"
+  variable script "C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/TOP_2.tcl"
   variable category "vivado_synth"
 }
 
@@ -63,45 +63,45 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.cache/wt [current_project]
-set_property parent.project_path C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.cache/wt [current_project]
+set_property parent.project_path C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.cache/ip [current_project]
+set_property ip_output_repo c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/debouncer.v
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/debouncer.v
 }
 read_vhdl -library xil_defaultlib {
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Types.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Snake.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Letters.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd
-  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Types.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Snake.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Letters.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_DrawStr.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd
+  C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd
 }
-read_ip -quiet C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/ip/PLL100to108/PLL100to108.xci
-set_property used_in_implementation false [get_files -all c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_ooc.xdc]
+read_ip -quiet C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/ip/PLL100to108/PLL100to108.xci
+set_property used_in_implementation false [get_files -all c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -112,12 +112,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]
+read_xdc C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/constrs_1/imports/new/Nexys-4-DDR-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -3,12 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Jan 16 12:44:00 2025
-# Process ID: 2824
-# Current directory: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.runs/impl_1
+# Start of session at: Wed Jan 22 17:42:45 2025
+# Process ID: 34640
+# Current directory: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/impl_1
 # Command line: vivado.exe -log TOP_2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOP_2.tcl -notrace
-# Log file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.runs/impl_1/TOP_2.vdi
-# Journal file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.runs/impl_1\vivado.jou
+# Log file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/impl_1/TOP_2.vdi
+# Journal file: C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/impl_1\vivado.jou
 # Running On        :DESKTOP-1V0CU1G
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :22631
@@ -17,8 +17,8 @@
 # CPU Physical cores:8
 # CPU Logical cores :16
 # Host memory       :17007 MB
-# Swap memory       :9027 MB
-# Total Virtual     :26034 MB
-# Available Virtual :5288 MB
+# Swap memory       :13026 MB
+# Total Virtual     :30034 MB
+# Available Virtual :6104 MB
 #-----------------------------------------------------------
 source TOP_2.tcl -notrace

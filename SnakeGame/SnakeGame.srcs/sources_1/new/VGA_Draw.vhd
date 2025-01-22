@@ -6,11 +6,11 @@
 -- 
 -- Create Date: 20.11.2024 10:53:37
 -- Design Name: VGA
--- Module Name: VGA_Sync - Behavioral
+-- Module Name: VGA_Draw - Behavioral
 -- Project Name: VHDL_SnakeGame
 -- Target Devices: Nexys4 - DDR
 -- Tool Versions: Vivado 2024.1
--- Description: Sincroniza el pulso de la pantalla vga con los pixeles del mismo y emite la zona visible 
+-- Description: Drawn game elements on the screen
 -- 
 -- Dependencies: 
 -- 

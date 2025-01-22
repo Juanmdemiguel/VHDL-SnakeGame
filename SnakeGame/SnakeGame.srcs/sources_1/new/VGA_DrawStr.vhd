@@ -1,14 +1,16 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: UPM
+-- Engineer: Iván Asensio Díez
+-- Engineer: Mario Luna López
+-- Engineer: Juan Muñoz de Bustillo de Miguel
 -- 
--- Create Date: 16.12.2024 17:32:37
--- Design Name: 
+-- Create Date: 20.11.2024 10:53:37
+-- Design Name: VGA
 -- Module Name: VGA_DrawStr - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
+-- Project Name: VHDL_SnakeGame
+-- Target Devices: Nexys4 - DDR
+-- Tool Versions: Vivado 2024.1
+-- Description: Drawing of characters (letters) on screen
 -- 
 -- Dependencies: 
 -- 
@@ -17,18 +19,11 @@
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.Letters.all;
 use work.Types.all;
 use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity VGA_DrawStr is
      port(

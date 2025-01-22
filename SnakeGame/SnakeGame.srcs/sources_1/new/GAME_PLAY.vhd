@@ -5,12 +5,12 @@
 -- Engineer: Juan Muñoz de Bustillo de Miguel
 -- 
 -- Create Date: 20.11.2024 10:53:37
--- Design Name: GAME
--- Module Name: GAME_Move - Behavioral
+-- Design Name: GAME_Play
+-- Module Name: GAME_Play - Behavioral
 -- Project Name: VHDL_SnakeGame
 -- Target Devices: Nexys4 - DDR
 -- Tool Versions: Vivado 2024.1
--- Description: Sincroniza el pulso de la pantalla vga con los pixeles del mismo y emite la zona visible 
+-- Description: Main logic of the snake's movement, the conditions of the snake's growth and the end of the game
 -- 
 -- Dependencies: 
 -- 
@@ -171,22 +171,6 @@ ramdom_number_gen:
             random_pos(15 downto 0) <= random_y + 7;
         end if;
     end process;
-    
---ramdom_number_gen:
---   process(clk_60hz)
---    begin
---        if rising_edge(clk_60hz) then
---            -- Generación de nuevo valor para lfsr_x (LFSR para X)
---            lfsr_x <= lfsr_x(14 downto 0) & (lfsr_x(15) xor lfsr_x(14));  -- Polinomio LFSR para 16 bits
-            
---            -- Generación de nuevo valor para lfsr_y (LFSR para Y)
---            lfsr_y <= lfsr_y(14 downto 0) & (lfsr_y(15) xor lfsr_y(14));  -- Polinomio LFSR para 16 bits
-
---            -- Ajustar los valores dentro del rango de la pantalla (screen_width y screen_height)
---            random_pos(31 downto 16) <= lfsr_x + to_unsigned(7, 16);  -- X con un ajuste de 7
---            random_pos(15 downto 0) <= lfsr_y + to_unsigned(7, 16);  -- Y con un ajuste de 7
---        end if;
---    end process;
     
  end BEHAVIORAL;
 

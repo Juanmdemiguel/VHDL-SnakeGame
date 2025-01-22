@@ -5,12 +5,12 @@
 -- Engineer: Juan Muñoz de Bustillo de Miguel
 -- 
 -- Create Date: 20.11.2024 10:53:37
--- Design Name: VGA
--- Module Name: VGA_Sync - Behavioral
+-- Design Name: Clock_Converter
+-- Module Name: Clock_Converter - Behavioral
 -- Project Name: VHDL_SnakeGame
 -- Target Devices: Nexys4 - DDR
 -- Tool Versions: Vivado 2024.1
--- Description: Sincroniza el pulso de la pantalla vga con los pixeles del mismo y emite la zona visible 
+-- Description: 100 MHz to 60 Hz clock frequency converter
 -- 
 -- Dependencies: 
 -- 
@@ -26,7 +26,6 @@ use IEEE.NUMERIC_STD.ALL;
 entity Clock_Converter is --Convertidor de señales de reloj de 33 MHz en señales de 60 Hz
     Port (
         clk_in   : in  std_logic;  -- Reloj de entrada (100 MHz)
-        --reset    : in  std_logic; 
         clk_out  : out std_logic   -- Reloj de salida (60 Hz)
     );
 end Clock_Converter;
@@ -39,9 +38,6 @@ begin
 
     process(clk_in)
     begin
---        if reset = '1' then
---            counter <= 0;
---            clk_temp <= '0';
         if rising_edge(clk_in) then
             if counter = converter - 1 then
                 counter <= 0;

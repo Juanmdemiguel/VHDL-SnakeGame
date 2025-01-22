@@ -1,14 +1,16 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: UPM
+-- Engineer: Iván Asensio Díez
+-- Engineer: Mario Luna López
+-- Engineer: Juan Muñoz de Bustillo de Miguel
 -- 
--- Create Date: 10.12.2024 19:20:36
--- Design Name: 
--- Module Name: Scaled_String - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
+-- Create Date: 12.12.2024 21:09:15
+-- Design Name: Scaled_String
+-- Module Name: Scaled_String - Structural
+-- Project Name: VHDL_SnakeGame
+-- Target Devices: Nexys4 - DDR
+-- Tool Versions: Vivado 2024.1
+-- Description: Entity in charge of scaling the letters to a correct size for display on the screen
 -- 
 -- Dependencies: 
 -- 

@@ -1,14 +1,16 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: UPM
+-- Engineer: Iván Asensio Díez
+-- Engineer: Mario Luna López
+-- Engineer: Juan Muñoz de Bustillo de Miguel
 -- 
--- Create Date: 28.11.2024 18:21:03
--- Design Name: 
+-- Create Date: 20.11.2024 10:53:37
+-- Design Name: VGA_Manager
 -- Module Name: VGA_Manager - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
+-- Project Name: VHDL_SnakeGame
+-- Target Devices: Nexys4 - DDR
+-- Tool Versions: Vivado 2024.1
+-- Description: Coordinator of entities related to screen output
 -- 
 -- Dependencies: 
 -- 
@@ -17,8 +19,6 @@
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.Types.all;

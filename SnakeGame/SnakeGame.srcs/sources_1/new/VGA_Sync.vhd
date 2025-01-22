@@ -10,7 +10,7 @@
 -- Project Name: VHDL_SnakeGame
 -- Target Devices: Nexys4 - DDR
 -- Tool Versions: Vivado 2024.1
--- Description: Sincroniza el pulso de la pantalla vga con los pixeles del mismo y emite la zona visible 
+-- Description: Synchronizes the pulse of the vga screen with its pixels and emits the visible area
 -- 
 -- Dependencies: 
 -- 

@@ -1,14 +1,16 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: UPM
+-- Engineer: Iván Asensio Díez
+-- Engineer: Mario Luna López
+-- Engineer: Juan Muñoz de Bustillo de Miguel
 -- 
--- Create Date: 13.12.2024 12:09:10
--- Design Name: 
+-- Create Date: 12.12.2024 21:09:15
+-- Design Name: EDGEDTCTR
 -- Module Name: EDGEDTCTR - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
+-- Project Name: VHDL_SnakeGame
+-- Target Devices: Nexys4 - DDR
+-- Tool Versions: Vivado 2024.1
+-- Description: Downhill edge detector
 -- 
 -- Dependencies: 
 -- 
@@ -39,6 +41,6 @@ begin
    
  with sreg select
     EDGE <= '1' when "100",
-    '0' when others;
+            '0' when others;
     
  end Behavioral;

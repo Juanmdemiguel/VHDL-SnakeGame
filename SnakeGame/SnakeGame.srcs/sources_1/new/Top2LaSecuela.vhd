@@ -1,14 +1,16 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: UPM
+-- Engineer: Iván Asensio Díez
+-- Engineer: Mario Luna López
+-- Engineer: Juan Muñoz de Bustillo de Miguel
 -- 
--- Create Date: 17.12.2024 10:24:40
--- Design Name: 
--- Module Name: TOP_2 - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
+-- Create Date: 12.12.2024 21:09:15
+-- Design Name: TOP_2
+-- Module Name: TOP_2 - Structural
+-- Project Name: VHDL_SnakeGame
+-- Target Devices: Nexys4 - DDR
+-- Tool Versions: Vivado 2024.1
+-- Description: Main gaming entity, coordinator of the different entities
 -- 
 -- Dependencies: 
 -- 
@@ -38,6 +40,20 @@ entity TOP_2 is
         HSync, VSync   : out std_logic;
         Red,Green,Blue : out std_logic_vector(3 downto 0);
         
+         --Teclado y salidas
+        PS2_DATA : in STD_LOGIC; --Datos de las teclas devueltos codificados
+        PS2_CLK : in STD_LOGIC; --Reloj para el comunicador USB
+        
+        SEG : out STD_LOGIC_VECTOR(6 downto 0); --Salida de displays de 7 segmentos
+        AN : out STD_LOGIC_VECTOR(7 downto 0); --Selector de los displays de 7 segmentos
+        DP : out STD_LOGIC; --Variable usada para poner o quitar los puntos de los displays
+        UART_TXD : out STD_LOGIC; 
+        
+        SALIDA_ARRIBA : out STD_LOGIC; --Señal para mover la serpiente hacia arriba
+        SALIDA_ABAJO : out STD_LOGIC; --Señal para mover la serpiente hacia abajo
+        SALIDA_IZQUIERDA : out STD_LOGIC; --Señal para mover la serpiente hacia la izquierda
+        SALIDA_DERECHA : out STD_LOGIC; --Señal para mover la serpiente hacia la derecha 
+        
         --Led de testeo---------------------------------------------------------------------
         LEDs           : out std_logic_vector(4 downto 0);
         --Testeo----------------------------------------------------------------------------
@@ -53,26 +69,11 @@ entity TOP_2 is
 --        sig_pyton_mesh_pos_out : out xys(0 to pyton_length_max - 1);
 --        sig_apple_pos_out      : out xy;
 --        estado_juego           : out std_logic_vector (2 downto 0)
-        led_choque               : out std_logic;
-         --Teclado y salidas
-        PS2_DATA : in STD_LOGIC; --Datos de las teclas devueltos codificados
-        PS2_CLK : in STD_LOGIC; --Reloj para el comunicador USB
-        
-        SEG : out STD_LOGIC_VECTOR(6 downto 0); --Salida de displays de 7 segmentos
-        AN : out STD_LOGIC_VECTOR(7 downto 0); --Selector de los displays de 7 segmentos
-        DP : out STD_LOGIC; --Variable usada para poner o quitar los puntos de los displays
-        UART_TXD : out STD_LOGIC; 
-        
-        SALIDA_ARRIBA : out STD_LOGIC; --Señal para mover la serpiente hacia arriba
-        SALIDA_ABAJO : out STD_LOGIC; --Señal para mover la serpiente hacia abajo
-        SALIDA_IZQUIERDA : out STD_LOGIC; --Señal para mover la serpiente hacia la izquierda
-        SALIDA_DERECHA : out STD_LOGIC --Señal para mover la serpiente hacia la derecha 
+        led_choque               : out std_logic
          );
 end TOP_2;
 
-
-
-architecture Behavioral of TOP_2 is
+architecture Structural of TOP_2 is
                 -----------------------------------------SIGNALS-----------------------------------------------------
                 -- CLOCK SIGNALS --
                 signal sig_108MHz : std_logic;
@@ -132,15 +133,15 @@ COMPONENT Scaled_String
 END COMPONENT;
 
 COMPONENT Clock_manager 
- Port (
-  clk_input  : in std_logic; 
-  clk_FSM    : out std_logic;
-  clk_SC     : out std_logic;     
-  clk_CV     : out std_logic;     
-  clk_EDGE   : out std_logic;     
-  clk_TEC    : out std_logic;          
-  clk_108MHz : out std_logic;
-  clk_60Hz   : out std_logic
+     Port (
+        clk_input  : in std_logic; 
+        clk_FSM    : out std_logic;
+        clk_SC     : out std_logic;     
+        clk_CV     : out std_logic;     
+        clk_EDGE   : out std_logic;     
+        clk_TEC    : out std_logic;          
+        clk_108MHz : out std_logic;
+        clk_60Hz   : out std_logic
 );
 END COMPONENT;
 COMPONENT BUTTONS_Sync 
@@ -253,25 +254,24 @@ end process;
         apple_pos_out        => sig_apple_pos_flipflop
     );
 Inst_Clock_Manager : Clock_Manager
- PORT MAP (
-  clk_input   => clk,
-  clk_FSM     => clk_FSM,
-  clk_SC      => clk_SC,     
-  clk_CV      => clk_CV,     
-  clk_EDGE    => clk_EDGE,     
-  clk_TEC     => clk_TEC,          
-  clk_108MHz  => sig_108MHz,
-  clk_60Hz    => sig_60Hz 
-);
+     PORT MAP (
+        clk_input   => clk,
+        clk_FSM     => clk_FSM,
+        clk_SC      => clk_SC,     
+        clk_CV      => clk_CV,     
+        clk_EDGE    => clk_EDGE,     
+        clk_TEC     => clk_TEC,          
+        clk_108MHz  => sig_108MHz,
+        clk_60Hz    => sig_60Hz 
+    );
 
 -- provides the strings for the start and gameover state
 Inst_ScaledString : Scaled_String 
-    PORT MAP(
-      clk       => clk_SC,
-      GAME_OVER => gameover,
-      START     => start
-    );
-    
+     PORT MAP(
+        clk       => clk_SC,
+        GAME_OVER => gameover,
+        START     => start
+    );    
 
 Inst_Buttons_Sync: BUTTONS_Sync
      PORT MAP (
@@ -312,7 +312,7 @@ Inst_GAME_Play: GAME_Play
         led_choque      => led_choque
     );
 -- -- Inputs draw depending on the state
-    Inst_VGA_Manager: VGA_Manager
+Inst_VGA_Manager: VGA_Manager
       PORT MAP (
         START            => start,
         GAMEOVER         => gameover,
@@ -327,6 +327,28 @@ Inst_GAME_Play: GAME_Play
         green            => Green,
         blue             => Blue
     );
+    
+Inst_Teclado: TOP_TECLADO
+     PORT MAP (
+        CLK100MHZ=>clk_TEC,
+        PS2_CLK=>PS2_CLK,
+        PS2_DATA=>PS2_DATA,
+        RESET_TECLADO=>reset,
+        SEG=>seg,
+        AN=>AN,
+        DP=>DP,
+        UART_TXD=>UART_TXD,
+        SALIDA_ARRIBA=>teclado_arriba,
+        SALIDA_ABAJO=>teclado_abajo,
+        SALIDA_IZQUIERDA=>teclado_izquierda,
+        SALIDA_DERECHA=>teclado_derecha
+    );   
+    
+    
+    SALIDA_ARRIBA <=teclado_arriba;
+    SALIDA_ABAJO <=teclado_abajo;
+    SALIDA_IZQUIERDA <=teclado_izquierda;
+    SALIDA_DERECHA <=teclado_derecha;
     
     ------------------------------------------------TESTEO---------------------------------------------
 
@@ -356,25 +378,4 @@ Inst_GAME_Play: GAME_Play
 --    clk_108MHz      <= sig_108MHz;
 --    clk_60Hz        <= sig_60Hz;
     
- Inst_Teclado: TOP_TECLADO
-     PORT MAP (
-        CLK100MHZ=>clk_TEC,
-        PS2_CLK=>PS2_CLK,
-        PS2_DATA=>PS2_DATA,
-        RESET_TECLADO=>reset,
-        SEG=>seg,
-        AN=>AN,
-        DP=>DP,
-        UART_TXD=>UART_TXD,
-        SALIDA_ARRIBA=>teclado_arriba,
-        SALIDA_ABAJO=>teclado_abajo,
-        SALIDA_IZQUIERDA=>teclado_izquierda,
-        SALIDA_DERECHA=>teclado_derecha
-    );   
-    
-    
-    SALIDA_ARRIBA <=teclado_arriba;
-    SALIDA_ABAJO <=teclado_abajo;
-    SALIDA_IZQUIERDA <=teclado_izquierda;
-    SALIDA_DERECHA <=teclado_derecha;
-end Behavioral;
+end Structural;
