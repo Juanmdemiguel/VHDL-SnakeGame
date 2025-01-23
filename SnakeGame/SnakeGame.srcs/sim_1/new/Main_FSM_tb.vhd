@@ -32,14 +32,14 @@ architecture tb of tb_Main_Game is
 
     component Main_Game
         port (
-            BUTTON     : in std_logic_vector(2 downto 0);
-            LOSE       : in std_logic;
+            BUTTON     : in std_logic;
+            LOSE       : inout std_logic;
             CLK_100MHz : in std_logic;
             STATE      : out std_logic_vector(1 downto 0)
         );
     end component;
 
-    signal BUTTON     : std_logic_vector(2 downto 0) := (others => '0');
+    signal BUTTON     : std_logic := '0';
     signal LOSE       : std_logic := '0';
     signal CLK_100MHz : std_logic := '0';
     signal STATE      : std_logic_vector(1 downto 0);
@@ -63,14 +63,14 @@ begin
     stimuli : process
     begin
         -- Inicialización
-        BUTTON <= (others => '0');
+        BUTTON <= '0';
         LOSE <= '0';
         wait for 50 * TbPeriod;
 
         -- Prueba transición a S1_GAME
-        BUTTON <= "100";
+        BUTTON <= '1';
         wait for 20 * TbPeriod;
-        BUTTON <= (others => '0');
+        BUTTON <= '0';
         wait for 50 * TbPeriod;
 
         -- Prueba transición a S2_GO
@@ -80,9 +80,9 @@ begin
         wait for 50 * TbPeriod;
 
         -- Prueba regreso a S0_START
-        BUTTON <= "100";
+        BUTTON <= '1';
         wait for 50 * TbPeriod;
-        BUTTON <= (others => '0');
+        BUTTON <= '0';
         wait for 50 * TbPeriod;
 
         -- Finalización

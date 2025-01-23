@@ -8,15 +8,16 @@
   **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Wed Jan 22 17:36:06 2025
+  **** Start of session at: Thu Jan 23 17:45:16 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source TOP_2.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 537.902 ; gain = 236.188
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 539.520 ; gain = 236.691
 Command: read_checkpoint -auto_incremental -incremental C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/utils_1/imports/synth_1/VGA_Sync.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+read_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 554.145 ; gain = 0.000
 Command: synth_design -top TOP_2 -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
@@ -25,28 +26,28 @@ INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 27176
+INFO: [Synth 8-7075] Helper process launched with PID 31736
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1415.195 ; gain = 448.391
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1413.129 ; gain = 447.281
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-9694] invalid size of integer constant literal [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:39]
 INFO: [Synth 8-638] synthesizing module 'TOP_2' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:76]
-INFO: [Synth 8-3491] module 'FLIP_FLOP_Pyton' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Snake.vhd:26' bound to instance 'Inst_Flip_Flop' of component 'FLIP_FLOP_Pyton' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:245]
-INFO: [Synth 8-638] synthesizing module 'FLIP_FLOP_Pyton' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Snake.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'FLIP_FLOP_Pyton' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Snake.vhd:39]
-INFO: [Synth 8-3491] module 'Clock_Manager' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:25' bound to instance 'Inst_Clock_Manager' of component 'Clock_manager' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:256]
+INFO: [Synth 8-3491] module 'FLIP_FLOP_Pyton' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Pyton.vhd:26' bound to instance 'Inst_Flip_Flop' of component 'FLIP_FLOP_Pyton' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'FLIP_FLOP_Pyton' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Pyton.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'FLIP_FLOP_Pyton' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/FLIP_FLOP_Pyton.vhd:39]
+INFO: [Synth 8-3491] module 'Clock_Manager' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:25' bound to instance 'Inst_Clock_Manager' of component 'Clock_manager' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:254]
 INFO: [Synth 8-638] synthesizing module 'Clock_Manager' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:39]
 INFO: [Synth 8-3491] module 'Clock_distributor' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:27' bound to instance 'Inst_ClockDistributor' of component 'clock_distributor' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:66]
 INFO: [Synth 8-638] synthesizing module 'Clock_distributor' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:36]
 INFO: [Synth 8-113] binding component instance 'bufg_inst' to cell 'BUFG' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'Clock_distributor' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_distributor.vhd:36]
-INFO: [Synth 8-3491] module 'PLL100to108' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-19832-DESKTOP-1V0CU1G/realtime/PLL100to108_stub.vhdl:6' bound to instance 'Inst_PLL' of component 'PLL100to108' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:76]
-INFO: [Synth 8-638] synthesizing module 'PLL100to108' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-19832-DESKTOP-1V0CU1G/realtime/PLL100to108_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'PLL100to108' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-26528-DESKTOP-1V0CU1G/realtime/PLL100to108_stub.vhdl:6' bound to instance 'Inst_PLL' of component 'PLL100to108' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'PLL100to108' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/.Xil/Vivado-26528-DESKTOP-1V0CU1G/realtime/PLL100to108_stub.vhdl:14]
 INFO: [Synth 8-3491] module 'Clock_Converter' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:26' bound to instance 'Inst_Clock_Converter' of component 'Clock_Converter' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:81]
 INFO: [Synth 8-638] synthesizing module 'Clock_Converter' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'Clock_Converter' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Converter.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'Clock_Manager' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Clock_Manager.vhd:39]
-INFO: [Synth 8-3491] module 'Scaled_String' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:26' bound to instance 'Inst_ScaledString' of component 'Scaled_String' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:269]
+INFO: [Synth 8-3491] module 'Scaled_String' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:26' bound to instance 'Inst_ScaledString' of component 'Scaled_String' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:267]
 INFO: [Synth 8-638] synthesizing module 'Scaled_String' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:34]
 INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:26' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:49]
 INFO: [Synth 8-638] synthesizing module 'Scaler' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:34]
@@ -60,21 +61,21 @@ INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Docume
 INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:26' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:49]
 INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:26' bound to instance 'Inst_Scaler' of component 'SCALER' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:49]
 INFO: [Synth 8-256] done synthesizing module 'Scaled_String' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaled_String.vhd:34]
-INFO: [Synth 8-3491] module 'BUTTONS_Sync' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:27' bound to instance 'Inst_Buttons_Sync' of component 'BUTTONS_Sync' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:276]
+INFO: [Synth 8-3491] module 'BUTTONS_Sync' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:27' bound to instance 'Inst_Buttons_Sync' of component 'BUTTONS_Sync' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:274]
 INFO: [Synth 8-638] synthesizing module 'BUTTONS_Sync' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:35]
 INFO: [Synth 8-256] done synthesizing module 'BUTTONS_Sync' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/BUTTONS_SYNCHRONIZER.vhd:35]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:25' bound to instance 'Inst_edge' of component 'EDGEDTCTR' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:284]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:25' bound to instance 'Inst_edge' of component 'EDGEDTCTR' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:282]
 INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:32]
 INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/EDGEDTCTR.vhd:32]
-INFO: [Synth 8-3491] module 'Main_Game' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:25' bound to instance 'Inst_MainFSM' of component 'Main_Game' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:291]
+INFO: [Synth 8-3491] module 'Main_Game' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:25' bound to instance 'Inst_MainFSM' of component 'Main_Game' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:289]
 INFO: [Synth 8-638] synthesizing module 'Main_Game' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:34]
 INFO: [Synth 8-256] done synthesizing module 'Main_Game' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Main_Game.vhd:34]
-INFO: [Synth 8-3491] module 'GAME_Play' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:27' bound to instance 'Inst_GAME_Play' of component 'GAME_Play' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:299]
-INFO: [Synth 8-638] synthesizing module 'GAME_Play' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:46]
-WARNING: [Synth 8-614] signal 'sig_pyton_mesh_pos' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:58]
-WARNING: [Synth 8-614] signal 'inited' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:58]
-INFO: [Synth 8-256] done synthesizing module 'GAME_Play' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:46]
-INFO: [Synth 8-3491] module 'VGA_Manager' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:27' bound to instance 'Inst_VGA_Manager' of component 'VGA_Manager' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:315]
+INFO: [Synth 8-3491] module 'GAME_Play' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:27' bound to instance 'Inst_GAME_Play' of component 'GAME_Play' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'GAME_Play' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:45]
+WARNING: [Synth 8-614] signal 'sig_pyton_mesh_pos' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:57]
+WARNING: [Synth 8-614] signal 'inited' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'GAME_Play' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:45]
+INFO: [Synth 8-3491] module 'VGA_Manager' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:27' bound to instance 'Inst_VGA_Manager' of component 'VGA_Manager' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:312]
 INFO: [Synth 8-638] synthesizing module 'VGA_Manager' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:42]
 INFO: [Synth 8-3491] module 'VGA_Sync' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd:26' bound to instance 'Inst_VGA_Sync' of component 'VGA_Sync' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:80]
 INFO: [Synth 8-638] synthesizing module 'VGA_Sync' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Sync.vhd:54]
@@ -102,7 +103,7 @@ WARNING: [Synth 8-614] signal 'red_g' is read in the process but is not in the s
 WARNING: [Synth 8-614] signal 'green_g' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
 WARNING: [Synth 8-614] signal 'blue_g' is read in the process but is not in the sensitivity list [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:116]
 INFO: [Synth 8-256] done synthesizing module 'VGA_Manager' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Manager.vhd:42]
-INFO: [Synth 8-3491] module 'TOP_TECLADO' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:27' bound to instance 'Inst_Teclado' of component 'TOP_TECLADO' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:331]
+INFO: [Synth 8-3491] module 'TOP_TECLADO' declared at 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:27' bound to instance 'Inst_Teclado' of component 'TOP_TECLADO' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:328]
 INFO: [Synth 8-638] synthesizing module 'TOP_TECLADO' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:45]
 INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:23]
 INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/debouncer.v:23]
@@ -115,7 +116,6 @@ INFO: [Synth 8-226] default block is never used [C:/Users/ivano/OneDrive/Documen
 INFO: [Synth 8-256] done synthesizing module 'MAQUINA_ESTADOS_TECLADO' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/DISPLAY_BCD.vhd:22]
 INFO: [Synth 8-256] done synthesizing module 'TOP_TECLADO' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:45]
 INFO: [Synth 8-256] done synthesizing module 'TOP_2' (0#1) [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:76]
-WARNING: [Synth 8-3848] Net estado in module/entity GAME_Play does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:39]
 WARNING: [Synth 8-3848] Net UART_TXD in module/entity TOP_TECLADO does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/new/TOP_TEC.vhd:36]
 WARNING: [Synth 8-3848] Net LEDs in module/entity TOP_2 does not have driver. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:58]
 WARNING: [Synth 8-7129] Port x[31] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
@@ -143,27 +143,24 @@ WARNING: [Synth 8-7129] Port x[10] in module MAQUINA_ESTADOS_TECLADO is either u
 WARNING: [Synth 8-7129] Port x[9] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
 WARNING: [Synth 8-7129] Port x[8] in module MAQUINA_ESTADOS_TECLADO is either unconnected or has no load
 WARNING: [Synth 8-7129] Port UART_TXD in module TOP_TECLADO is either unconnected or has no load
-WARNING: [Synth 8-7129] Port estado[2] in module GAME_Play is either unconnected or has no load
-WARNING: [Synth 8-7129] Port estado[1] in module GAME_Play is either unconnected or has no load
-WARNING: [Synth 8-7129] Port estado[0] in module GAME_Play is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LEDs[4] in module TOP_2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LEDs[3] in module TOP_2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LEDs[2] in module TOP_2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LEDs[1] in module TOP_2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LEDs[0] in module TOP_2 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1672.703 ; gain = 705.898
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1670.160 ; gain = 704.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1672.703 ; gain = 705.898
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1670.160 ; gain = 704.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1672.703 ; gain = 705.898
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1670.160 ; gain = 704.312
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1678.273 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1670.160 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -181,20 +178,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1982.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1981.531 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.231 . Memory (MB): peak = 1982.684 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.394 . Memory (MB): peak = 1981.531 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1982.684 ; gain = 1015.879
+Finished Constraint Validation : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 1981.531 ; gain = 1015.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1982.684 ; gain = 1015.879
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 1981.531 ; gain = 1015.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -203,17 +200,19 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/i
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.gen/sources_1/ip/PLL100to108/PLL100to108/PLL100to108_in_context.xdc, line 4).
 Applied set_property KEEP_HIERARCHY = SOFT for Inst_Clock_Manager/Inst_PLL. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1982.684 ; gain = 1015.879
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 1981.531 ; gain = 1015.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Preparing Guide Design
 ---------------------------------------------------------------------------------
+got a mismatch GAME_Play
+Is not a child genome
 WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1982.684 ; gain = 1015.879
+Finished Doing Graph Differ : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 1981.531 ; gain = 1015.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1982.684 ; gain = 1015.879
+Finished Preparing Guide Design : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 1981.531 ; gain = 1015.684
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'Main_Game'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'MAQUINA_ESTADOS_TECLADO'
@@ -225,8 +224,8 @@ INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in modul
                    s2_go |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'one-hot' in module 'Main_Game'
-WARNING: [Synth 8-327] inferring latch for variable 'inited_reg' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:74]
-WARNING: [Synth 8-327] inferring latch for variable 'drawPyton.draw_management_reg' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:60]
+WARNING: [Synth 8-327] inferring latch for variable 'inited_reg' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/GAME_PLAY.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 'drawPyton.draw_management_reg' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/VGA_Draw.vhd:60]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -237,9 +236,9 @@ WARNING: [Synth 8-327] inferring latch for variable 'drawPyton.draw_management_r
                es_arriba |                            10000 |                              001
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'MAQUINA_ESTADOS_TECLADO'
-WARNING: [Synth 8-327] inferring latch for variable 'sig_buttons_lock_reg' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:233]
+WARNING: [Synth 8-327] inferring latch for variable 'sig_buttons_lock_reg' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Top2LaSecuela.vhd:231]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1982.684 ; gain = 1015.879
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1981.531 ; gain = 1015.684
 ---------------------------------------------------------------------------------
 
 
@@ -321,58 +320,58 @@ WARNING: [Synth 8-7129] Port LEDs[2] in module TOP_2 is either unconnected or ha
 WARNING: [Synth 8-7129] Port LEDs[1] in module TOP_2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LEDs[0] in module TOP_2 is either unconnected or has no load
 INFO: [Synth 8-5544] ROM "Strlen" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'scaling[0].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[0].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[0].Inst_Scaler/char_scaled_reg[40][0:79]' into 'scaling[0].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[0].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[0].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[0].Inst_Scaler/char_scaled_reg[50][0:79]' into 'scaling[0].Inst_Scaler/char_scaled_reg[20][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[0].Inst_Scaler/char_scaled_reg[55][0:79]' into 'scaling[0].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[5][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[10][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[20][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[30][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[40][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[50][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[55][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[60][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[2].Inst_Scaler/char_scaled_reg[30][0:79]' into 'scaling[2].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[2].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[2].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[3].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[3].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[3].Inst_Scaler/char_scaled_reg[40][0:79]' into 'scaling[3].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[3].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[3].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[3].Inst_Scaler/char_scaled_reg[50][0:79]' into 'scaling[3].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[3].Inst_Scaler/char_scaled_reg[55][0:79]' into 'scaling[3].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[3].Inst_Scaler/char_scaled_reg[60][0:79]' into 'scaling[3].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[30][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[40][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[20][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[50][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[10][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[55][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[5][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[60][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[5].Inst_Scaler/char_scaled_reg[30][0:79]' into 'scaling[5].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[5].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[5].Inst_Scaler/char_scaled_reg[10][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[5].Inst_Scaler/char_scaled_reg[50][0:79]' into 'scaling[5].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[5][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[10][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[20][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[25][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[30][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[40][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[50][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[55][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[60][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[5][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[10][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[15][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[25][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[20][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[40][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[55][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[50][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Inst_Teclado/keyboard/keycode_reg' and it is trimmed from '32' to '24' bits. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame-Copy-15-1/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:74]
+INFO: [Synth 8-4471] merging register 'scaling[0].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[0].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[0].Inst_Scaler/char_scaled_reg[40][0:79]' into 'scaling[0].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[0].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[0].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[0].Inst_Scaler/char_scaled_reg[50][0:79]' into 'scaling[0].Inst_Scaler/char_scaled_reg[20][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[0].Inst_Scaler/char_scaled_reg[55][0:79]' into 'scaling[0].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[5][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[10][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[20][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[30][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[40][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[50][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[55][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[1].Inst_Scaler/char_scaled_reg[60][0:79]' into 'scaling[1].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[2].Inst_Scaler/char_scaled_reg[30][0:79]' into 'scaling[2].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[2].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[2].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[3].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[3].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[3].Inst_Scaler/char_scaled_reg[40][0:79]' into 'scaling[3].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[3].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[3].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[3].Inst_Scaler/char_scaled_reg[50][0:79]' into 'scaling[3].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[3].Inst_Scaler/char_scaled_reg[55][0:79]' into 'scaling[3].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[3].Inst_Scaler/char_scaled_reg[60][0:79]' into 'scaling[3].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[30][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[25][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[40][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[20][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[50][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[10][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[55][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[5][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[4].Inst_Scaler/char_scaled_reg[60][0:79]' into 'scaling[4].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[5].Inst_Scaler/char_scaled_reg[30][0:79]' into 'scaling[5].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[5].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[5].Inst_Scaler/char_scaled_reg[10][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[5].Inst_Scaler/char_scaled_reg[50][0:79]' into 'scaling[5].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[5][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[10][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[20][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[25][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[30][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[40][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[50][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[55][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[7].Inst_Scaler/char_scaled_reg[60][0:79]' into 'scaling[7].Inst_Scaler/char_scaled_reg[15][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[5][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[10][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[15][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[0][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[25][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[20][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[35][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[30][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[45][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[40][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+INFO: [Synth 8-4471] merging register 'scaling[8].Inst_Scaler/char_scaled_reg[55][0:79]' into 'scaling[8].Inst_Scaler/char_scaled_reg[50][0:79]' [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/new/Scaler.vhd:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Inst_Teclado/keyboard/keycode_reg' and it is trimmed from '32' to '24' bits. [C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.srcs/sources_1/imports/sources_1/imports/hdl/PS2Receiver.v:74]
 INFO: [Synth 8-5544] ROM "Inst_Teclado/sevenSeg/an" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Inst_Teclado/keyboard/datacur" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Inst_Teclado/sevenSeg/seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -590,25 +589,25 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Inst_Sca
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Inst_ScaledString/scaling[0].Inst_Scaler/char_scaled_reg[0][0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Inst_ScaledString/scaling[2].Inst_Scaler/char_scaled_reg[60][79] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:53 . Memory (MB): peak = 1982.684 ; gain = 1015.879
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:53 ; elapsed = 00:02:51 . Memory (MB): peak = 1981.531 ; gain = 1015.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:03 ; elapsed = 00:03:49 . Memory (MB): peak = 1982.684 ; gain = 1015.879
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:03 ; elapsed = 00:05:19 . Memory (MB): peak = 1981.531 ; gain = 1015.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:56 ; elapsed = 00:04:50 . Memory (MB): peak = 1982.684 ; gain = 1015.879
+Finished Timing Optimization : Time (s): cpu = 00:04:52 ; elapsed = 00:06:13 . Memory (MB): peak = 1981.531 ; gain = 1015.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:12 ; elapsed = 00:05:13 . Memory (MB): peak = 1982.684 ; gain = 1015.879
+Finished Technology Mapping : Time (s): cpu = 00:05:04 ; elapsed = 00:06:31 . Memory (MB): peak = 1981.531 ; gain = 1015.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -626,37 +625,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:25 ; elapsed = 00:05:29 . Memory (MB): peak = 1990.391 ; gain = 1023.586
+Finished IO Insertion : Time (s): cpu = 00:05:16 ; elapsed = 00:06:45 . Memory (MB): peak = 1993.414 ; gain = 1027.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:25 ; elapsed = 00:05:29 . Memory (MB): peak = 1990.391 ; gain = 1023.586
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:16 ; elapsed = 00:06:46 . Memory (MB): peak = 1993.414 ; gain = 1027.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:29 ; elapsed = 00:05:32 . Memory (MB): peak = 1990.391 ; gain = 1023.586
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:19 ; elapsed = 00:06:49 . Memory (MB): peak = 1993.414 ; gain = 1027.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:29 ; elapsed = 00:05:32 . Memory (MB): peak = 1990.391 ; gain = 1023.586
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:20 ; elapsed = 00:06:49 . Memory (MB): peak = 1993.414 ; gain = 1027.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:29 ; elapsed = 00:05:33 . Memory (MB): peak = 1990.391 ; gain = 1023.586
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:20 ; elapsed = 00:06:49 . Memory (MB): peak = 1993.414 ; gain = 1027.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:29 ; elapsed = 00:05:33 . Memory (MB): peak = 1990.391 ; gain = 1023.586
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:20 ; elapsed = 00:06:50 . Memory (MB): peak = 1993.414 ; gain = 1027.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -694,30 +693,30 @@ Report Cell Usage:
 |19    |OBUFT            |     5|
 +------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:30 ; elapsed = 00:05:33 . Memory (MB): peak = 1990.391 ; gain = 1023.586
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:20 ; elapsed = 00:06:50 . Memory (MB): peak = 1993.414 ; gain = 1027.566
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 110 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:03 ; elapsed = 00:05:17 . Memory (MB): peak = 1990.391 ; gain = 713.605
-Synthesis Optimization Complete : Time (s): cpu = 00:04:30 ; elapsed = 00:05:35 . Memory (MB): peak = 1990.391 ; gain = 1023.586
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:37 ; elapsed = 00:06:24 . Memory (MB): peak = 1993.414 ; gain = 716.195
+Synthesis Optimization Complete : Time (s): cpu = 00:05:20 ; elapsed = 00:06:51 . Memory (MB): peak = 1993.414 ; gain = 1027.566
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.643 . Memory (MB): peak = 1990.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.627 . Memory (MB): peak = 1993.414 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4054 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1994.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1997.422 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 35 instances were transformed.
   LD => LDCE: 35 instances
 
 Synth Design complete | Checksum: 8116b25
 INFO: [Common 17-83] Releasing license: Synthesis
-259 Infos, 170 Warnings, 0 Critical Warnings and 0 Errors encountered.
+259 Infos, 166 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:45 ; elapsed = 00:06:00 . Memory (MB): peak = 1994.391 ; gain = 1443.309
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.181 . Memory (MB): peak = 1994.391 ; gain = 0.000
+synth_design: Time (s): cpu = 00:05:36 ; elapsed = 00:07:10 . Memory (MB): peak = 1997.422 ; gain = 1443.277
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.173 . Memory (MB): peak = 1997.422 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ivano/OneDrive/Documentos/GitHub/VHDL-SnakeGame/SnakeGame/SnakeGame.runs/synth_1/TOP_2.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1994.391 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1997.422 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_utilization -file TOP_2_utilization_synth.rpt -pb TOP_2_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 22 17:42:33 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 23 17:53:04 2025...

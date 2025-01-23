@@ -17,6 +17,15 @@
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
+--
+--
+--      TESTBENCH NO ACTUALIZADO
+--      Este testbench fue utilizado en versiones previas a la incorporación 
+--      de varias funcionabilidades, es especial el teclado.
+--      NO SE ENCUENTRA EN ESTADO FUNCIONAL
+--
+--
+--------------------------------------------------------------------------------
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -47,9 +56,9 @@ ARCHITECTURE behavior OF top_tb IS
             STATE_OUT       : OUT std_logic_vector(2 downto 0);
             MAINSTATE       : OUT std_logic_vector(1 downto 0);
             lose          : out std_logic; 
-            snake_length  : OUT integer RANGE 0 TO 20;
-            snake_mesh_xy : OUT xys(0 TO snake_length_max-1);
-            food_xy       : OUT xy
+            pyton_length  : OUT integer RANGE 0 TO 20;
+            pyotn_mesh_pos : OUT xys(0 TO pyton_length_max-1);
+            apple_pos       : OUT xy
         );
     END COMPONENT;
 
@@ -69,9 +78,9 @@ ARCHITECTURE behavior OF top_tb IS
     SIGNAL STATE_OUT     : std_logic_vector(2 downto 0);
     SIGNAL MAINSTATE     : std_logic_vector(1 downto 0);
     SIGNAL lose          : std_logic;
-    SIGNAL snake_length  : integer RANGE 0 TO 20;
-    SIGNAL snake_mesh_xy : xys(0 TO snake_length_max-1);
-    SIGNAL food_xy       : xy;
+    SIGNAL pyton_length  : integer RANGE 0 TO 20;
+    SIGNAL pyton_mesh_pos : xys(0 TO pyton_length_max-1);
+    SIGNAL apple_pos       : xy;
 
     CONSTANT clk_period : time := 10 ns;
 
@@ -96,9 +105,9 @@ BEGIN
         state_out => state_out,
         mainstate => mainstate,
         lose => lose,
-        snake_length => snake_length,
-        snake_mesh_xy => snake_mesh_xy,
-        food_xy => food_xy
+        pyton_length => pyton_length,
+        pyton_mesh_pos => pyton_mesh_pos,
+        apple_pos => apple_pos
     );
 
     -- Clock generation

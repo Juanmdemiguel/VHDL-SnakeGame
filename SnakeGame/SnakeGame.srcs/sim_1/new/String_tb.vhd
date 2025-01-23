@@ -35,7 +35,7 @@ architecture Behavioral of BigLetters_tb is
     constant CLK_PERIOD : time := 10 ns; -- Período del reloj para 100 MHz
 
     -- DUT instantiation
-    component BigLetters
+    component Scaled_String
         port(
             clk       : in  std_logic;
             GAME_OVER : out big_letter_array(0 to 8);
@@ -54,7 +54,7 @@ begin
     end process;
 
     -- Instanciación del DUT
-    UUT: BigLetters
+    UUT: Scaled_String
         port map(
             clk       => clk,
             GAME_OVER => GAME_OVER,

@@ -36,7 +36,6 @@ entity GAME_Play is
         pyton_mesh_pos  : out xys(0 to pyton_length_max - 1);
         apple_pos       : out xy;
         
-        estado          : out std_logic_vector (2 downto 0);
         lose            : out std_logic;
         
         led_choque      : out std_logic

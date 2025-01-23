@@ -1,11 +1,11 @@
 
 { 
-    crc :  2857015795297362030  , 
+    crc :  9835293669155127209  , 
     ccp_crc :  0  , 
-    cmdline : " --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot BigLetters_tb_behav xil_defaultlib.BigLetters_tb" , 
+    cmdline : " --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot BigLetters_tb_behav xil_defaultlib.BigLetters_tb xil_defaultlib.glbl" , 
     buildDate : "May 22 2024" , 
     buildTime : "19:03:11" , 
-    linkCmd : "C:\\Users\\juans\\OneDrive\\Documentos\\Xilinx\\Vivado\\2024.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/BigLetters_tb_behav/xsimk.exe\"   \"xsim.dir/BigLetters_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/BigLetters_tb_behav/obj/xsim_1.win64.obj\" -L\"C:\\Users\\juans\\OneDrive\\Documentos\\Xilinx\\Vivado\\2024.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    linkCmd : "C:\\XILINX1\\Vivado\\2024.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/BigLetters_tb_behav/xsimk.exe\"   \"xsim.dir/BigLetters_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/BigLetters_tb_behav/obj/xsim_1.win64.obj\" -L\"C:\\XILINX1\\Vivado\\2024.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
     aggregate_nets : 
     [ 
     ] 

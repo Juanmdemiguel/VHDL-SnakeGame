@@ -42,30 +42,33 @@ architecture Behavioral of GAME_PLAY_TB is
     component GAME_Play is
         port(
             clk_60hz        : in  std_logic;
+            clk_108Mhz      : in  std_logic;
             reset           : in std_logic;
             play            : in std_logic;
-            joystick        : in std_logic_vector(2 downto 0);
+            teclado         : in std_logic_vector(2 downto 0);
             
-            snake_length    : out integer range 0 to snake_length_max;
-            snake_mesh_xy   : out xys(0 to snake_length_max - 1);
-            food_xy         : out xy;
+            pyton_length    : out integer range 0 to pyton_length_max;
+            pyton_mesh_pos  : out xys(0 to pyton_length_max - 1);
+            apple_pos       : out xy;
             
-            estado          : out std_logic_vector (2 downto 0);
-            lose            : out std_logic
+            lose            : out std_logic;
+            
+            led_choque      : out std_logic
         );
     end component;
 
     -- Signals to connect to the GAME_Play entity
     signal clk_60hz        : std_logic := '0';
+    signal clk_108Mhz      : std_logic := '0';
     signal reset           : std_logic := '0';
     signal play            : std_logic := '0';
-    signal joystick        : std_logic_vector(2 downto 0):="111";
+    signal teclado         : std_logic_vector(2 downto 0):="111";
 
-    signal snake_length    : integer range 0 to snake_length_max;
-    signal snake_mesh_xy   : xys(0 to snake_length_max - 1);
-    signal food_xy         : xy;
-    signal estado          : std_logic_vector (2 downto 0);
+    signal pyton_length    : integer range 0 to pyton_length_max;
+    signal pyton_mesh_pos  : xys(0 to pyton_length_max - 1);
+    signal apple_pos       : xy;
     signal lose            : std_logic :='0';
+    signal led             : std_logic;
 
     -- Clock period definition
     constant clk_period : time := 10 ns; -- 60Hz clock
@@ -75,16 +78,18 @@ begin
     uut: GAME_Play
         port map (
             clk_60hz        => clk_60hz,
+            clk_108Mhz      => clk_108Mhz,
             reset           => reset,
             play            => play,
-            joystick        => joystick,
+            teclado        => teclado,
             
-            snake_length    => snake_length,
-            snake_mesh_xy   => snake_mesh_xy,
-            food_xy         => food_xy,
+            pyton_length    => pyton_length,
+            pyton_mesh_pos  => pyton_mesh_pos,
+            apple_pos       => apple_pos,
            
-            estado          => estado,
-            lose            => lose
+            lose            => lose,
+            
+            led_choque      => led
         );
 
     -- Clock generation process
@@ -94,6 +99,18 @@ begin
             clk_60hz <= '0';
             wait for clk_period / 2;
             clk_60hz <= '1';
+            wait for clk_period / 2;
+        end loop;
+        wait;
+    end process;
+    
+    -- Clock generation process
+    clk_process2: process
+    begin
+        while true loop
+            clk_108Mhz <= '0';
+            wait for clk_period / 2;
+            clk_108Mhz <= '1';
             wait for clk_period / 2;
         end loop;
         wait;
@@ -111,23 +128,23 @@ begin
         play <= '1';
         wait for clk_period;
 
-        -- Test joystick movements
-        joystick <= "111"; -- Move init/none     -> Only at firt time
+        -- Test teclado movements
+        teclado <= "111"; -- Move init/none     -> Only at firt time
         wait for 10 * clk_period;
 
-        joystick <= "000"; -- Move up
+        teclado <= "000"; -- Move up
         wait for 10 * clk_period;
 
-        joystick <= "001"; -- Move down
+        teclado <= "001"; -- Move down
         wait for 10 * clk_period;
 
-        joystick <= "010"; -- Move left
+        teclado <= "010"; -- Move left
         wait for 10 * clk_period;
         
-        joystick <= "011"; -- Move right
+        teclado <= "011"; -- Move right
         wait for 10 * clk_period;
         
-        joystick <= "100"; -- Move none      -> Case imposible
+        teclado <= "100"; -- Move none      -> Case imposible
         wait for 10 * clk_period;
 
         
@@ -138,7 +155,7 @@ begin
         play <= '1';
         wait for 5 * clk_period;
         
-        joystick <= "000"; -- Move up
+        teclado <= "000"; -- Move up
         wait for 10 * clk_period;
 
         -- End simulation

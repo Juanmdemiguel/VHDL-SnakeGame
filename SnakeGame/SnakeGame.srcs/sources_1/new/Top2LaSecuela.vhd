@@ -102,7 +102,6 @@ architecture Structural of TOP_2 is
                 signal sig_apple_pos_flipflop       : xy;
                 
                 -- TEST ONLY SIGNALS --
-                signal sig_estado_juego          : std_logic_vector (2 downto 0);
                 
                 signal teclado_arriba :std_logic;
                 signal teclado_abajo :std_logic;
@@ -187,7 +186,6 @@ COMPONENT GAME_Play
         pyton_length    : out integer range 0 to pyton_length_max;
         pyton_mesh_pos  : out xys(0 to pyton_length_max - 1);
         apple_pos       : out xy;
-        estado          : out std_logic_vector (2 downto 0);
         lose            : inout std_logic;
         led_choque      : out std_logic
     );
@@ -307,7 +305,6 @@ Inst_GAME_Play: GAME_Play
         pyton_length    => sig_pyton_length,
         pyton_mesh_pos  => sig_pyton_mesh_pos,
         apple_pos       => sig_apple_pos,
-        estado          => sig_estado_juego,
         lose            => sig_lose,
         led_choque      => led_choque
     );
